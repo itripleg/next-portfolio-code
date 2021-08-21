@@ -1,5 +1,6 @@
 import React from 'react'
 import TextLoop from 'react-text-loop'
+import Image from 'next/image'
 
 function About() {
 	return (
@@ -20,7 +21,10 @@ function About() {
 			<div className="container mx-auto flex px-10  flex-row  items-center  ">
 				<div className=" md:w-100 md:pr-16 flex flex-col mb-16 items-center text-center ">
 					<div className="flex flex-col items-center  md:flex-col lg:flex-row ">
-						<img src="./me.jpg" className="loading=lazy rounded-full 
+						<Image 
+							src="./me.jpg" 
+							alt="Josh Bell"
+							className="loading=lazy rounded-full 
 							h-20 m-4 transition transform duration-150 hover:scale-110 md:h-26 lg:h-36"/>
 						<p className="text-center mt-6 mb-10 lg:mb-0 p-12 ">
 							Full Stack developer. Musican. Crypto and Blockchain enthusist.

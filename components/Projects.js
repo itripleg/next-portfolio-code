@@ -1,6 +1,7 @@
 import React from 'react'
 import { CodeIcon } from "@heroicons/react/solid";
 import { projects } from "../data";
+import Image from 'next/image'
 
 function Projects() {
 	return (
@@ -9,7 +10,7 @@ function Projects() {
 		    <div className="flex flex-col w-full mb-20 lg:flex-col h-full">
 		      <CodeIcon className="mx-auto inline-block w-10 mb-4" />
 		      <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-		        Apps I've Built
+		        { "Apps I've Built" }
 		      </h1>
 		      <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
 		        Coming soon. Some projects are still in alpha and or experimental in nature. 
@@ -23,7 +24,7 @@ function Projects() {
 		          key={project.image}
 		          className="sm:w-1/2 w-100 p-4">
 		          <div className="flex relative">
-		            <img
+		            <Image
 		              alt="gallery"
 		              className="absolute inset-0 w-full h-full object-cover object-center"
 		              src={project.image}
