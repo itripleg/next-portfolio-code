@@ -3,7 +3,7 @@ import TextLoop from 'react-text-loop'
 
 function About() {
 	return (
-		<section id="about">
+		<section id="about" className="">
 					<h1 className="title-font sm:text-4xl text-3xl pt-12 font-medium text-white text-center mb-6">
 						Lets {''}
 							<TextLoop interval="5000">

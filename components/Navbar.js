@@ -1,19 +1,22 @@
 import React from 'react'
-import { ArrowRightIcon } from "@heroicons/react/solid";
+import { ArrowRightIcon, HomeIcon } from "@heroicons/react/solid";
 import Link from 'next/link'
 import 'tailwindcss/tailwind.css'
 
 
 function Navbar() {
-	return (
-		<header className="bg-gray-800  top-0 z-10">
-			<div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
-				<Link href={'/'}><p className="invisible md:visible">Home</p></Link>
+  return (
+    <header className="bg-gray-800  top-0 z-10">
+      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
+        < a href="/" className="inline-flex items-center mx-auto">
+          <HomeIcon className="w-8 h-6 ml-8 md:ml-0"/>
+          <Link href={'/'}><p className="invisible md:visible text-xl">Home</p></Link>
+        </a>
         <span className="flex mx-auto lg:mr-10"></span>
         <h1 className="title-font font-medium text-white
-					cursor-pointer hover:underline select-none mb-4 md:mb-0 "> 
-					<a href="#about" className="text-xl mr-4">Joshua Bell</a></h1>
-					<nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
+          cursor-pointer hover:underline select-none mb-4 md:mb-0 "> 
+          <a href="#about" className="text-xl mr-4">Joshua Bell</a></h1>
+          <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap items-center text-base justify-center">
           <a href="#projects" className="mr-5 hover:text-white">
             Past Work
           </a>
@@ -33,9 +36,9 @@ function Navbar() {
             <ArrowRightIcon className="w-4 h-4 ml-1" />
           </a>
         </div>
-			</div>
-		</header>
-	)
+      </div>
+    </header>
+  )
 }
 
 export default Navbar

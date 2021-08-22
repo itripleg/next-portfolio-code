@@ -9,12 +9,11 @@ export default function Portfolio() {
   return (
       <main className="text-gray-400 bg-gray-900 body-font">
         <div className="no-scrollbar">
-          
-        <Navbar />
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
+          <Navbar />
+          <About />
+          <Projects />
+          <Skills />
+          <Contact />
         </div>
       </main>
     )

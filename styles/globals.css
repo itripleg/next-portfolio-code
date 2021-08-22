@@ -20,3 +20,14 @@ a {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
 }
+
+.bg {
+    /*background-image: url("/dark.png");*/
+
+    /* Full height */
+    height: 100vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
