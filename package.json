@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.6.6",
     "@heroicons/react": "^1.0.4",
     "@netlify/plugin-nextjs": "^3.8.0",
     "moralis": "^0.0.28",

@@ -37,12 +37,7 @@ function Navbar() {
           </Link>          
         </nav>
         <div>   
-          <Link
-            href="https://github.com/itripleg/" passHref={true}
-            className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base">
-            Github
-            <ArrowRightIcon className="w-4 h-4 ml-1" />
-          </Link>
+
         </div>
       </div>
     </header>

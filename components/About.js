@@ -1,6 +1,6 @@
 import React from 'react'
 import TextLoop from 'react-text-loop'
-import { Image } from 'next/image'
+import Image  from 'next/image'
 
 function About() {
 	return (
