@@ -19,6 +19,7 @@ function handleSubmit(e) {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      action: "https://formsubmit.co/your@email.com",
       body: encode({ "form-name": "contact", name, email, message }),
     })
       .then(() => alert("Message sent!"))

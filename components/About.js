@@ -6,10 +6,9 @@ function About() {
 		<section id="about">
 					<h1 className="title-font sm:text-4xl text-3xl pt-12 font-medium text-white text-center mb-6">
 						Lets {''}
-							<TextLoop interval="7000">
+							<TextLoop interval="5000">
 								<h1> Build </h1>
                 <h1> Work </h1>
-                <h1> Experiment </h1>
                 <h1> Decentralize </h1>
                 <h1> Succeed </h1>
                 <h1> Thrive </h1>

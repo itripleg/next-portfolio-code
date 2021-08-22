@@ -1,12 +1,10 @@
 import React from 'react'
-import { ArrowRightIcon } from "@heroicons/react/solid";
 import Link from 'next/link'
-import 'tailwindcss/tailwind.css'
+import { ArrowRightIcon } from '@heroicons/react/solid';
 
-
-function Navbar() {
+function Topbar() {
 	return (
-		<header className="bg-gray-800  top-0 z-10">
+<header className="bg-gray-800  top-0 z-10">
 			<div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
 				<Link href={'/'}><p className="invisible md:visible">Home</p></Link>
         <span className="flex mx-auto lg:mr-10"></span>
@@ -38,4 +36,4 @@ function Navbar() {
 	)
 }
 
-export default Navbar
+export default Topbar
