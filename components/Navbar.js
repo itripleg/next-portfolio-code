@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <header className="bg-gray-800  top-0 z-10 text-gray-400 sticky">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
-        {/*Left side of navigation bar icons*/}
+        Left side of navigation bar Link
         <div className="flex">
           <HomeIcon className="w-8 h-6 mr-2 md:ml-0 hover:text-white"><Link href={'/'}></Link></HomeIcon> 
         </div>
@@ -17,32 +17,32 @@ function Navbar() {
         <h1 className="title-font font-medium text-white
           cursor-pointer hover:underline 
           select-none mb-4 md:mb-0 "> 
-          <a href="/#about" className="text-xl mr-4">Joshua Bell</a>
+          <Link href="/#about" className="text-xl mr-4">Joshua Bell</Link>
         </h1>
         <nav className="md:mr-auto md:ml-4 md:py-1 
           md:pl-4 md:border-l md:border-gray-700 
           flex flex-wrap items-center text-base 
           justify-center">
-          <a href="/#projects" className="mr-5 hover:text-white">
+          <Link href="/#projects" className="mr-5 hover:text-white">
             Past Work
-          </a>
-          <a href="/#skills" className="mr-5 hover:text-white">
+          </Link>
+          <Link href="/#skills" className="mr-5 hover:text-white">
             Skills
-          </a>
-          <a href="/#contact" className="mr-5 hover:text-white">
+          </Link>
+          <Link href="/#contact" className="mr-5 hover:text-white">
             Contact
-          </a>
-          <a href="/Web3" className="mr-5 hover:text-white">
+          </Link>
+          <Link href="/Web3" className="mr-5 hover:text-white">
             Web3
-          </a>          
+          </Link>          
         </nav>
         <div>   
-          <a
-            href="https://github.com/itripleg/"
+          <Link
+            href="https://github.com/itripleg/" passHref={true}
             className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base">
             Github
             <ArrowRightIcon className="w-4 h-4 ml-1" />
-          </a>
+          </Link>
         </div>
       </div>
     </header>

@@ -8,7 +8,7 @@ function Topbar() {
 			<div className="container flex p-7 flex-col mb-5 h-7 text-gray text-center md:flex-row mx-auto">
 				<h1 className="text-white">Welcome!</h1>
 				 {/*<h1 className="ml-5 invisible md:visible">Please login to Web3 get started</h1>*/}
-				<Link href="/auth">
+				<Link href="/Web3" passHref={true}>
 					<button className="position absolute 
 					right-1 mr-10 transition
 					 transform duration-150

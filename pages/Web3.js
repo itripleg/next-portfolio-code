@@ -1,12 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Portfolio from './Portfolio'
 import Link from 'next/link'
 import Navbar from '../components/Navbar';
-import Topbar from '../components/Topbar';
 import { useMoralis } from 'react-moralis';
 import React, { useState } from 'react';
-
 
 const Login  = () => {
   const { login } = useMoralis();
@@ -72,6 +69,7 @@ export default function Web3() {
             onClick={authenticate, hideEmailBox}>
             <h1 className="mb-8">Login With Metamask</h1>
               <Image src="/metamask.png"
+                alt="metamask"
                 height="100"
                 width="100" 
                 className=""/>
@@ -82,6 +80,7 @@ export default function Web3() {
             onClick={handleEmail}>
             <h1 className="mb-8 z-100">Login With Email</h1>
               <Image src="/moralis.png"
+                alt="moralis"
                 height="100"
                 width="100" 
                 className=""/>

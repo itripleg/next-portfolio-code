@@ -15,7 +15,6 @@ function MyApp({ Component, pageProps }) {
   const doSomething = ()=> {alert()}
   return (
     <MoralisProvider appId={appId} serverUrl={serverUrl}>
-      {/*<Topbar />*/}
       <Navbar />
       <Component {...pageProps} />
     </MoralisProvider>
