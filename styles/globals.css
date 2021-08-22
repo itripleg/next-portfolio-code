@@ -31,3 +31,28 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.auth {
+  /*position: fixed;*/
+  background-color: #21212e; 
+  height: 100vh;
+  width: 100;
+}
+
+.center {
+  margin-left: 5rem;
+  padding-top: 5rem;
+  /*padding-left: 1rem;*/
+  text-align: center;
+  color: var(--text-primary);
+  /*height: 100vh;*/
+  /*position: fixed;*/
+  /*width: 100%;*/
+}
+
+body {
+  padding: 0rem;
+  color: var(--bg-primary);
+  margin-left: 0rem;
+  background-color: white;
+}
