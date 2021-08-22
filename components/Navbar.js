@@ -28,7 +28,7 @@ function Navbar() {
           </a>
         </nav>
         <div className="inline-flex items-center">
-          <a href="/" className="mt-4 md:invisible">Home</a>
+          <Link href="/" className="mt-4 md:invisible">Home</Link>
           <a
             href="https://github.com/itripleg/"
             className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
