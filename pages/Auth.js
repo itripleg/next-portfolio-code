@@ -4,7 +4,6 @@ import { Button, Input } from 'reactstrap';
 import { Container, Heading, Stack, Center } from '@chakra-ui/layout';
 import { useMoralis } from 'react-moralis';
 import { useState } from 'react';
-import './Auth.css'
 
 import {
   Alert,
