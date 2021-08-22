@@ -4,7 +4,6 @@ import Portfolio from './Portfolio'
 import Link from 'next/link'
 import Navbar from '../components/Navbar';
 import Topbar from '../components/Topbar';
-import BGImage from '../components/BackgroundImage';
 
 export default function Home() {
   return (

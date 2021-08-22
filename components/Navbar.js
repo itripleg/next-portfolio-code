@@ -8,10 +8,10 @@ function Navbar() {
   return (
     <header className="bg-gray-800  top-0 z-10">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center ">
-        < a href="/" className="inline-flex items-center mx-auto">
+        <Link href="/" className="inline-flex items-center mx-auto">
           <HomeIcon className="w-8 h-6 ml-8 md:ml-0"/>
-          <Link href={'/'}><p className="invisible md:visible text-xl">Home</p></Link>
-        </a>
+        </Link>
+        <Link href={'/'}><p className="invisible md:visible text-xl">Home</p></Link>
         <span className="flex mx-auto lg:mr-10"></span>
         <h1 className="title-font font-medium text-white
           cursor-pointer hover:underline select-none mb-4 md:mb-0 "> 
