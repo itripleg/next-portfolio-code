@@ -5,9 +5,10 @@ import Image  from 'next/image'
 function About() {
 	return (
 		<section id="about" className="">
-					<h1 className="title-font sm:text-4xl text-3xl pt-12 font-medium text-white text-center mb-6">
+					<h1 className="title-font sm:text-4xl text-3xl pt-12 font-medium
+					 text-white text-center mb-6 md:space-x-8">
 						Lets {''}
-							<TextLoop interval="5000">
+							<TextLoop interval="5000" className="animate-pulse text-blue-200">
 								<h1> Build </h1>
                 <h1> Work </h1>
                 <h1> Decentralize </h1>
@@ -20,8 +21,9 @@ function About() {
 			<div className="container mx-auto flex px-10  flex-row  items-center  ">
 				<div className=" md:w-100 md:pr-16 flex flex-col mb-16 items-center text-center ">
 					<div className="flex flex-col items-center  md:flex-col lg:flex-row ">
-						<Image alt="me" src="./me.jpg" className="loading=lazy rounded-full 
-							h-20 m-4 transition transform duration-150 hover:scale-110 md:h-26 lg:h-36"/>
+						<Image alt="me" src="/me.jpg" className="loading=lazy rounded-full 
+							h-20 m-4 transition transform duration-150 hover:scale-110 md:h-26 lg:h-36"
+							width="150" height="150"/>
 						<p className="text-center mt-6 mb-10 lg:mb-0 p-12 ">
 							Full Stack developer. Musican. Crypto and Blockchain enthusist.
 							I love working with bleeding edge technology helping to decentralize the web.

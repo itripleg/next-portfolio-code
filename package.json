@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "license": "MIT",
   "dependencies": {
     "@heroicons/react": "^1.0.4",
     "@netlify/plugin-nextjs": "^3.8.0",
