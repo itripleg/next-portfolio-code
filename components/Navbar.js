@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { ArrowRightIcon, HomeIcon, MenuIcon } from "@heroicons/react/solid";
 import Link from 'next/link'
 import 'tailwindcss/tailwind.css'
-import { useMoralis } from 'react-moralis';
+// import { useMoralis } from 'react-moralis';
 
 function Navbar() {
 
