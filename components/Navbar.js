@@ -8,7 +8,7 @@ function Navbar() {
 
 const CustomHomeIcon = React.forwardRef(function CustomComponent(props, ref) {
   return (
-      <Link href={'/'}>
+      <Link href={'/'} passHref={true}> 
       <HomeIcon className="w-8 h-6 mr-2 md:ml-0 hover:text-white" >
       </HomeIcon>
     </Link>
