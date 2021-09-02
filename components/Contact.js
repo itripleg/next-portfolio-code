@@ -66,7 +66,7 @@ function handleSubmit(e) {
             </div>
           </div>
         </div>
-        //Netlify form
+        {/*contact form*/}
         <form
           netlify
           name="contact"
