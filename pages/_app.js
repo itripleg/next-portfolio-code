@@ -1,7 +1,6 @@
 import '../styles/globals.css'
 import 'tailwindcss/tailwind.css'
 import { MoralisProvider } from 'react-moralis';
-import Topbar from '../components/Topbar';
 import Navbar from '../components/Navbar';
 import { useMoralis } from 'react-moralis';
 import { useState } from 'react';
@@ -12,7 +11,7 @@ const serverUrl ="https://rub78qqvax12.moralis.io:2053/server";
 
 
 function MyApp({ Component, pageProps }) {
-  const doSomething = ()=> {alert()}
+  // const doSomething = ()=> {alert()}
   return (
     <MoralisProvider appId={appId} serverUrl={serverUrl}>
       <Navbar />
