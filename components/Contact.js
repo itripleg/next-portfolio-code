@@ -28,7 +28,7 @@ function handleSubmit(e) {
 
 
   return (
-    <section id="contact" className="relative">
+    <section id="contactMe" className="relative">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
@@ -66,6 +66,7 @@ function handleSubmit(e) {
             </div>
           </div>
         </div>
+        //Netlify form
         <form
           netlify
           name="contact"
@@ -88,7 +89,8 @@ function handleSubmit(e) {
             />
           </div>
           <div className="relative mb-4">
-            <label htmlFor="email" className="leading-7 text-sm text-gray-400">
+            <label
+              htmlFor="email" className="leading-7 text-sm text-gray-400">
               Email
             </label>
             <input
