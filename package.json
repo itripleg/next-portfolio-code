@@ -12,6 +12,8 @@
   "dependencies": {
     "@heroicons/react": "^1.0.4",
     "@netlify/plugin-nextjs": "^3.9.0",
+    "@walletconnect/web3-provider": "^1.6.5",
+    "babel-eslint": "^10.1.0",
     "moralis": "^0.0.41",
     "next": "^11.1.2",
     "react": "^17.0.2",
