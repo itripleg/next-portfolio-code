@@ -14,17 +14,17 @@ export default function Contact() {
       .join("&");
   }
 
-function handleSubmit(e) {
-    e.preventDefault();
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      action: "https://formsubmit.co/joshua.bell.8282gmail.com",
-      body: encode({ "form-name": "contact", name, email, message }),
-    })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
-  }
+// function handleSubmit(e) {
+//     e.preventDefault();
+//     fetch("/", {
+//       method: "POST",
+//       headers: { "Content-Type": "application/x-www-form-urlencoded" },
+//       action: "https://formsubmit.co/joshua.bell.8282gmail.com",
+//       body: encode({ "form-name": "contact", name, email, message }),
+//     })
+//       .then(() => alert("Message sent!"))
+//       .catch((error) => alert(error));
+//   }
 
 
   return (
