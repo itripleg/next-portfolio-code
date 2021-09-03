@@ -21,7 +21,7 @@
     "yarn": "^1.22.11"
   },
   "resolutions": {
-    "moralis/uuid": "^8.3.2",
+    "moralis/uuid": "^7.0.0",
     "moralis/web3": "^1.5.2"
   },
   "devDependencies": {
