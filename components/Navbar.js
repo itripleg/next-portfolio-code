@@ -40,8 +40,8 @@ const CustomHomeIcon = React.forwardRef(function CustomComponent(props, ref) {
         <Link href="/#contact" passHref={true} className="mr-5 hover:text-white">
           Contact
         </Link>
-        <Link href="/Web3" passHref={true} className="mr-5 hover:text-white">
-          Web3
+        <Link href="/Blockchain" passHref={true} className="mr-5 hover:text-white">
+          Blockchain
         </Link>          
       </nav>
       <div>   

@@ -11,7 +11,10 @@
   "license": "MIT",
   "dependencies": {
     "@heroicons/react": "^1.0.4",
+<<<<<<< Updated upstream
     "@walletconnect/web3-provider": "^1.6.5",
+=======
+>>>>>>> Stashed changes
     "moralis": "^0.0.41",
     "next": "^11.1.2",
     "react": "^17.0.2",
@@ -27,5 +30,8 @@
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.9",
     "yarn-upgrade-all": "^0.5.4"
+  },
+  "resolutions": {
+    "uuid": "^8.3.2"
   }
 }

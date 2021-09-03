@@ -5,7 +5,7 @@ export const projects = [
     description:
       "Experimental blockchain games using smart contracts deployed on Ethereum and Binance Smart Chain networks. Current contracts are on Rinkeby testnet.",
     image: "/project-1.gif",
-    link: "/Web3",
+    link: "/Blockchain",
   },
   {
     title: "Google Clone",
