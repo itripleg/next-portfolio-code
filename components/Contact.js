@@ -66,15 +66,11 @@ function handleSubmit(e) {
             </div>
           </div>
         </div>
-    <form name="contactForm" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-    </form>
         {/*contact form*/}
         <form
           name="contactForm"
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+          <input type="hidden" name="form-name" value="contactForm" />
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font text-center">
             Contact Me
           </h2>
