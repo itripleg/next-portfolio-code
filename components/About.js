@@ -27,7 +27,9 @@ function About() {
 						<p className="text-center mt-6 mb-10 lg:mb-0 p-12 ">
 							Full Stack developer. Musican. Crypto and Blockchain enthusist.
 							I love working with bleeding edge technology helping to decentralize the web.
-							This page was built using <a href="http://nextjs.org" className="underline">Next.js</a> and <a href="http://tailwindcss.com" className="underline"> Tailwind CSS. </a></p>
+							I built this page with ♥ using Yarn with <a href="http://nextjs.org" className="underline">Next.js</a>
+							{' '}and <a href="http://tailwindcss.com" className="underline"> Tailwind CSS.</a>
+							{' '}Deployed with Netlify and Github.</p>
 							<div className=" flex">							
 						<a
               href="#contact"
@@ -42,9 +44,7 @@ function About() {
               See My Past Work
             </a>
 					</div>
-
 					</div>
-
 				</div>
 			</div>
 		</section>
