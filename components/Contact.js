@@ -29,6 +29,7 @@ export default function Contact() {
 
 
   return (
+    <>
     <Head> 
       {/*A little help for the Netlify post-processing bots */}
       <form name="contactForm" netlify netlify-honeypot="bot-field" hidden>
@@ -128,10 +129,10 @@ export default function Contact() {
           </button>
         </form>
       </div>
-    <div className="absolute bottom-0 right-1/4 md:right-1/2 lg:right-80 ">
-    	© 2021 Joshua Bell, all rights reserved
-    </div>
-
+      <div className="absolute bottom-0 right-1/4 md:right-1/2 lg:right-80 ">
+      	© 2021 Joshua Bell, all rights reserved
+      </div>
     </section>
+    </>
   );
 }
