@@ -15,7 +15,7 @@ const CustomHomeIcon = React.forwardRef(function CustomComponent(props, ref) {
 });
 
   return (
-    <header className="bg-gray-800  top-0 z-10 text-gray-400 sticky">
+    <header className="bg-gray-800 md:top-0 z-10 text-gray-400 sticky">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <div className="flex">
           <CustomHomeIcon/>
