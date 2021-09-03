@@ -32,7 +32,7 @@ export default function Contact() {
     <>
  
       {/*A little help for the Netlify post-processing bots */}
-      <form name="contactForm" netlify netlify-honeypot="bot-field" hidden>
+      <form name="contactForm" data-netlify="true" netlify-honeypot="bot-field" hidden>
         <input type="text" name="name" />
         <input type="email" name="email" />
         <textarea name="message"></textarea>
@@ -79,8 +79,11 @@ export default function Contact() {
         {/*contact form*/}
         <form
           name="contactForm"
-          method="post"
+          method="POST"
+          data-netlify="true"
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+          {/*For netlify forms*/}
+          <input type="hidden" name="form-name" value="contactForm" />
           <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font text-center">
             Contact Me
           </h2>
