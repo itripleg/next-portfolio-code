@@ -17,13 +17,13 @@ function Projects() {
 		        Source code will eventually be uploaded to Github.
 		      </p>
 		    </div>
-		    <div className="flex flex-wrap -m-4">
+		    <div className="flex flex-wrap -m-4 grid-cols-2 justify-center gap-3 md:gap-0 min-h-200">
 		      {projects.map((project) => (
 		        <a
 		          href={project.link}
 		          key={project.image}
 		          className="sm:w-1/2 w-100 p-4">
-		          <div className="flex relative">
+		          <div className="flex relative h-full">
 		            <Image
 		              alt="gallery"
 		              className="absolute inset-0 w-full h-full object-cover object-center"

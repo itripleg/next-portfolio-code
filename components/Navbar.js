@@ -9,8 +9,7 @@ function Navbar() {
 const CustomHomeIcon = React.forwardRef(function CustomComponent(props, ref) {
   return (
       <Link href={'/'} passHref={true}> 
-      <HomeIcon className="w-8 h-6 mr-2 md:ml-0 hover:text-white" >
-      </HomeIcon>
+      <HomeIcon className="w-8 h-6 mr-2 md:ml-0 hover:text-white" />
     </Link>
   );
 });
@@ -25,19 +24,19 @@ const CustomHomeIcon = React.forwardRef(function CustomComponent(props, ref) {
       <h1 className="title-font font-medium text-white
         cursor-pointer hover:underline 
         select-none mb-4 md:mb-0 "> 
-        <Link href="/#about" passHref={true} className="text-xl mr-4">Joshua Bell</Link>
+        <Link href="/Portfolio#about" passHref={true} className="text-xl mr-4">Joshua Bell</Link>
       </h1>
       <nav className="md:mr-auto md:ml-4 md:py-1 
         md:pl-4 md:border-l md:border-gray-700 
         flex flex-wrap items-center text-base 
         justify-center space-x-3 md:space-x-6">
-        <Link href="/#projects" passHref={true} className="mr-5 hover:text-white">
+        <Link href="/Portfolio#projects" passHref={true} className="mr-5 hover:text-white">
           Past Work
         </Link>
-        <Link href="/#skills" passHref={true} className="mr-5 hover:text-white">
+        <Link href="/Portfolio#skills" passHref={true} className="mr-5 hover:text-white">
           Skills
         </Link>
-        <Link href="/#contact" passHref={true} className="mr-5 hover:text-white">
+        <Link href="/Portfolio#contact" passHref={true} className="mr-5 hover:text-white">
           Contact
         </Link>
         <Link href="/Web3" passHref={true} className="mr-5 hover:text-white">

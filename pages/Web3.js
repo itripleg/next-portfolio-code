@@ -28,8 +28,10 @@ export default function Web3() {
       showEmailBox(!useEmail)
       console.log(useEmail)
     };
-  const hideEmailBox = () => {
-      showEmailBox(false)
+  const metamaskLogin = () => {
+        if(showEmailBox){
+        showEmailBox(false)
+      } authenticate();
     };
 
 
@@ -66,7 +68,7 @@ export default function Web3() {
         <div className="container p-4 flex flex-col md:flex-row mx-auto justify-center md:p-20 lg:p-40" >
           <div className="h-60 w-auto md:w-60 bg-gray-800 text-gray rounded-md p-4 m-4
             text-center transform transition hover:scale-110 hover:text-green-500 animate-pulse"
-            onClick={authenticate, hideEmailBox}>
+            onClick={metamaskLogin}>
             <h1 className="mb-8">Login With Metamask</h1>
               <Image src="/metamask.png"
                 alt="metamask"
