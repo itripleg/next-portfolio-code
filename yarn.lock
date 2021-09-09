@@ -617,9 +617,9 @@
   integrity sha512-S63Dlv4zIPb8x6MMTgDq5WWRJQe56iBEY0O3SOFA9JrRienkOVDXSXBjjJw6HTNQYSE2JI6GMCR6LVbIMHJVvA==
 
 "@types/node@^12.12.6":
-  version "12.20.23"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.23.tgz#d0d5885bb885ee9b1ed114a04ea586540a1b2e2a"
-  integrity sha512-FW0q7NI8UnjbKrJK8NGr6QXY69ATw9IFe6ItIo5yozPwA9DU/xkhiPddctUVyrmFXvyFYerYgQak/qu200UBDw==
+  version "12.20.24"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.24.tgz#c37ac69cb2948afb4cef95f424fa0037971a9a5c"
+  integrity sha512-yxDeaQIAJlMav7fH5AQqPH1u8YIuhYJXYBzxaQ4PifsU0GDO38MSdmEDeRlIxrKbC6NbEaaEHDanWb+y30U8SQ==
 
 "@types/node@^14.6.2":
   version "14.17.14"
@@ -4374,10 +4374,10 @@ modern-normalize@^1.1.0:
   resolved "https://registry.yarnpkg.com/modern-normalize/-/modern-normalize-1.1.0.tgz#da8e80140d9221426bd4f725c6e11283d34f90b7"
   integrity sha512-2lMlY1Yc1+CUy0gw4H95uNN7vjbpoED7NNRSBHE25nWfLBdmMzFCsPshlzbxHz+gYMcBEUN8V4pU16prcdPSgA==
 
-moralis@^0.0.41:
-  version "0.0.41"
-  resolved "https://registry.yarnpkg.com/moralis/-/moralis-0.0.41.tgz#dd8f3e3340baa9253f689d722ac6440c4bc67003"
-  integrity sha512-vZMoll6O6V/cgJe84Iz3LIU4/JG2fk2ieOVOGRpKB2qtRHO6BATU2X1PVHHFDztASGCSyVDLMoAPhG+Z8gj5fQ==
+moralis@^0.0.44:
+  version "0.0.44"
+  resolved "https://registry.yarnpkg.com/moralis/-/moralis-0.0.44.tgz#e065ad5df7632d5b96bce5299a4c4c8aa36366dc"
+  integrity sha512-wxK7zEi4Ylylja+TvB5VpXeYocHp1or49bGSYWamxPkvPtpa5uuwzi97BV73Qa0AqesUA4Y0lPk7AasJ1TkXNQ==
   dependencies:
     "@babel/runtime" "7.12.5"
     "@babel/runtime-corejs3" "7.12.5"
@@ -4481,7 +4481,7 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-next@^11.1.2:
+next@latest:
   version "11.1.2"
   resolved "https://registry.yarnpkg.com/next/-/next-11.1.2.tgz#527475787a9a362f1bc916962b0c0655cc05bc91"
   integrity sha512-azEYL0L+wFjv8lstLru3bgvrzPvK0P7/bz6B/4EJ9sYkXeW8r5Bjh78D/Ol7VOg0EIPz0CXoe72hzAlSAXo9hw==
@@ -5361,9 +5361,9 @@ react-is@^16.8.1:
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
 react-moralis@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/react-moralis/-/react-moralis-0.2.1.tgz#5dfed0fcaaa4ae8757782cdf3433aa185737eeb9"
-  integrity sha512-ST61cAMONEkUS5JR2w1pddB8lI++JYSoUkl5YSYfjIveFpcfMEFDg7pRdAZmJnB+uHoT5GNyTw99SF04Vq+4Ng==
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/react-moralis/-/react-moralis-0.2.2.tgz#92bfdb4b23b71b65f6d92fcac2cd848057e32b7a"
+  integrity sha512-U78kqzzu8oL7f99/t6WcBOUEzlRjyxIfTIkrWxJg+OfTYnngkMKl+iDR9PCQvncNeUwQHzQL522pRiExYuRTQg==
   dependencies:
     fast-deep-equal "^3.1.3"
     immer "^9.0.1"
@@ -6545,12 +6545,7 @@ uuid@3.3.2:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
   integrity sha512-yXJmeNaw3DnnKAOKJE51sL/ZaYfWJRl1pK9dr19YFCu0ObS231AB1/LbqTKRAQ5kw8A90rA6fr4riOUpTZvQZA==
 
-uuid@3.4.0, uuid@^7.0.0:
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-7.0.3.tgz#c5c9f2c8cf25dc0a372c4df1441c41f5bd0c680b"
-  integrity sha512-DPSke0pXhTZgoF/d+WSt2QaKMCFSfx7QegxEWT+JOuHF5aWrKEn0G+ztjuJg/gG8/ItK+rbPCD/yNv8yyih6Cg==
-
-uuid@^3.3.2:
+uuid@3.4.0, uuid@^3.3.2:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
@@ -6844,7 +6839,7 @@ web3-utils@1.5.2:
     randombytes "^2.1.0"
     utf8 "3.0.0"
 
-web3@^1.3.3, web3@^1.5.2:
+web3@^1.3.3:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/web3/-/web3-1.5.2.tgz#736ca2f39048c63964203dd811f519400973e78d"
   integrity sha512-aapKLdO8t7Cos6tZLeeQUtCJvTiPMlLcHsHHDLSBZ/VaJEucSTxzun32M8sp3BmF4waDEmhY+iyUM1BKvtAcVQ==

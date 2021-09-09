@@ -11,18 +11,18 @@ const Login  = () => {
   const [password, setPassword] = useState();
 
   return(
-    <div className="h-60 w-auto md:w-60 bg-gray-800 text-gray rounded-md p-4 m-4
-            text-center transform transition hover:scale-110 animate-pulse">
+    <div className="h-60 w-auto md:w-60 bg-gray-800 text-gray rounded-md
+    p-4 m-4 text-center transform transition hover:scale-110 animate-pulse">
       <input className="rounded-md w-full h-12 text-center" placeholder="Email" value={email} onChange={(event)=> setEmail(event.currentTarget.value)}/>
       <input className="rounded-md w-full h-12 text-center" placeholder="Password" type="password" value={password} onChange={(event)=> setPassword(event.currentTarget.value)}/>
-      <button className="hover:text-green-500 mt-4 p-6" onClick={() => login(email, password)}>Login</button>
+      <button className="hover:text-green-500 mt-4 p-6" onClick={() => login(email, password,)}>Login</button>
       <p className="p-0 hover:underline hover:text-green-500 text-xs mt-4">Or Signup</p>
     </div>
   )
 }
 
 export default function Web3() {
-  const {authenticate, isAuthenticated, isAuthenticating, authError, logout, user} = useMoralis();
+  const { authenticate, isAuthenticated, isAuthenticating, authError, logout, user } = useMoralis();
   const [useEmail, showEmailBox] = useState(false);
   const handleEmail = () => {
       showEmailBox(!useEmail)

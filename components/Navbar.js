@@ -6,19 +6,13 @@ import 'tailwindcss/tailwind.css'
 
 function Navbar() {
 
-const CustomHomeIcon = React.forwardRef(function CustomComponent(props, ref) {
-  return (
-      <Link href={'/'} passHref={true}> 
-      <HomeIcon className="w-8 h-6 mr-2 md:ml-0 hover:text-white" />
-    </Link>
-  );
-});
-
   return (
     <header className="bg-gray-800 md:top-0 z-10 text-gray-400 sticky">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <div className="flex">
-          <CustomHomeIcon/>
+        <Link href={'/'} passHref={true}>
+          <a><HomeIcon className="w-8 h-6 mr-2 md:ml-0 hover:text-white" /></a>
+        </Link>
         </div>
       <span className="flex mx-auto lg:mr-10"></span>
       <h1 className="title-font font-medium text-white
