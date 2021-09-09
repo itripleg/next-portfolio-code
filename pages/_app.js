@@ -13,7 +13,7 @@ const serverUrl ="https://rub78qqvax12.moralis.io:2053/server";
 function MyApp({ Component, pageProps }) {
   // const doSomething = ()=> {alert()}
   return (
-      <MoralisProvider appId serverUrl>
+      <MoralisProvider appId={appId} serverUrl={serverUrl}>
         <Navbar />
         <Component {...pageProps} />
       </MoralisProvider>

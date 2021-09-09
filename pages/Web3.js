@@ -28,10 +28,10 @@ export default function Web3() {
       showEmailBox(!useEmail)
       console.log(useEmail)
     };
-  const metamaskLogin = () => {
+  const metamaskLogin = async () => {
         if(showEmailBox){
         showEmailBox(false)
-      } authenticate();
+      } await authenticate();
     };
 
 
