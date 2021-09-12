@@ -10,8 +10,8 @@ export default function Portfolio() {
       <main className="text-gray-400 bg-gray-900 body-font">
         <div className="no-scrollbar">
           <About />
-          <Projects />
           <Skills />
+          <Projects />
           <Contact />
         </div>
       </main>

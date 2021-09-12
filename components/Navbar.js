@@ -9,23 +9,23 @@ function Navbar() {
   return (
     <header className="bg-gray-800 md:top-0 z-10 text-gray-400 sticky">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <div className="flex">
+        <div className="flex justify-center">
         <Link href={'/'} passHref={true}>
-          <a><HomeIcon className="w-8 h-6 mr-2 md:ml-0 hover:text-white" /></a>
+          <a><HomeIcon className="w-8 h-6  md:ml-0 hover:text-white " /></a>
         </Link>
         </div>
       <span className="flex mx-auto lg:mr-10"></span>
       <h1 className="title-font font-medium text-white
         cursor-pointer hover:underline 
-        select-none mb-4 md:mb-0 "> 
-        <Link href="/Portfolio#about" passHref={true} className="text-xl mr-4">Joshua Bell</Link>
+        select-none mb-4 md:mb-0 invisible md:visible"> 
+        <Link href="/Portfolio#about" passHref={true} className="text-xl">Joshua Bell</Link>
       </h1>
       <nav className="md:mr-auto md:ml-4 md:py-1 
         md:pl-4 md:border-l md:border-gray-700 
         flex flex-wrap items-center text-base 
         justify-center space-x-3 md:space-x-6">
         <Link href="/Portfolio#projects" passHref={true} className="mr-5 hover:text-white">
-          Past Work
+          Projects
         </Link>
         <Link href="/Portfolio#skills" passHref={true} className="mr-5 hover:text-white">
           Skills
@@ -35,7 +35,10 @@ function Navbar() {
         </Link>
         <Link href="/Web3" passHref={true} className="mr-5 hover:text-white">
           Web3
-        </Link>          
+        </Link>
+        <Link href="/Chart" passHref={true} className="mr-5 hover:text-white">
+          Chart
+        </Link>       
       </nav>
       <div>   
         <div className="p-4 flex">

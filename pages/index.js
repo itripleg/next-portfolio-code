@@ -1,6 +1,5 @@
 import React from "react";
 import Image from 'next/image'
-import Router from 'next/router'
 import Portfolio from '/pages/Portfolio'
 
 export default function Index() {

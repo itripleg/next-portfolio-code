@@ -9,6 +9,24 @@ import Profile from './Profile';
 import ReactDOM from 'react'
 import Router from 'next/router'
 
+const SignupBox  = () => {
+  const { login, isInitialized } = useMoralis();
+
+  const emailLogin = async () => {
+    
+    console.log(email, password);
+    try{
+      const user = await Moralis.User.signup(email, password)
+      alert("User Created!")
+      
+      
+      }catch(err){
+        alert(err.message);
+      }
+
+  }
+}
+
 const Login  = () => {
   const { login, isInitialized } = useMoralis();
   const [email, setEmail] = useState();
@@ -18,9 +36,8 @@ const Login  = () => {
     
     console.log(email, password);
     try{
-      const user = await Moralis.User.logIn(email, password)
-      Router.reload(window.location.pathname)
-      
+      const user = await Moralis.User.logIn(email, password);
+            
       }catch(err){
         alert(err.message);
       }
@@ -30,10 +47,10 @@ const Login  = () => {
   return(
     <div className="h-60 w-auto md:w-60 bg-gray-800 text-gray rounded-md
     p-4 m-4 text-center transform transition hover:scale-110 animate-pulse">
-      <input className="rounded-md w-full h-12 text-center" placeholder="Babyboi828@gmail.com" value={email} onChange={(event)=> setEmail(event.currentTarget.value)}/>
-      <input className="rounded-md w-full h-12 text-center" placeholder="2acesFTW" type="password" value={password} onChange={(event)=> setPassword(event.currentTarget.value)}/>
+      <input className="rounded-md w-full h-12 text-center" placeholder="Email" value={email} onChange={(event)=> setEmail(event.currentTarget.value)}/>
+      <input className="rounded-md w-full h-12 text-center" placeholder="Password" type="password" value={password} onChange={(event)=> setPassword(event.currentTarget.value)}/>
       <button className="hover:text-green-500 mt-4 p-6" onClick={ emailLogin }>Login</button>
-      <p className="p-0 hover:underline hover:text-green-500 text-xs mt-4">Or Signup</p>
+      <p href="/Register" className="p-0 hover:underline hover:text-green-500 text-xs mt-4"></p>
     </div>
   )
 }
@@ -41,11 +58,17 @@ const Login  = () => {
 export default function Web3() {
   const { authenticate, isAuthenticated, isAuthenticating, authError, logout, user } = useMoralis();
   const [useEmail, showEmailBox] = useState(false);
+//   const [useSignupBox, showSignupBox] = useState(false);
   
-const currentUser = async() => await Moralis.User.current();
-  if(!currentUser){
-    logout();
-  }
+// const currentUser = async() => await Moralis.User.current();
+//   if(!currentUser){
+//     logout();
+//   }
+
+//   const handleSignup = () => {
+//       showSignupBox(!useSignupBox);
+//     };
+
 
   const handleEmail = () => {
       showEmailBox(!useEmail);
@@ -98,7 +121,19 @@ const currentUser = async() => await Moralis.User.current();
                 width="100" 
                 className=""/>
           </div>)}
+{/*          {(useSignupBox ? <SignupBox /> : 
+          <div className="h-60 w-auto md:w-60 bg-gray-800 text-gray rounded-md p-4 m-4
+            text-center transform transition hover:scale-110 hover:text-green-500 animate-pulse"
+            onClick={handleSignup}>
+            <h1 className="mb-8 z-100">Signup</h1>
+              <Image src="/moralis.png"
+                alt="moralis"
+                height="100"
+                width="100" 
+                className=""/>
+          </div>)}*/}
         </div>
+          <p>More options coming soon</p>
       </div>
   </div>
   )
