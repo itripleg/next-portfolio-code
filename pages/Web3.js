@@ -50,7 +50,7 @@ const Login  = () => {
       <input className="rounded-md w-full h-12 text-center" placeholder="Email" value={email} onChange={(event)=> setEmail(event.currentTarget.value)}/>
       <input className="rounded-md w-full h-12 text-center" placeholder="Password" type="password" value={password} onChange={(event)=> setPassword(event.currentTarget.value)}/>
       <button className="hover:text-green-500 mt-4 p-6" onClick={ emailLogin }>Login</button>
-      <p href="/Register" className="p-0 hover:underline hover:text-green-500 text-xs mt-4"></p>
+      <p className="p-0 hover:underline hover:text-green-500 text-xs mt-4"></p>
     </div>
   )
 }
