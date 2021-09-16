@@ -36,8 +36,8 @@ function Navbar() {
         <Link href="/Web3" passHref={true} className="mr-5 hover:text-white">
           Web3
         </Link>
-        <Link href={'/Chart'} passHref={true}><a> className="mr-5 hover:text-white">
-          Chart </a>
+        <Link href="/Chart" passHref={true} className="mr-5 hover:text-white">
+          Chart
         </Link>       
       </nav>
       <div>   

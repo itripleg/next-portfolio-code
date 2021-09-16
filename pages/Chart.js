@@ -10,12 +10,12 @@ const Chart = () => {
 			symbol="BTCUSDT"
 			theme="Dark"
 			autosize />
-		</div>
 			</div>
 				<div className="flex-col invisible md:visible">
 				<div className="p-16">item 1 chart</div>
 				<div className="p-16">item 1 chart</div>
 			</div>
+		</div>
 	)
 }
 
