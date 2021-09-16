@@ -7,23 +7,19 @@ import React, { useState } from 'react';
 import Moralis from 'moralis';
 import Profile from './Profile';
 import ReactDOM from 'react'
-import Router from 'next/router'
+
 
 const SignupBox  = () => {
   const { login, isInitialized } = useMoralis();
 
-  const emailLogin = async () => {
-    
+  const emailSignup = async () => {
     console.log(email, password);
     try{
       const user = await Moralis.User.signup(email, password)
       alert("User Created!")
-      
-      
       }catch(err){
         alert(err.message);
       }
-
   }
 }
 
@@ -31,17 +27,13 @@ const Login  = () => {
   const { login, isInitialized } = useMoralis();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
-
   const emailLogin = async () => {
-    
     console.log(email, password);
     try{
-      const user = await Moralis.User.logIn(email, password);
-            
+      const user = await Moralis.User.logIn(email, password);           
       }catch(err){
         alert(err.message);
       }
-
   }
 
   return(
@@ -68,7 +60,6 @@ export default function Web3() {
 //   const handleSignup = () => {
 //       showSignupBox(!useSignupBox);
 //     };
-
 
   const handleEmail = () => {
       showEmailBox(!useEmail);
