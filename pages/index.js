@@ -1,6 +1,6 @@
 import React from "react";
 import Image from 'next/image'
-import Portfolio from '/pages/Portfolio'
+import Portfolio from '../pages/Portfolio'
 
 export default function Index() {
 
