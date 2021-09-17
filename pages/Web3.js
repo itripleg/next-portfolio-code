@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 import { useMoralis } from 'react-moralis';
 import React, { useState } from 'react';
 import Moralis from 'moralis';
-import Profile from './Profile';
+import Profile from '../components/Profile';
 import ReactDOM from 'react'
 
 
