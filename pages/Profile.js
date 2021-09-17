@@ -1,12 +1,12 @@
 import React from 'react'
 import dynamic from 'next/dynamic';
-import { useMoralis } from 'react-moralis'
+// import { useMoralis } from 'react-moralis'
 
 const Profile = () => {
-  // const DynamicUseMoralis = dynamic(() => import("react-moralis")
-  // , { ssr: false })
+  const DynamicUseMoralis = ()=> dynamic(() => import("react-moralis").then((mod) => mod.useMoralis)
+  , { ssr: false })
 
-  const { user, logout } = useMoralis();
+  const { user, logout } = DynamicUseMoralis();
 
   return (
     <div className="h-screen bg-gray-900 p-20">
@@ -18,9 +18,9 @@ const Profile = () => {
       </div>
       <div className= "container mx-auto mr-20 mt-20 text-gray-400 bg-gray-600 mr-80 rounded-md p-4">
         <h1 className="text-white text-xl h-8 rounded-full">Profile</h1>
-        <p className="ml-20 ">Accounts: { user.attributes.accounts }</p>
-        <p className="ml-20 ">Email address: { user.attributes.email }</p>
-        <p className="ml-20 ">Avatar: { user.attributes.avatar }</p>
+{/*        <p className="ml-20 ">Accounts: { user.get("accounts") }</p>
+        <p className="ml-20 ">Email address: { user.get("email") }</p>
+        <p className="ml-20 ">Avatar: { user.get("avatar") }</p>*/}
       </div>
       <div className=" text-white pt-20 text-center">
         <h1>Alot more details and features to come!</h1>
