@@ -30,17 +30,23 @@ const Login  = () => {
   const emailLogin = async () => {
     console.log(email, password);
     try{
-      const user = await Moralis.User.logIn(email, password);           
+      const user = await Moralis.User.logIn(email, password);
+      if(user){
+        window.location.reload();
+      }
       }catch(err){
         alert(err.message);
       }
+
   }
 
   return(
     <div className="h-60 w-auto md:w-60 bg-gray-800 text-gray rounded-md
     p-4 m-4 text-center transform transition hover:scale-110 animate-pulse">
+    <form>
       <input className="rounded-md w-full h-12 text-center" placeholder="Email" value={email} onChange={(event)=> setEmail(event.currentTarget.value)}/>
       <input className="rounded-md w-full h-12 text-center" placeholder="Password" type="password" value={password} onChange={(event)=> setPassword(event.currentTarget.value)}/>
+    </form>
       <button className="hover:text-green-500 mt-4 p-6" onClick={ emailLogin }>Login</button>
       <p className="p-0 hover:underline hover:text-green-500 text-xs mt-4"></p>
     </div>
@@ -80,7 +86,7 @@ export default function Web3() {
   }
   //Else client not authenticated
   return (
-    <div id="signInOptions" className="text-gray-400 bg-gray-900 h-screen z-0">
+    <div id="signInOptions" className="text-gray-400 bg-gray-900 h-full z-0">
       {/*Main container*/}
       <Head>
         <title>Josh Bell Dev</title>
