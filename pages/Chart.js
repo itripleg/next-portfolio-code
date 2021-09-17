@@ -1,19 +1,41 @@
 import React from 'react'
-import TradingViewWidget, { themes } from 'react-tradingview-widget'
 import { useState } from 'react'
+import dynamic from 'next/dynamic'
+import { ChevronDownIcon } from '@heroicons/react/outline'
 
 const Chart = () => {
+  
+  const DynamicChart = dynamic(() => import("react-tradingview-widget")
+  , { ssr: false })
+
 	return (
-		<div className="bg-purple-900 h-screen pb-2 md:flex fixed w-full">
-			<div className="w-full h-5/6">
-			<TradingViewWidget
+		<div className="bg-purple-900 h-screen flex w-screen ">
+			{/*Sidebar*/}
+			<div className="hidden w-20 bg-purple-900
+				text-center">
+				<ChevronDownIcon className="animate-bounce duration-100 w-20 text-gray-800 bg-black " />
+			</div>
+			<div className=" w-full md:pb-0 ">
+			<DynamicChart
 			symbol="BTCUSDT"
 			theme="Dark"
-			autosize />
-			</div>
-				<div className="flex-col invisible md:visible">
-				<div className="p-16">item 1 chart</div>
-				<div className="p-16">item 1 chart</div>
+			autosize
+			withdateranges
+			// calendar
+			enable_publishing
+			hide_side_toolbar={false}
+			watchlist={[
+		    "CRYPTOCAP:BTC.D",
+		    "CRYPTOCAP:ETH.D",
+		    "CRYPTOCAP:BNB.D",
+		    "BINANCE:BTCUSDT",
+		    "BINANCE:ETHUSDT",
+		    "BINANCE:BNBUSDT",
+				"BINANCE:EOSUSDT",
+		    "BINANCE:DOTUSDT",
+		    "BINANCE:UNIUSDT",
+  			]}
+   		/>
 			</div>
 		</div>
 	)

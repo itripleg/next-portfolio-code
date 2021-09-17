@@ -7,7 +7,7 @@ import 'tailwindcss/tailwind.css'
 function Navbar() {
 
   return (
-    <header className="bg-gray-800 md:top-0 z-10 text-gray-400 sticky">
+    <header className="bg-gray-800 md:top-0 z-10 text-gray-400">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <div className="flex justify-center">
         <Link href={'/'} passHref={true}>
@@ -46,7 +46,7 @@ function Navbar() {
             href="https://github.com/itripleg/" passHref={true}
             className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 
             focus:outline-none hover:bg-gray-700 rounded text-base">
-              Github
+              <a className="ml-4">Github</a>
           </Link>
           <ArrowRightIcon className="invisible md:visible w-4 h-4 ml-1 md:mt-1" />
           </div>

@@ -10,4 +10,12 @@ module.exports = {
         }
     ]
   },
+  async reroutes() {
+    return [
+        {
+          source: '/',
+          destination: '/Portfolio',
+        }
+    ]
+  },
 }

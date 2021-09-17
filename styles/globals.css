@@ -4,6 +4,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    overflow: auto;
+    width: 100%;
 }
 
 a {
@@ -36,7 +38,7 @@ a {
   /*position: fixed;*/
   background-color: #21212e; 
   height: 100vh;
-  width: 100;
+  width: 100hh;
 }
 
 .center {
