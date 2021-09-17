@@ -1,15 +1,18 @@
 import React from 'react'
-import { useMoralis } from 'react-moralis';
-import Moralis from 'moralis';
+import dynamic from 'next/dynamic';
+import { useMoralis } from 'react-moralis'
 
 const Profile = () => {
+  // const DynamicUseMoralis = dynamic(() => import("react-moralis")
+  // , { ssr: false })
+
   const { user, logout } = useMoralis();
 
   return (
     <div className="h-screen bg-gray-900 p-20">
       {/*Auth message and logout button*/}
       <div className="container mx-auto flex gap-4 flex-col md:flex-row md:justify-between">
-        <h1 className="text-green-300 pt-3 m-4 animate-pulse center">Succesfully authenticated. Welcome back! {Moralis.User.current.username}</h1>
+        <h1 className="text-green-300 pt-3 m-4 animate-pulse center">Succesfully authenticated. Welcome back!</h1>
         <button className="h-12 text-lg text-black bg-red-700 rounded-md w-40"
           onClick={logout}>Logout</button>
       </div>

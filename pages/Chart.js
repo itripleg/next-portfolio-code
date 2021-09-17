@@ -2,9 +2,6 @@ import React from 'react'
 import { useState } from 'react'
 import dynamic from 'next/dynamic'
 import { ChevronDownIcon } from '@heroicons/react/outline'
-import { Ticker } from "react-ts-tradingview-widgets";
-
-<Ticker colorTheme="dark"></Ticker>
 
 const Chart = () => {
   
