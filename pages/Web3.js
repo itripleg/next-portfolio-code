@@ -106,25 +106,25 @@ export default function Web3() {
             text-center transform transition hover:scale-110 hover:text-green-500 animate-pulse"
             onClick={handleEmail}>
             <h1 className="mb-8 z-100">Login With Email</h1>
-              <Image src="/moralis.png"
-                alt="moralis"
+              <Image src="/email.png"
+                alt="email"
                 height="100"
                 width="100" 
-                className=""/>
+                className="text-green-800"/>
           </div>)}
-{/*          {(useSignupBox ? <SignupBox /> : 
+          {/*{(useSignupBox ? <SignupBox /> : */}
           <div className="h-60 w-auto md:w-60 bg-gray-800 text-gray rounded-md p-4 m-4
-            text-center transform transition hover:scale-110 hover:text-green-500 animate-pulse"
-            onClick={handleSignup}>
-            <h1 className="mb-8 z-100">Signup</h1>
+            text-center transform transition hover:scale-110 hover:text-green-500 animate-pulse">
+            {/*onClick={handleSignup}>*/}
+            <h1 className="mb-8 z-100">Email Signup *Soon!*</h1>
               <Image src="/moralis.png"
                 alt="moralis"
                 height="100"
                 width="100" 
                 className=""/>
-          </div>)}*/}
+          </div>
         </div>
-          <p>More options coming soon</p>
+          <p>*Beta is currently only Metamask and pre-registered emails are able to connect. More options coming soon!</p>
       </div>
   </div>
   )

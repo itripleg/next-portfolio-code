@@ -17,7 +17,7 @@ export default function Portfolio() {
           <Contact />
           <Link className="" href={"/"}>
             <a>
-              <ArrowUpIcon  className="fixed bottom-0 text-white hidden md:block w-10"/>
+              <ArrowUpIcon  className="fixed bottom-0 right-0 m-4 text-white hidden md:block w-10"/>
             </a>
           </Link>
         </div>
