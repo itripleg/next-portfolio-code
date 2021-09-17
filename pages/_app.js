@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }) {
   return (
       <MoralisProvider appId={appId} serverUrl={serverUrl}>
         <Navbar />
+        
         <Component {...pageProps} />
       </MoralisProvider>
     )
