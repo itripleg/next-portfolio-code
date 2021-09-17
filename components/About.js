@@ -8,7 +8,7 @@ function About() {
 					<h1 className="title-font sm:text-4xl text-3xl pt-12 font-medium
 					 text-white text-center mb-6 md:space-x-8">
 						Lets {''}
-							<TextLoop interval="5000" className="animate-pulse text-blue-200">
+							<TextLoop interval="5000" className="">
 								<h1> Build </h1>
                 <h1> Work </h1>
                 <h1> Decentralize </h1>

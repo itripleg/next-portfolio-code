@@ -37,7 +37,7 @@ function Navbar() {
           Web3
         </Link>
         <Link href="/Chart" passHref={true} className="mr-5 hover:text-white">
-          <a className="animate-pulse text-green-600 text-lg">Chart</a>
+          <a className="text-green-500 text-lg">Chart</a>
         </Link>       
       </nav>
       <div>   

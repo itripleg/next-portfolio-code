@@ -7,7 +7,8 @@ import Contact from '../components/Contact'
 
 export default function Portfolio() {
   return (
-      <main className="text-gray-400 bg-gray-900 body-font">
+      <main className="text-gray-400 bg-gray-900 body-font ">
+        <div className="container fixed text-right">Back to top</div>
         <div className="no-scrollbar">
           <About />
           <Skills />
