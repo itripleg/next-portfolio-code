@@ -4,12 +4,14 @@ import dynamic from 'next/dynamic'
 import { ChevronDownIcon } from '@heroicons/react/outline'
 
 const Chart = () => {
-  
+  // apparently we need client side/dynamic rendering for tv-widget to work reliably
   const DynamicChart = dynamic(() => import("react-tradingview-widget")
   , { ssr: false })
 
 	return (
 		<>
+		<p className="w-full h-full bg-gray-900 p-0 text-center text-purple-900 text-bold">
+		Chart is still in beta with more features to come!</p>
 			<div className="bg-purple-900 h-screen flex w-screen ">
 				{/*Hidden Sidebar*/}
 				<div className="hidden w-20 bg-purple-900
@@ -39,7 +41,7 @@ const Chart = () => {
 			    "BINANCE:UNIUSDT",
 	  			]}
 			  studies= {[
-	    		"RSI@tv-basicstudies"
+	    		// "RSI@tv-basicstudies"
 	  			]}
 	   		/>
 				</div>

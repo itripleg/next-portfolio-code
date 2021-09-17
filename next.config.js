@@ -1,5 +1,5 @@
 module.exports = {
-  webpack5: false,
+  // webpack5: false,
   reactStrictMode: true,
   generateBuildId: () => 'build',
   async rewrites() {

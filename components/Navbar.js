@@ -11,13 +11,13 @@ function Navbar() {
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <div className="flex justify-center">
         <Link href={'/'} passHref={true}>
-          <a><HomeIcon className="w-8 h-6  md:ml-0 hover:text-white " /></a>
+          <a><HomeIcon className="w-8 h-6 md:ml-0 hover:text-white mb-3 md:m-0"/></a>
         </Link>
         </div>
       <span className="flex mx-auto lg:mr-10"></span>
       <h1 className="title-font font-medium text-white
         cursor-pointer hover:underline 
-        select-none mb-4 md:mb-0 invisible md:visible"> 
+        select-none mb-4 md:mb-0 hidden md:block md:mr-4"> 
         <Link href="/Portfolio#about" passHref={true} className="text-xl">Joshua Bell</Link>
       </h1>
       <nav className="md:mr-auto md:ml-4 md:py-1 

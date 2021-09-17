@@ -95,7 +95,7 @@ export default function Web3() {
       </Head>
       {/*Login Card Container*/}
       <div className="flex-col p-20 text-center md:p-40 md:text-lg" >
-        <h1 className="text-xl text-white animate-pulse">Please Login to Web3 to Continue</h1>
+        <h1 className="text-xl text-white ">Please Login to Web3 to Continue</h1>
         <div className="container p-4 flex flex-col md:flex-row mx-auto justify-center md:p-20 lg:p-40" >
           <div className="h-60 w-auto md:w-60 bg-gray-800 text-gray rounded-md p-4 m-4
             text-center transform transition hover:scale-110 hover:text-green-500 animate-pulse"
@@ -120,7 +120,7 @@ export default function Web3() {
           </div>)}
           {/*{(useSignupBox ? <SignupBox /> : */}
           <div className="h-60 w-auto md:w-60 bg-gray-800 text-gray rounded-md p-4 m-4
-            text-center transform transition hover:scale-110 hover:text-green-500 animate-pulse">
+            text-center transform transition hover:scale-110 hover:text-green-500">
             {/*onClick={handleSignup}>*/}
             <h1 className="mb-8 z-100">Email Signup *Soon!*</h1>
               <Image src="/moralis.png"
@@ -130,7 +130,9 @@ export default function Web3() {
                 className=""/>
           </div>
         </div>
-          <p>*Beta is currently only Metamask and pre-registered emails are able to connect. More options coming soon!</p>
+          <p>
+            {"*Alpha testing is currently only available to Metamask users and privatly invited email address. If you'd like to be a tester, please use my contact form. More options coming soon!"}
+          </p>
       </div>
   </div>
   )

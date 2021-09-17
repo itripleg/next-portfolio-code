@@ -16,7 +16,7 @@ const Profile = () => {
           <h1 className="text-green-300 pt-3 m-4 animate-pulse">Succesfully authenticated. Welcome back!</h1>
           <button className=" text-center text-lg text-black bg-red-700
             rounded-md w-40 h-16 " 
-            onClick={logout}><p>Logout</p>
+            onClick={ logout }><p>Logout</p>
           </button>
         </div>
         {/*Profile Info*/}

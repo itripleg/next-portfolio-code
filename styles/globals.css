@@ -18,10 +18,6 @@ a {
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
-}
 
 .bg {
     /*background-image: url("/dark.png");*/
@@ -34,12 +30,6 @@ a {
     background-size: cover;
 }
 
-.auth {
-  /*position: fixed;*/
-  background-color: #21212e; 
-  height: 100vh;
-  width: 100hh;
-}
 
 .center {
   margin-left: 5rem;

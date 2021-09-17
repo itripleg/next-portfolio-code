@@ -1,6 +1,7 @@
 import React from "react";
 import Image from 'next/image'
 import Portfolio from '../pages/Portfolio'
+import Head from 'next/head'
 
 export default function Index() {
 
