@@ -24,10 +24,10 @@ function About() {
 						<Image alt="me" src="/me.jpg" className="loading=lazy rounded-full 
 							h-20 m-4 transition transform duration-150 hover:scale-110 md:h-26 lg:h-36"
 							width="150" height="150"/>
-						<p className="text-center mt-6 mb-10 lg:mb-0 p-12 ">
+						<p className="text-center mt-6 mb-10 lg:mb-0 p-12 flex-wrap">
 							Full Stack developer. Musican. Crypto and Blockchain enthusist.
 							I love working with bleeding edge technology helping to decentralize the web.
-							I built this page with ♥ using Yarn with <a href="http://nextjs.org" className="underline">Next.js</a>
+							I built this page with <span className="text-red-700">♥</span> using Yarn with <a href="http://nextjs.org" className="underline">Next.js</a>
 							{' '}and <a href="http://tailwindcss.com" className="underline"> Tailwind CSS.</a>
 							{' '}Deployed with Netlify and Github.</p>
 							<div className=" flex">							

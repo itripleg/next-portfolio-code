@@ -25,7 +25,7 @@ function Navbar() {
         flex flex-wrap items-center text-base 
         justify-center space-x-3 md:space-x-6">
         <Link href="/Portfolio#projects" passHref={true} className="mr-5 hover:text-white">
-          Projects
+          <a>Projects</a>
         </Link>
         <Link href="/Portfolio#skills" passHref={true} className="mr-5 hover:text-white">
           Skills
@@ -37,7 +37,7 @@ function Navbar() {
           Web3
         </Link>
         <Link href="/Chart" passHref={true} className="mr-5 hover:text-white">
-          Chart
+          <a className="animate-pulse text-green-600 text-lg">Chart</a>
         </Link>       
       </nav>
       <div>   
