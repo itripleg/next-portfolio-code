@@ -21,7 +21,7 @@ export const projects = [
     description:
       "More practice building clones of popular websites. This clone has image uploading and user authentication and Cloud Firestore integration. Usage of Redux for state management. ",
     image: "/project-3.gif",
-    link: "https://github.com/itripleg",
+    link: "/Social",
   },
   {
     title: "Crypto Currency",
