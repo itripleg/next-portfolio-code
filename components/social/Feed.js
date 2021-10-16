@@ -1,4 +1,4 @@
-import Stories from './stories'
+import Stories from './Stories'
 import InputBox from './InputBox'
 
 function Feed() {
