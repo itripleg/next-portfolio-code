@@ -1,5 +1,7 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection } from "firebase/firestore";
+import 'firebase/storage';
+import { getFirestore, collection} from "firebase/firestore";
+import { getStorage } from "firebase/storage";
 
 
 const firebaseConfig = {
@@ -8,11 +10,12 @@ const firebaseConfig = {
   projectId: "fakebook-1b26a",
   storageBucket: "fakebook-1b26a.appspot.com",
   messagingSenderId: "624899786808",
-  appId: "1:624899786808:web:dfc2910568c8dfc3babecd"
+  appId: "1:624899786808:web:dfc2910568c8dfc3babecd",
 };
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+const firebaseApp = initializeApp(firebaseConfig);
+const db = getFirestore(firebaseApp);
+const storage = getStorage(firebaseApp);
 
-export { db }
+export { db,  storage}
 

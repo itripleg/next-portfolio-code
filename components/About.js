@@ -4,9 +4,9 @@ import Image  from 'next/image'
 
 function About() {
 	return (
-		<section id="about" className="">
+		<section id="about" className="flex flex-col justify-items-center">
 					<h1 className="title-font sm:text-4xl text-3xl pt-12 font-medium
-					 text-white text-center mb-6 md:space-x-8">
+					 text-white text-center mb-6 md:space-x-8 ">
 						Lets {''}
 							<TextLoop interval="4500" className="">
 								<h1> Build </h1>
@@ -19,10 +19,10 @@ function About() {
 						Together
 					</h1>
 			<div className="container mx-auto flex px-10  flex-row  items-center  ">
-				<div className=" md:w-100 md:pr-16 flex flex-col mb-16 items-center text-center ">
-					<div className="flex flex-col items-center  md:flex-col lg:flex-row ">
+				<div className=" md:w-100  flex flex-col mb-16 items-center text-center ">
+					<div className="flex flex-col items-center md:flex-col justify-items-center ">
 						<Image alt="me" src="/me_mask.jpg" className="loading=lazy rounded-full 
-							h-20 m-4 transition transform duration-150 hover:scale-110 md:h-26 md:w-1 lg:h-36 hover:-animate-bounce"
+							h-20 m-4 transition transform duration-150 md:h-26 md:w-1 lg:h-36"
 							width="150" height="150"/>
 						<p className="text-center mt-6 mb-10 lg:mb-0 p-12 ">
 							Full Stack developer. Musican. Crypto and Blockchain enthusist.
@@ -31,7 +31,7 @@ function About() {
 							{' '}<a href="http://nextjs.org" className="underline">Next.js</a>
 							{' '}and <a href="http://tailwindcss.com" className="underline"> Tailwind CSS.</a>
 							{' '}which I deployed with Netlify and Github.</p>
-							<div className="flex">							
+							<div className="flex ml-5">							
 						<a
               href="#contact"
               className="inline-flex text-white bg-green-500 border-0 py-2 md:py-4 px-6 focus:outline-none hover:bg-green-600
@@ -40,7 +40,7 @@ function About() {
             </a>
             <a
               href="#projects"
-              className="text-center ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700
+              className="text-center ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 md:py-4 px-6 focus:outline-none hover:bg-gray-700
                hover:text-white rounded text-lg transition transform duration-150 hover:scale-110">
               See My Past Work
             </a>

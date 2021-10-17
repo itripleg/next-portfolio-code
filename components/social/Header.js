@@ -16,6 +16,7 @@ import {
 	SearchIcon,
 	ShoppingCartIcon,
 } from "@heroicons/react/outline"
+import Link from 'next/link'
 
 const Header = () => {
 
@@ -41,7 +42,11 @@ const Header = () => {
 			{/*Middle*/}
 			<div className="flex justify-center flex-grow">
 				<div className="flex space-x-6 md:space-x-2">
-					<HeaderIcon active Icon={ HomeIcon }/>
+					<Link href="/" passHref={true}>
+						<a>								
+							<HeaderIcon active Icon={ HomeIcon } />
+						</a>
+					</Link>
 					<HeaderIcon Icon={ FlagIcon }/>
 					<HeaderIcon Icon={ PlayIcon }/>
 					<HeaderIcon Icon={ ShoppingCartIcon }/>
@@ -58,7 +63,7 @@ const Header = () => {
 					className="rounded-full cursor-pointer text-xs"
 					width={40}
 					height={40}
-					layout="fixed"
+					layout=""
 					alt="Signout"
 				/>
 

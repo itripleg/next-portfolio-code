@@ -9,7 +9,7 @@ import Feed from '../components/social/Feed'
 export default function Social({ session }) {
   if (!session) return <Login />
   return (
-    <div className="h-screen bg-gray-200">
+    <div className="h-screen bg-gray-100 fixed w-full top-0 ">
       <Head>
         <title>Fakebook</title>
       </Head>

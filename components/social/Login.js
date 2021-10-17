@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { signIn } from 'next-auth/client'
 
 
-function Login() {
+export default function Login({ providers }) {
 	return (
 		<div className="grid place-items-center mt-6">
 			<Image 
@@ -18,4 +18,10 @@ function Login() {
 	)
 }
 
-export default Login
+export async function getServerSideProps(context) {
+  return {
+    props: {
+      providers: await providers(context),
+    },
+  };
+}

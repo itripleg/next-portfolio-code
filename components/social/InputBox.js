@@ -3,8 +3,11 @@ import Image from 'next/image'
 import { EmojiHappyIcon } from '@heroicons/react/outline'
 import { CameraIcon, VideoCameraIcon} from '@heroicons/react/solid'
 import { useRef, useState} from 'react'
-import { db } from '../../firebase'
-import { collection, addDoc } from "firebase/firestore"; 
+import { db, storage } from '../../firebase'
+import { collection, addDoc} from "firebase/firestore";
+import { ref, uploadBytes } from 'firebase/storage' 
+
+
 
 const InputBox = () => {
 	const [ session ] = useSession();
@@ -13,7 +16,7 @@ const InputBox = () => {
 	const inputRef = useRef(null);
 	const fileRef = useRef(null);
 	
-	const sendPost = async (e) =>{
+	const sendPost = async (e) => {
 		e.preventDefault();
 		if (!inputRef.current.value) return;
 			await addDoc(collection(db, 'posts'), {
@@ -21,7 +24,12 @@ const InputBox = () => {
 				name: session.user.name,
 				email: session.user.email,
 				image: session.user.image,
-  	});
+  		}).then((doc)=>{
+					if(imageToPost){
+						const uploadTask = ref(storage, imageToPost)
+						uploadBytes(uploadTask, imageToPost);
+					}
+			})
 		inputRef.current.value = "";
 	}
 
@@ -43,7 +51,7 @@ const removeImage = () => {
 	return (
 		<div className="bg-white p-2 rounded-2xl shadow-md text-gray-500 font-medium mt-6">
 			<div className="flex spacd-x-4 p-4 items-center">
-				<Image 
+				<Image className="rounded-full"
 				src={session.user.image}
 				width={40}
 				height={40}
@@ -86,13 +94,12 @@ const removeImage = () => {
 				</div>
 			</div>
 				{imageToPost && (
-					<div onClick={removeImage} className="flex flex-col hover:brightness-110 transition
-					  duration-150 transform hover:scale-105 cursor-pointer mx-4">
+					<div onClick={removeImage} className="flex flex-col cursor-pointer mx-4 p-4 border-t">
 						<Image src={imageToPost} 
 						alt="Preview" 
 						height={600}
-						width={500}
-						className=" pb-4 w-full px-4 object-contain"/>
+						width={400}
+						className="  w-full px-4 object-contain"/>
 					</div> 
 					)}
 		</div>

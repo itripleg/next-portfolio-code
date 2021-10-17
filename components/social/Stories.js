@@ -1,7 +1,27 @@
 import React from 'react'
 import StoryCard from './StoryCard'
+// import { useSession } from 'next-auth/client'
+
+
+// const getCurrentUser = () => {
+// 	const [ session ] = useSession(); 
+// 	if (session){
+		
+// 	}
+// }
+
+const currentUser = {
+	name: "josh",
+	src: "/me.jpg",
+	profile: "/me_mask.jpg"
+}
 
 const stories = [
+	{
+		name: currentUser.name,
+		src: currentUser.src,
+		profile: currentUser.profile,
+	},
 	{
 		name: "Elon Musk",
 		src: "https://links.papareact.com/4zn",
@@ -25,6 +45,7 @@ const stories = [
 ]
 
 function Stories() {
+
 	return (
 		<div className="flex justify-center space-x-3 mx-auto">
 			{stories.map(story =>(

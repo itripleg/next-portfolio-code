@@ -16,7 +16,7 @@ const DContact = dynamic(() => import('../components/Contact'))
 
 export default function Portfolio() {
   return (
-      <main className="text-gray-400 bg-gray-900 body-font">
+      <main className="text-gray-400 bg-gray-900 body-font ">
         <div className="">
           <DAbout />
           <DSkills />
