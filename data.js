@@ -39,5 +39,5 @@ export const skills = [
   "Web design: React,  Next.js,  Tailwind CSS,  Material UI",
   "Programming: Node, C++, Python",
   "Database Management: SQL, Moralis, Firebase, MongoDB",
-  "Scripting: Bash, Powershell, Docker"
+  "Scripting: Bash, Powershell, Docker",
 ];
