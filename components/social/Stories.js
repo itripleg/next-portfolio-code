@@ -15,7 +15,7 @@ const currentUser = {
   profile: "/me_mask.jpg",
 };
 
-const stories = [
+const storyData = [
   {
     name: currentUser.name,
     src: currentUser.src,
@@ -46,7 +46,7 @@ const stories = [
 function Stories() {
   return (
     <div className="flex justify-center space-x-3 mx-auto">
-      {stories.map((story) => (
+      {storyData.map((story) => (
         <StoryCard
           key={story.src}
           name={story.name}
