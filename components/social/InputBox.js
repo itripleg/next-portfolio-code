@@ -35,11 +35,20 @@ const InputBox = () => {
 		if (image) {
 			const storageRef = ref(storage, `images/${image.name}`);
 			await uploadBytes(storageRef, image);
-			const url = await getDownloadURL(storageRef).then((url) => {});
-			//clean up
+
+			const url = await getDownloadURL(storageRef);
+
+			try {
+				addDoc(collection(firestore, "posts"), {
+					postImage: url,
+				});
+			} catch (err) {
+				console.log(err);
+			}
+
+			inputRef.current.value = "";
+			removeImage();
 		}
-		inputRef.current.value = "";
-		removeImage();
 	};
 
 	const addImageToPost = async (e) => {

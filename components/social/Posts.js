@@ -1,6 +1,6 @@
 import Post from "./Post";
 import { useCollection } from "react-firehooks/firestore";
-import { collection } from "firebase/firestore";
+import { collection, orderBy, query } from "firebase/firestore";
 import { firestore, addDoc } from "../../firebase";
 
 function Posts() {
@@ -14,7 +14,7 @@ function Posts() {
           name={post.data().name}
           message={post.data().message}
           email={post.data().email}
-          timestamp={post.data().timestamp}
+          serverTimestamp={post.data().serverTimestamp}
           image={post.data().image}
           postImage={post.data().postImage}
         />

@@ -5,7 +5,7 @@ import Header from "../components/social/Header";
 import Login from "../components/social/Login";
 import Sidebar from "../components/social/Sidebar";
 import Feed from "../components/social/Feed";
-import Poster from "../components/social/Poster";
+import Widgets from "../components/social/Widgets";
 
 export default function Social({ session }) {
   if (!session) return <Login />;
@@ -18,7 +18,7 @@ export default function Social({ session }) {
       <main className="flex">
         <Sidebar />
         <Feed />
-        {/*Widgets*/}
+        <Widgets />
       </main>
     </div>
   );
