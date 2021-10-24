@@ -20,6 +20,7 @@ function Header() {
 						src={"https://links.papareact.com/ocw"}
 						layout="fill"
 						objectFit="contain"
+						alt="Instagram"
 					/>
 				</div>
 				<div className="relative lg:hidden flex-shrink-0 w-10 cursor-pointer">
@@ -27,6 +28,7 @@ function Header() {
 						src={"https://links.papareact.com/jjm"}
 						layout="fill"
 						objectFit="contain"
+						alt="Instagram"
 					/>
 				</div>
 				{/*Middle - Search*/}
@@ -63,10 +65,12 @@ function Header() {
 					<PlusCircleIcon className="navBtn" />
 					<UserGroupIcon className="navBtn" />
 					<HeartIcon className="navBtn" />
-					<img
+					<Image
 						src="/me_mask.jpg"
 						alt="Profile Pic"
-						className="h-10 rounded-full cursor-pointer"
+						width={10}
+						height={10}
+						className=" rounded-full cursor-pointer"
 					/>
 				</div>
 			</div>

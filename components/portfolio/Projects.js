@@ -13,9 +13,9 @@ function Projects() {
             {"Current and Past Projects"}
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Here are some projects I'm currently working on. Most are still in
+            {`Here are some projects I'm currently working on. Most are still in
             beta with limited features but used for demonstration purposes. I
-            will try to post all revelant code to my Github as progress is made.
+            will try to post all revelant code to my Github as progress is made.`}
           </p>
         </div>
         <div className="flex flex-wrap -m-4 grid-cols-2 justify-center gap-3 md:gap-0 min-h-200">

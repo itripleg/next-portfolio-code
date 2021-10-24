@@ -7,14 +7,6 @@ export const projects = [
     image: "/project-3.gif",
     link: "/Social",
   },
-  // {
-  //   title: "Instagram Clone",
-  //   subtitle: "Next.js, Tailwind CSS, and Firebase 9",
-  //   description:
-  //     "A functional clone of Google.com using React with Next.js and Tailwind CSS for practice using inline HTML styling. Deployment with Vercel and hosting on Hostinger.",
-  //   image: "/insta.gif",
-  //   link: "https://github.com/itripleg",
-  // },
   {
     title: "Instagram Clone",
     subtitle: "Next.js, TailwindCSS, Faker.js, and Firebase 9",

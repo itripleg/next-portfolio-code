@@ -25,7 +25,6 @@ function Posts() {
 					key={post.id}
 					username={post.username}
 					userImg={post.userImg}
-					caption={post.caption}
 					img={post.img}
 					caption={post.caption}
 				/>
