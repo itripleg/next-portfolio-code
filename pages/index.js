@@ -3,11 +3,18 @@ import Image from "next/image";
 import Portfolio from "../pages/Portfolio";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
+import { useEffect } from "react";
+import Projects from "../components/portfolio/Projects";
 
 export default function Index(session) {
+  useEffect(() => {
+    return <h1>Use Effect Test</h1>;
+  }, []);
   return (
-    <main className="text-gray-400 bg-gray-900 body-font">
-      <Portfolio />
+    <main className="">
+      <div className="">
+        <Portfolio />
+      </div>
     </main>
   );
 }

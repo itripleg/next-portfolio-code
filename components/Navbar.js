@@ -21,7 +21,7 @@ function Navbar() {
         cursor-pointer hover:underline 
         select-none mb-4 md:mb-0 hidden md:block md:mr-4"
         >
-          <Link href="/Portfolio#about" passHref={true} className="text-xl">
+          <Link href="/Portfolio" passHref={true} className="text-xl">
             Joshua Bell
           </Link>
         </h1>
@@ -38,6 +38,12 @@ function Navbar() {
           >
             <a>Projects</a>
           </Link>
+          <Link href="/Chart" passHref={true} className="mr-5 hover:text-white">
+            <a className="text-green-500 text-lg">Charts</a>
+          </Link>
+          <Link href="/Web3" passHref={true} className="mr-5 hover:text-white">
+            Web3
+          </Link>
           <Link
             href="/Portfolio#skills"
             passHref={true}
@@ -51,12 +57,6 @@ function Navbar() {
             className="mr-5 hover:text-white"
           >
             Contact
-          </Link>
-          <Link href="/Web3" passHref={true} className="mr-5 hover:text-white">
-            Web3
-          </Link>
-          <Link href="/Chart" passHref={true} className="mr-5 hover:text-white">
-            <a className="text-green-500 text-lg">Chart</a>
           </Link>
         </nav>
         <div>

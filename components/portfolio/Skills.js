@@ -1,6 +1,6 @@
 import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import React from "react";
-import { skills } from "../data";
+import { skills } from "./data";
 
 export default function Skills() {
   return (
@@ -12,7 +12,8 @@ export default function Skills() {
             Skills &amp; Technologies
           </h1>
           <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-            A wide range of varios computer sciences and fullstack technology.
+            A wide range of various computer sciences and fullstack technology.
+            Always learning more!
           </p>
         </div>
         <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">

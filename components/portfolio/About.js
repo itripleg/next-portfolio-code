@@ -7,7 +7,7 @@ function About() {
     <section id="about" className="flex flex-col justify-items-center">
       <h1
         className="title-font sm:text-4xl text-3xl pt-12 font-medium
-					 text-white text-center mb-6 md:space-x-8 "
+					 text-white text-center mb-6 md:space-x-8"
       >
         Lets {""}
         <TextLoop interval="4500" className="">
@@ -56,10 +56,10 @@ function About() {
               </a>
               <a
                 href="#projects"
-                className="text-center ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 md:py-4 px-6 focus:outline-none hover:bg-gray-700
+                className="text-center ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 md:py-4 px-8 focus:outline-none hover:bg-gray-700
                hover:text-white rounded text-lg transition transform duration-150 hover:scale-110"
               >
-                See My Past Work
+                See My Work
               </a>
             </div>
           </div>

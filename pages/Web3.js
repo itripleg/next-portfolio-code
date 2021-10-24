@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 import { useMoralis } from "react-moralis";
 import React, { useState } from "react";
 import Moralis from "moralis";
-import Profile from "../components/Profile";
+import Profile from "../components/web3/Profile";
 import ReactDOM from "react";
 
 const SignupBox = () => {
@@ -119,7 +119,7 @@ export default function Web3() {
         <div className="container p-4 flex flex-col md:flex-row mx-auto justify-center md:p-20 lg:p-40">
           <div
             className="h-60 w-auto md:w-60 bg-gray-800 text-gray rounded-md p-4 m-4
-            text-center transform transition hover:scale-110 hover:text-green-500 animate-pulse"
+            text-center transform transition hover:scale-110 hover:text-green-500 "
             onClick={metamaskLogin}
           >
             <h1 className="mb-8">Login With Metamask</h1>
@@ -136,7 +136,7 @@ export default function Web3() {
           ) : (
             <div
               className="h-60 w-auto md:w-60 bg-gray-800 text-gray rounded-md p-4 m-4
-            text-center transform transition hover:scale-110 hover:text-green-500 animate-pulse"
+            text-center transform transition hover:scale-110 hover:text-green-500"
               onClick={handleEmail}
             >
               <h1 className="mb-8 z-100">Login With Email</h1>
@@ -152,10 +152,10 @@ export default function Web3() {
           {/*{(useSignupBox ? <SignupBox /> : */}
           <div
             className="h-60 w-auto md:w-60 bg-gray-800 text-gray rounded-md p-4 m-4
-            text-center transform transition hover:scale-110 hover:text-green-500"
+            text-center transform transition hover:scale-110 hover:text-green-500 opacity-25"
           >
             {/*onClick={handleSignup}>*/}
-            <h1 className="mb-8 z-100">Email Signup *Soon!*</h1>
+            <h1 className="mb-8 z-100 text-white">Email Signup *Soon!*</h1>
             <Image
               src="/moralis.png"
               alt="moralis"
