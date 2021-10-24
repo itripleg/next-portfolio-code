@@ -17,7 +17,7 @@ export default function Portfolio() {
   return (
     <main className="text-gray-400 bg-gray-900 body-font ">
       <div className="">
-        {/*<Navbar />*/}
+        <Navbar />
         <DAbout />
         <DSkills />
         <DProjects />

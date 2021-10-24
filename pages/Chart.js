@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import { ChevronDownIcon } from "@heroicons/react/outline";
+import Navbar from "../components/Navbar";
 
 const Chart = () => {
   // apparently we need client side/dynamic rendering for tv-widget to work reliably
@@ -11,6 +12,7 @@ const Chart = () => {
 
   return (
     <>
+      <Navbar />
       <p className="w-full h-full bg-gray-900 p-0 text-center text-purple-900 text-bold">
         Chart is still in beta with more features to come!
       </p>
@@ -18,7 +20,7 @@ const Chart = () => {
         {/*Hidden Sidebar*/}
         <div
           className="hidden w-20 bg-purple-900
-					text-center"
+          text-center"
         >
           <ChevronDownIcon className="animate-bounce duration-100 w-20 text-gray-800 bg-black " />
         </div>

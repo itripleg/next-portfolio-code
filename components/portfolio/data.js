@@ -17,11 +17,11 @@ export const projects = [
   // },
   {
     title: "Instagram Clone",
-    subtitle: "Next.js, TailwindCSS and Firebase 9",
+    subtitle: "Next.js, TailwindCSS, Faker.js, and Firebase 9",
     description:
-      "More practice building clones of popular websites. This clone is more robust with the ability to auth via Facebook or Instagram, and like posts. Firebase 9 integration.",
+      "More practice building clones of popular websites. This clone is much more robust with randomly generated faux user data via Faker.js, and the ablilty to like posts. Firebase 9 integration.",
     image: "/insta.gif",
-    link: "/Fakebook",
+    link: "/Insta",
   },
   {
     title: "Decentralized Games",

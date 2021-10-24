@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
             <text y=%22.9em%22 font-size=%2290%22>🧙🏽‍</text></svg>"
           />
         </Head>
-        <Navbar />
+        {/*<Navbar />*/}
         <Component {...pageProps} />
       </MoralisProvider>
     </Provider>

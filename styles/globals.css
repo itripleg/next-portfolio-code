@@ -10,6 +10,14 @@
   .inputIcon {
     @apply flex items-center space-x-1 hover:bg-gray-100 justify-center p-2 rounded-xl cursor-pointer;
   }
+
+  .navBtn {
+    @apply hidden h-6 md:inline-flex cursor-pointer transition hover:scale-125 transition-all duration-150 ease-out;
+  }
+}
+
+.postBtn {
+  @apply h-8 hover:scale-125 cursor-pointer transition-all duration-150 ease-out;
 }
 
 .bg {
