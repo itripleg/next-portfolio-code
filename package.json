@@ -11,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "@heroicons/react": "^1.0.4",
+    "@tailwindcss/forms": "^0.3.4",
     "@walletconnect/web3-provider": "^1.6.5",
     "cors": "^2.8.5",
     "faker": "^5.5.3",

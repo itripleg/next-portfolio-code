@@ -1050,6 +1050,13 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
+"@tailwindcss/forms@^0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@tailwindcss/forms/-/forms-0.3.4.tgz#e4939dc16450eccf4fd2029770096f38cbb556d4"
+  integrity sha512-vlAoBifNJUkagB+PAdW4aHMe4pKmSLroH398UPgIogBFc91D2VlHUxe4pjxQhiJl0Nfw53sHSJSQBSTQBZP3vA==
+  dependencies:
+    mini-svg-data-uri "^1.2.3"
+
 "@types/bn.js@^4.11.3", "@types/bn.js@^4.11.5":
   version "4.11.6"
   resolved "https://registry.yarnpkg.com/@types/bn.js/-/bn.js-4.11.6.tgz#c306c70d9358aaea33cd4eda092a742b9505967c"
@@ -5062,6 +5069,11 @@ min-document@^2.19.0:
   integrity sha1-e9KC4/WELtKVu3SM3Z8f+iyCRoU=
   dependencies:
     dom-walk "^0.1.0"
+
+mini-svg-data-uri@^1.2.3:
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/mini-svg-data-uri/-/mini-svg-data-uri-1.4.3.tgz#43177b2e93766ba338931a3e2a84a3dfd3a222b8"
+  integrity sha512-gSfqpMRC8IxghvMcxzzmMnWpXAChSA+vy4cia33RgerMS8Fex95akUyQZPbxJJmeBGiGmK7n/1OpUX8ksRjIdA==
 
 minimalistic-assert@^1.0.0, minimalistic-assert@^1.0.1:
   version "1.0.1"

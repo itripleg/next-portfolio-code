@@ -9,7 +9,9 @@ const Stories = () => {
 		//Investigate: how are we returning the index of array with '(_,i)' as the first parameter of map?
 		const arr = [...Array(20)].map((_, i) => ({
 			...faker.helpers.contextualCard(),
+			id: i,
 		}));
+		//remember to do this before returning!
 		setProfiles(arr);
 		return () => {};
 	}, []);

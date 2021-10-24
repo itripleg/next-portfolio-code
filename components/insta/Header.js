@@ -64,12 +64,12 @@ function Header() {
 					</div>
 					<PlusCircleIcon className="navBtn" />
 					<UserGroupIcon className="navBtn" />
-					<HeartIcon className="navBtn" />
+					<HeartIcon className="navBtn pr-4" />
 					<Image
 						src="/me_mask.jpg"
 						alt="Profile Pic"
-						width={10}
-						height={10}
+						width={40}
+						height={40}
 						className=" rounded-full cursor-pointer"
 					/>
 				</div>

@@ -6,14 +6,14 @@ const posts = [
 		username: "bbchocobo",
 		userImg: "./me_mask.jpg",
 		img: "./shoutout.jpg",
-		caption: "Sup bitches",
+		caption: "Decentralize",
 	},
 	{
 		id: "234",
 		username: "bluewetball",
 		userImg: "./me.jpg",
 		img: "./dokoro.gif",
-		caption: "Sup bitches",
+		caption: "血しぶきどこどこどころちゃん～",
 	},
 ];
 
