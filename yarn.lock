@@ -2527,6 +2527,11 @@ data-uri-to-buffer@3.0.1:
   resolved "https://registry.yarnpkg.com/data-uri-to-buffer/-/data-uri-to-buffer-3.0.1.tgz#594b8973938c5bc2c33046535785341abc4f3636"
   integrity sha512-WboRycPNsVw3B3TL559F7kuBUM4d8CgMEvk6xEJlOp7OBPjt6G7z8WMWlD2rOFZLk6OYfFIUGsCOWzcQH9K2og==
 
+date-fns@^2.23.0:
+  version "2.25.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.25.0.tgz#8c5c8f1d958be3809a9a03f4b742eba894fc5680"
+  integrity sha512-ovYRFnTrbGPD4nqaEqescPEv1mNwvt+UTqI3Ay9SzNtey9NZnYu6E2qCcBBgJ6/2VF1zGGygpyTDITqpQQ5e+w==
+
 debug@2, debug@2.6.9, debug@^2.2.0, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -6154,6 +6159,14 @@ raw-body@2.4.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
+react-activity-calendar@^1.3.5:
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/react-activity-calendar/-/react-activity-calendar-1.3.5.tgz#ac6aec3ec734f241bb6e0d3f831920ab4ba16326"
+  integrity sha512-1ZC9Mr+DxS0Xeq1GIzWzAzW0/IfxQfpShak2nl1ThK2+BKBYiBm6KflxHojYEp75EqxUAjOgE8mafmtqgaAgzQ==
+  dependencies:
+    date-fns "^2.23.0"
+    tinycolor2 "^1.4.0"
+
 react-dom@^17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
@@ -6172,6 +6185,13 @@ react-firehooks@^1.4.2:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/react-firehooks/-/react-firehooks-1.4.2.tgz#b140decaa523b625620fbee509ec92ec95327fc6"
   integrity sha512-tMQmH7rGX9UwxHQuStLNAajtqAicWQBQSbIaoKSnV049soxDI43YN1YzXVgyjc2N91w8h6zX6QLHAiCI0pW7DQ==
+
+react-github-calendar@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/react-github-calendar/-/react-github-calendar-3.1.2.tgz#9594b277b492db9a02ec0739c5796dd5097f4dcd"
+  integrity sha512-se+qabyYSSiFeR9tgELG28wrAVlfCYnZBcZwejrloIlNNcJj2fQJQokySZBYUdSFzCZ19MeDYn2RCZUMiXzgFw==
+  dependencies:
+    react-activity-calendar "^1.3.5"
 
 react-is@17.0.2:
   version "17.0.2"
@@ -7131,6 +7151,11 @@ timers-browserify@2.0.12, timers-browserify@^2.0.4:
   integrity sha512-9phl76Cqm6FhSX9Xe1ZUAMLtm1BLkKj2Qd5ApyWkXzsMRaA7dgr81kf4wJmQf/hAvg8EEyJxDo3du/0KlhPiKQ==
   dependencies:
     setimmediate "^1.0.4"
+
+tinycolor2@^1.4.0:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.2.tgz#3f6a4d1071ad07676d7fa472e1fac40a719d8803"
+  integrity sha512-vJhccZPs965sV/L2sU4oRQVAos0pQXwsvTLkWYdqJ+a8Q5kPFzJTuOFwy7UniPli44NKQGAglksjvOcpo95aZA==
 
 tmp@^0.2.1:
   version "0.2.1"
