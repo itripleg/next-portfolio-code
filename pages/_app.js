@@ -5,14 +5,18 @@ import { useState } from "react";
 // import { useMoralis } from 'react-moralis';
 import { MoralisProvider } from "react-moralis";
 import Head from "next/head";
-import { Provider } from "next-auth/client";
+import { SessionProvider } from "next-auth/react";
 
 const appId = "kDIpI7RTlC1K51JQQ5vFrWBYggHY09E7hrGrH52n";
 const serverUrl = "https://rub78qqvax12.moralis.io:2053/server";
 
-function MyApp({ Component, pageProps }) {
+export default function App({
+  Component,
+  pageProps: { session, ...pageProps },
+}) {
+  console.log(session);
   return (
-    <Provider session={pageProps.session}>
+    <SessionProvider session={session}>
       <MoralisProvider appId={appId} serverUrl={serverUrl}>
         <Head>
           <link
@@ -22,11 +26,9 @@ function MyApp({ Component, pageProps }) {
             <text y=%22.9em%22 font-size=%2290%22>🧙🏽‍</text></svg>"
           />
         </Head>
-        {/*<Navbar />*/}
+        <Navbar />
         <Component {...pageProps} />
       </MoralisProvider>
-    </Provider>
+    </SessionProvider>
   );
 }
-
-export default MyApp;

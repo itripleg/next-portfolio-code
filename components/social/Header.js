@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import HeaderIcon from "./HeaderIcon";
-import { signOut, useSession } from "next-auth/client";
+import { signOut, useSession } from "next-auth/react";
 import {
   BellIcon,
   ChatIcon,
@@ -19,17 +19,17 @@ import {
 import Link from "next/link";
 
 const Header = () => {
-  const [session] = useSession();
+  const { data: session, status } = useSession();
 
   return (
-    <div className="sticky top-0 z-50 bg-white flex items-center p-2 md: px-5 shadow-md">
+    <div className="sticky bg-white flex items-center p-2 md: px-5 shadow-md">
       {/*Left*/}
       <div className="flex items-center">
         <Image
           src={"https://links.papareact.com/5me"}
           width={40}
           height={40}
-          layout="fixed"
+          // layout="sticky"
           alt="Fakebook.com"
         />
 
@@ -37,7 +37,7 @@ const Header = () => {
           <SearchIcon className="h-6" />
           <input
             className="flex ml-2 items-center flex-shrink hidden md:inline-flex
-					bg-transparent outline-none placeholder-gray-500"
+          bg-transparent outline-none placeholder-gray-500 "
             type="text"
             placeholder="Search Fakebook"
           ></input>
@@ -47,7 +47,7 @@ const Header = () => {
       {/*Middle*/}
       <div className="flex justify-center flex-grow">
         <div className="flex space-x-6 md:space-x-2">
-          <Link href="/" passHref={true}>
+          <Link href="/Portfolio#projects" passHref={true}>
             <a>
               <HeaderIcon active Icon={HomeIcon} />
             </a>
@@ -72,13 +72,15 @@ const Header = () => {
           alt="Signout"
         />
 
-        <p className="whitespace-nowrap font-semibold pr-3">
+        <p className="hidden xl:inline-flex whitespace-nowrap font-semibold pr-3">
           {session.user.name}
         </p>
-        <ViewGridIcon className="icon" />
-        <ChatIcon className="icon" />
-        <BellIcon className="icon" />
-        <ChevronDownIcon className="icon" />
+        <div className="flex-shrink space-x-2">
+          <ViewGridIcon className="icon" />
+          <ChatIcon className="icon" />
+          <BellIcon className="icon" />
+          <ChevronDownIcon className="icon" />
+        </div>
       </div>
     </div>
   );

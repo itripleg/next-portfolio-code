@@ -1,4 +1,4 @@
-import { useSession } from "next-auth/client";
+import { useSession } from "next-auth/react";
 import {
   ChevronDownIcon,
   ShoppingBagIcon,
@@ -14,10 +14,10 @@ import SidebarRow from "./SidebarRow";
 import Image from "next/image";
 
 const Sidebar = () => {
-  const [session, loading] = useSession();
+  const { data: session, status } = useSession();
   return (
     <div className="p-2 mt-5 max-w-[600px] xl:min-w-[300px]">
-      <SidebarRow src={session.user.image} title={session.user.name} />
+      {/*<SidebarRow src={session.user.image} title={session.user.name} />*/}
       <SidebarRow Icon={UsersIcon} title="Friends" />
       <SidebarRow Icon={UserGroupIcon} title="Groups" />
       <SidebarRow Icon={ShoppingBagIcon} title="Marketplace" />

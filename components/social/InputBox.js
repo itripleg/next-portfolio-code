@@ -1,4 +1,4 @@
-import { useSession } from "next-auth/client";
+import { useSession } from "next-auth/react";
 import Image from "next/image";
 import { EmojiHappyIcon } from "@heroicons/react/outline";
 import { CameraIcon, VideoCameraIcon } from "@heroicons/react/solid";
@@ -14,7 +14,7 @@ import {
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 
 const InputBox = () => {
-	const [session] = useSession();
+	const { data: session, status } = useSession();
 	const [image, setImage] = useState(null);
 	const [localImageURL, setlocalImageURL] = useState("");
 
@@ -82,7 +82,7 @@ const InputBox = () => {
 						ref={inputRef}
 						className="rounded-full h-12 bg-gray-100 flex-grow px-5 focus:outline-none"
 						type="text"
-						placeholder={`Whats on your mind, ${session.user.name}?`}
+						placeholder={`Hey, ${session.user.name}! Try making a post with a picture added`}
 					/>
 					<button hidden type="submit" onClick={sendPost}>
 						Submit

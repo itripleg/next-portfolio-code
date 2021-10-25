@@ -1,5 +1,5 @@
 import React from "react";
-import { CodeIcon } from "@heroicons/react/solid";
+import { CodeIcon, HomeIcon } from "@heroicons/react/solid";
 import { projects } from "./data";
 import Image from "next/image";
 
@@ -16,6 +16,13 @@ function Projects() {
             {`Here are some projects I'm currently working on. Most are still in
             beta with limited features but used for demonstration purposes. I
             will try to post all revelant code to my Github as progress is made.`}
+            <div className="flex items-center">
+              <p className="">Using a</p> <HomeIcon className="h-4 px-2" />
+              <p>
+                {`icon will bring you back here. Clicking your profile pic in the
+                app's Navbar should log you out.`}
+              </p>
+            </div>
           </p>
         </div>
         <div className="flex flex-wrap -m-4 grid-cols-2 justify-center gap-3 md:gap-0 min-h-200">

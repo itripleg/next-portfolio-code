@@ -5,6 +5,7 @@ function Contact(src, name) {
 	return (
 		<div>
 			<p>{name}</p>
+			<img src={src} alt />
 		</div>
 	);
 }
