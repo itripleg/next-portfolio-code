@@ -14,7 +14,7 @@ function Posts() {
           name={post.data().name}
           message={post.data().message}
           email={post.data().email}
-          serverTimestamp={post.data().timeStamp.toDate()}
+          serverTimestamp={post.data().timeStamp?.toDate()}
           image={post.data().image}
           postImage={post.data().postImage}
         />

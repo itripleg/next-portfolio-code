@@ -39,7 +39,7 @@ const InputBox = () => {
 
 			//update doc with the download url
 			try {
-				updateDoc(doc(firestore, "posts", docRef.id), {
+				await updateDoc(doc(firestore, "posts", docRef.id), {
 					postImage: url,
 				});
 			} catch (err) {
