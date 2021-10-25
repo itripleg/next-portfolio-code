@@ -9,8 +9,12 @@ import {
 	MenuIcon,
 } from "@heroicons/react/outline";
 import { HomeIcon } from "@heroicons/react/solid";
+import Login from "./Login";
+import { useSession, signOut } from "next-auth/react";
 
 function Header() {
+	const { data: session } = useSession();
+
 	return (
 		<div className="shadow-sm border-b bg-white sticky top-0 z-50">
 			<div className="flex justify-between max-w-6xl mx-5 lg:mx-auto">
@@ -66,11 +70,12 @@ function Header() {
 					<UserGroupIcon className="navBtn" />
 					<HeartIcon className="navBtn pr-4" />
 					<Image
-						src="/me_mask.jpg"
+						src={session.user.image}
 						alt="Profile Pic"
 						width={40}
 						height={40}
 						className=" rounded-full cursor-pointer"
+						onClick={signOut}
 					/>
 				</div>
 			</div>
