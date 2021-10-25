@@ -14,7 +14,6 @@ export default function App({
   Component,
   pageProps: { session, ...pageProps },
 }) {
-  console.log(session);
   return (
     <SessionProvider session={session}>
       <MoralisProvider appId={appId} serverUrl={serverUrl}>

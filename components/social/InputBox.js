@@ -46,9 +46,9 @@ const InputBox = () => {
 				console.log(err);
 			}
 
-			inputRef.current.value = "";
 			removeImage();
 		}
+		inputRef.current.value = "";
 	};
 
 	const addImageToPost = async (e) => {
@@ -83,7 +83,7 @@ const InputBox = () => {
 						ref={inputRef}
 						className="rounded-full h-12 bg-gray-100 flex-grow px-5 focus:outline-none"
 						type="text"
-						placeholder={`What's up, ${session.user.name}!`}
+						placeholder={`What's up, ${session.user.name}?`}
 					/>
 					<button hidden type="submit" onClick={sendPost}>
 						Submit

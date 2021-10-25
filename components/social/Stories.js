@@ -1,57 +1,35 @@
-import React from "react";
 import StoryCard from "./StoryCard";
-// import { useSession } from 'next-auth/client'
-
-// const getCurrentUser = () => {
-// 	const [ session ] = useSession();
-// 	if (session){
-
-// 	}
-// }
-
-const currentUser = {
-  name: "josh",
-  src: "/me.jpg",
-  profile: "/me_mask.jpg",
-};
-
-const storyData = [
-  {
-    name: currentUser.name,
-    src: currentUser.src,
-    profile: currentUser.profile,
-  },
-  {
-    name: "Elon Musk",
-    src: "https://links.papareact.com/4zn",
-    profile: "https://links.papareact.com/kxk",
-  },
-  {
-    name: "Jeff Bezos",
-    src: "https://links.papareact.com/k2j",
-    profile: "https://links.papareact.com/f0p",
-  },
-  {
-    name: "Mark Zuckerberg",
-    src: "https://links.papareact.com/xql",
-    profile: "https://links.papareact.com/snf",
-  },
-  {
-    name: "Bill Gates",
-    src: "https://links.papareact.com/4u4",
-    profile: "https://links.papareact.com/zvy",
-  },
-];
+import { useState, useEffect } from "react";
+import faker from "faker";
+import { useSession } from "next-auth/react";
 
 function Stories() {
+  const [stories, setStories] = useState([]);
+  const { data: session } = useSession();
+
+  useEffect(() => {
+    const arr = [...Array(4)].map((_, i) => ({
+      ...faker.helpers.contextualCard(),
+      id: i,
+    }));
+    //remember to do this before returning!
+    setStories(arr);
+    return () => {};
+  }, []);
   return (
     <div className="flex justify-center space-x-3 mx-auto">
-      {storyData.map((story) => (
+      <StoryCard
+        name={session.user.name}
+        src={session.user.image}
+        profile={session.user.image}
+      />
+      {console.log(session)}
+      {stories.map((story) => (
         <StoryCard
-          key={story.src}
+          key={story.id}
           name={story.name}
-          src={story.src}
-          profile={story.profile}
+          src={story.avatar}
+          profile={story.avatar}
         />
       ))}
     </div>

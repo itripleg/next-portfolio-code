@@ -4,13 +4,21 @@ import {
 	SearchIcon,
 	VideoCameraIcon,
 } from "@heroicons/react/solid";
-
-const contacts = [
-	{ src: "https://links.papareact.com/kxk", name: "Elon Musk" },
-	{ src: "https://links.papareact.com/kxk", name: "Elon Musk" },
-];
+import { useState, useEffect } from "react";
+import faker from "faker";
 
 function Widgets() {
+	const [contacts, setContacts] = useState([]);
+
+	useEffect(() => {
+		const arr = [...Array(10)].map((_, i) => ({
+			...faker.helpers.contextualCard(),
+			id: i,
+		}));
+		//remember to do this before returning!
+		setContacts(arr);
+		return () => {};
+	}, []);
 	return (
 		<div className="hidden lg:flex flex-col w-60 p-2 mt-6">
 			<div className="flex justify-between items-center text-gray-500 mb-5">
@@ -21,9 +29,9 @@ function Widgets() {
 					<DotsHorizontalIcon className="h-6" />
 				</div>
 			</div>
-			{/*			{contacts.map((contact) => (
-				<Contact key={contact.src} src={contact.src} name={contact.name} />
-			))}*/}
+			{contacts.map((contact) => (
+				<Contact key={contact.id} src={contact.avatar} name={contact.name} />
+			))}
 		</div>
 	);
 }
