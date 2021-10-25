@@ -24,13 +24,12 @@ const InputBox = () => {
 	const sendPost = async (e) => {
 		e.preventDefault();
 		if (!inputRef.current.value) return;
-		await addDoc(collection(firestore, "posts"), {
+		const docRef = await addDoc(collection(firestore, "posts"), {
 			message: inputRef.current.value,
 			name: session.user.name,
 			email: session.user.email,
 			image: session.user.image,
 			timeStamp: serverTimestamp(),
-			postImage: "",
 		});
 		if (image) {
 			const storageRef = ref(storage, `images/${image.name}`);
@@ -38,8 +37,9 @@ const InputBox = () => {
 
 			const url = await getDownloadURL(storageRef);
 
+			//update doc with the download url
 			try {
-				addDoc(collection(firestore, "posts"), {
+				updateDoc(doc(firestore, "posts", docRef.id), {
 					postImage: url,
 				});
 			} catch (err) {
@@ -52,6 +52,7 @@ const InputBox = () => {
 	};
 
 	const addImageToPost = async (e) => {
+		//seems to work fine without a reader?
 		const reader = new FileReader();
 		if (e.target.files[0]) {
 			setImage(event.target.files[0]);
@@ -82,7 +83,7 @@ const InputBox = () => {
 						ref={inputRef}
 						className="rounded-full h-12 bg-gray-100 flex-grow px-5 focus:outline-none"
 						type="text"
-						placeholder={`Hey, ${session.user.name}! Try making a post with a picture added`}
+						placeholder={`What's up, ${session.user.name}!`}
 					/>
 					<button hidden type="submit" onClick={sendPost}>
 						Submit

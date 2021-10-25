@@ -5,6 +5,7 @@ import { useSession, signOut } from "next-auth/react";
 
 function Insta() {
 	const { data: session } = useSession();
+	// Blocks all access to Insta app unless logged in initially
 	if (!session) return <Login />;
 	return (
 		<div className="bg-gray-50 h-screen overflow-y-scroll z-50 fixed top-0 w-full">

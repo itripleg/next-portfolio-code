@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useSession } from "next-auth/react";
+import { useSession, signOut } from "next-auth/react";
 
 function MiniProfile() {
 	const { data: session } = useSession();
@@ -15,7 +15,9 @@ function MiniProfile() {
 				<h2 className="font-bold">{session.user.name}</h2>
 				<h3 className="text-sm">Welcome to Instagram</h3>
 			</div>
-			<button className="text-blue-400 text-sm font-semibold">Sign Out</button>
+			<button className="text-blue-400 text-sm font-semibold" onClick={signOut}>
+				Sign Out
+			</button>
 		</div>
 	);
 }

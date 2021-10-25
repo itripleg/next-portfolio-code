@@ -24,6 +24,7 @@ module.exports = {
       "platform-lookaside.fbsbx.com",
       "firebasestorage.googleapis.com",
       "cdn.fakercloud.com",
+      "lh3.googleusercontent.com",
     ],
   },
 };

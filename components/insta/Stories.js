@@ -1,9 +1,11 @@
 import faker from "faker";
 import { useEffect, useState } from "react";
 import Story from "./Story";
+import { useSession } from "next-auth/react";
 
 const Stories = () => {
 	const [profiles, setProfiles] = useState([]);
+	const { data: session } = useSession();
 
 	useEffect(() => {
 		//Investigate: how are we returning the index of array with '(_,i)' as the first parameter of map?
@@ -22,6 +24,10 @@ const Stories = () => {
 				className="flex space-x-2 p-6 bg-white mt-8 border-gray-200 
 				border rounded-md overflow-x-scroll "
 			>
+				{/*render current user story before map*/}
+				{session && (
+					<Story img={session.user.image} username={session.user.name} />
+				)}
 				{profiles.map((profile) => (
 					// <p>{profile.name}</p>
 					<Story
