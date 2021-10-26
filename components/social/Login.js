@@ -33,22 +33,31 @@ export default function Login({ providers }) {
       >
         {`I know what I'm doing`}
       </h1>
-      <div className="text-center"></div>
-      <h1 className="font-bold">To Do List</h1>
-      <p>Order posts from newest to oldest</p>
-      <p>Load user profile picture when using Facebook authentication method</p>
-      <p>Remove searchbox outline</p>
-      <p>Improve mobile responiveness</p>
-      <p>Add submit post button</p>
-      <p>Add clear/delete post button</p>
-      <strike>
-        Populate stories and contacts with randomly generated user data
-      </strike>
-      <strike>Retrieve all posts from Firebase datastore </strike>
-      <strike>Include optional photo with posts</strike>
-      <strike>Add timestamp to posts</strike>
-
-      <p></p>
+      <div className=" text-center whitespace-pre">
+        <h1 className="font-bold">To Do List</h1>
+        <p>Order posts from newest to oldest</p>
+        <p classname="">
+          Load user profile picture when using Facebook authentication method
+        </p>
+        <p>Remove searchbox outline</p>
+        <p>Improve mobile responiveness</p>
+        <p>Add submit post button</p>
+        <p>Add clear/delete post button</p>
+        <p>
+          <strike>
+            Populate stories and contacts with randomly generated user data
+          </strike>
+        </p>
+        <p>
+          <strike>Retrieve all posts from Firebase datastore </strike>
+        </p>
+        <p>
+          <strike>Include optional photo with posts</strike>
+        </p>
+        <p>
+          <strike>Add timestamp to posts</strike>
+        </p>
+      </div>
     </div>
   );
 }
