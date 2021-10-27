@@ -23,7 +23,6 @@ function Stories() {
         src={session.user.image}
         profile={session.user.image}
       />
-      {console.log(session)}
       {stories.map((story) => (
         <StoryCard
           key={story.id}
