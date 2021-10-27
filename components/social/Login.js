@@ -36,9 +36,7 @@ export default function Login({ providers }) {
       <div className=" text-center whitespace-pre">
         <h1 className="font-bold">To Do List</h1>
         <li>Order posts from newest to oldest</li>
-        <li classname="">
-          Load user profile picture when using Facebook login
-        </li>
+        <li>Load user profile picture when using Facebook login</li>
         <li>Remove searchbox outline</li>
         <li>Improve mobile responiveness</li>
         <li>Add submit post button</li>
