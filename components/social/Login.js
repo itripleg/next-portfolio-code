@@ -35,28 +35,28 @@ export default function Login({ providers }) {
       </h1>
       <div className=" text-center whitespace-pre">
         <h1 className="font-bold">To Do List</h1>
-        <p>Order posts from newest to oldest</p>
-        <p classname="">
-          Load user profile picture when using Facebook authentication method
-        </p>
-        <p>Remove searchbox outline</p>
-        <p>Improve mobile responiveness</p>
-        <p>Add submit post button</p>
-        <p>Add clear/delete post button</p>
-        <p>
+        <li>Order posts from newest to oldest</li>
+        <li classname="">
+          Load user profile picture when using Facebook login
+        </li>
+        <li>Remove searchbox outline</li>
+        <li>Improve mobile responiveness</li>
+        <li>Add submit post button</li>
+        <li>Add clear/delete post button</li>
+        <li>
           <strike>
             Populate stories and contacts with randomly generated user data
           </strike>
-        </p>
-        <p>
+        </li>
+        <li>
           <strike>Retrieve all posts from Firebase datastore </strike>
-        </p>
-        <p>
+        </li>
+        <li>
           <strike>Include optional photo with posts</strike>
-        </p>
-        <p>
+        </li>
+        <li>
           <strike>Add timestamp to posts</strike>
-        </p>
+        </li>
       </div>
     </div>
   );
