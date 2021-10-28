@@ -37,9 +37,9 @@ const Header = () => {
           <SearchIcon className="h-6" />
           <input
             className="flex ml-2 items-center flex-shrink hidden md:inline-flex
-          bg-transparent outline-none placeholder-gray-500 "
+          bg-transparent outline-none placeholder-gray-500 block focus:ring-0 border-gray-100"
             type="text"
-            placeholder="Search Fakebook"
+            placeholder="Search..."
           ></input>
         </div>
       </div>

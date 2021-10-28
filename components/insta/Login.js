@@ -12,7 +12,7 @@ export default function Login({ providers }) {
 					objectFit="contain"
 					width={200}
 					height={200}
-					alt="Instagram"
+					alt="logo"
 				/>
 			</div>
 			<p className="flex pb-6 text-center mx-4 md:mx-60 lg:p-16 sm:text-xl font-bold text-gray-500">
@@ -33,6 +33,13 @@ export default function Login({ providers }) {
 			>
 				{`I know what I'm doing`}
 			</h1>
+			<div className=" text-center whitespace-pre">
+				<h1 className="font-bold">To Do List</h1>
+				<li>Implement post functionality</li>
+				<li>Display sorted posts</li>
+				<li>Enable comments</li>
+				<li>Enable likes</li>
+			</div>
 		</div>
 	);
 }
