@@ -12,7 +12,6 @@ const Chart = () => {
 
   return (
     <>
-      <Navbar />
       <p className="w-full h-full bg-gray-900 p-0 text-center text-purple-900 text-bold">
         Chart is still in beta with more features to come!
       </p>
