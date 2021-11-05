@@ -1,8 +1,6 @@
-import React from "react";
-import { useState } from "react";
-import dynamic from "next/dynamic";
+// import { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/outline";
-import Navbar from "../components/Navbar";
+import dynamic from "next/dynamic";
 
 const Chart = () => {
   // apparently we need client side/dynamic rendering for tv-widget to work reliably

@@ -28,7 +28,7 @@ function Navbar() {
         justify-center space-x-3 md:space-x-6"
         >
           <Link
-            href="/#projects"
+            href="/Portfolio#projects"
             passHref={true}
             className="mr-5 hover:text-white"
           >
@@ -41,14 +41,14 @@ function Navbar() {
             Web3
           </Link>
           <Link
-            href="/#skills"
+            href="/Portfolio#skills"
             passHref={true}
             className="mr-5 hover:text-white"
           >
             Skills
           </Link>
           <Link
-            href="/#contact"
+            href="/Portfolio#contact"
             passHref={true}
             className="mr-5 hover:text-white"
           >

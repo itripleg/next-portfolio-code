@@ -1,10 +1,9 @@
-import React from "react";
-import Head from "next/head";
+import { useState } from "react";
 
 export default function Contact() {
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   function encode(data) {
     return Object.keys(data)
@@ -13,18 +12,6 @@ export default function Contact() {
       )
       .join("&");
   }
-
-  // function handleSubmit(e) {
-  //     e.preventDefault();
-  //     fetch("/", {
-  //       method: "POST",
-  //       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //       action: "https://formsubmit.co/joshua.bell.8282gmail.com",
-  //       body: encode({ "form-name": "contact", name, email, message }),
-  //     })
-  //       .then(() => alert("Message sent!"))
-  //       .catch((error) => alert(error));
-  //   }
 
   return (
     <>

@@ -6,7 +6,7 @@ function About() {
     <section id="about" className="flex flex-col justify-items-center">
       <h1
         className="title-font sm:text-4xl text-3xl pt-12 font-medium
-					 text-white text-center mb-6 md:space-x-8"
+           text-white text-center mb-6 md:space-x-8"
       >
         Lets {""}
         <TextLoop interval="4500" className="">
@@ -26,7 +26,7 @@ function About() {
               alt="me"
               src="/me_mask.jpg"
               className="loading=lazy rounded-full 
-							h-20 m-4 transition transform duration-150 md:h-26 md:w-1 lg:h-36"
+              h-20 m-4 transition transform duration-150 md:h-26 md:w-1 lg:h-36"
               width="150"
               height="150"
             />
@@ -49,7 +49,7 @@ function About() {
               <a
                 href="#contact"
                 className="inline-flex text-white bg-green-500 border-0 py-2 md:py-4 px-6 focus:outline-none hover:bg-green-600
-              	rounded text-lg transition transform duration-150 hover:scale-110 text-center"
+                rounded text-lg transition transform duration-150 hover:scale-110 text-center"
               >
                 Work With Me
               </a>
