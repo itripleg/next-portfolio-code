@@ -2,8 +2,6 @@ import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import FacebookProvider from "next-auth/providers/facebook";
 
-import React from "react";
-
 export default NextAuth({
   providers: [
     FacebookProvider({
@@ -16,7 +14,7 @@ export default NextAuth({
     }),
   ],
   pages: {
-    // signIn: "/auth/signin",
+    signIn: "/auth/signin",
   },
   theme: {
     logo: "/next-auth.png",

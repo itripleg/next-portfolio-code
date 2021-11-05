@@ -4,10 +4,8 @@ import Link from "next/link";
 import { useMoralis } from "react-moralis";
 import { useState, useEffect } from "react";
 import Moralis from "moralis";
-// import Profile from "../components/web3/Profile";
+// import Profile from "../components/web3/Profile"; //Use dynamic import instead
 import dynamic from "next/dynamic";
-// import ReactDOM from "react";
-// import { useRouter } from "next/router";
 
 const SignupBox = () => {
   const { login, isInitialized } = useMoralis();
@@ -76,18 +74,7 @@ export default function Web3() {
     user,
   } = useMoralis();
 
-  console.log("User logged in? " + isAuthenticated);
   const [useEmail, showEmailBox] = useState(false);
-  //   const [useSignupBox, showSignupBox] = useState(false);
-
-  // const currentUser = async() => await Moralis.User.current();
-  //   if(!currentUser){
-  //     logout();
-  //   }
-
-  //   const handleSignup = () => {
-  //       showSignupBox(!useSignupBox);
-  //     };
 
   const handleEmail = () => {
     showEmailBox(!useEmail);

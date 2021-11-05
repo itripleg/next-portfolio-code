@@ -1,6 +1,20 @@
-import { getProviders, signIn } from "next-auth/react";
+import { getProviders, signIn, signOut, useSession } from "next-auth/react";
 
 export default function SignIn({ providers }) {
+  const { data: session } = useSession();
+
+  if (session) {
+    return (
+      <>
+        Already logged in
+        {console.log(session)};
+        <button className="outline-black" onClick={() => signOut()}>
+          Sign Out
+        </button>
+      </>
+    );
+  }
+
   return (
     <div className="h-screen ">
       <div className="flex flex-col justify-center items-center p-20">
@@ -9,7 +23,9 @@ export default function SignIn({ providers }) {
           <div className="mt-20" key={provider.name}>
             <button
               className="outline-black"
-              onClick={() => signIn(provider.id)}
+              onClick={() => {
+                signIn(provider.id);
+              }}
             >
               Sign in with {provider.name}
             </button>
