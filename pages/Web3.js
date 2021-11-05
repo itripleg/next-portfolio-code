@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useMoralis } from "react-moralis";
 import { useState, useEffect } from "react";
 import Moralis from "moralis";
-// import Profile from "../components/web3/Profile";
+import Profile from "../components/web3/Profile";
 import dynamic from "next/dynamic";
 // import ReactDOM from "react";
 // import { useRouter } from "next/router";
