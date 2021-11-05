@@ -25,6 +25,10 @@ export default function Index(session) {
   //     </div>
   //   </main>
   // ) : (
-  <Portfolio />;
+  return <Portfolio />;
   // );
+}
+
+export getServerSideProps(){
+
 }
