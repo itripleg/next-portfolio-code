@@ -9,26 +9,23 @@ import { useEffect, useState } from "react";
 
 export default function Index(session) {
   // const Portfolio = dynamic(() => import("../pages/Portfolio"));
-  // const [splash, setSplash] = useState(true);
+  const [splash, setSplash] = useState(false);
 
-  // useEffect(async () => {
-  //   setTimeout(() => {
-  //     setSplash(false);
-  //   }, 2211);
-  //   return () => {};
-  // }, []);
+  useEffect(async () => {
+    console.log("setting timeout");
+    setTimeout(() => {
+      setSplash(false);
+    }, 2211);
+    return () => {};
+  }, []);
 
-  // return splash ? (
-  //   <main className="bg-gray-800 text-white bg ">
-  //     <div className="flex mx-auto items-center min-h-screen text-center justify-center align-center pb-40 h-40">
-  //       <p className="animate-bounce text-xl">buncombe.tech</p>
-  //     </div>
-  //   </main>
-  // ) : (
-  return <Portfolio />;
-  // );
-}
-
-export getServerSideProps(){
-
+  return splash ? (
+    <main className="bg-gray-800 text-white bg ">
+      <div className="flex mx-auto items-center min-h-screen text-center justify-center align-center pb-40 h-40">
+        <p className="animate-bounce text-xl">buncombe.tech</p>
+      </div>
+    </main>
+  ) : (
+    <Portfolio />
+  );
 }
