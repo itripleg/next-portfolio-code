@@ -1,18 +1,19 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Navbar from "../components/Navbar";
 import { useMoralis } from "react-moralis";
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import Moralis from "moralis";
-import Profile from "../components/web3/Profile";
-import ReactDOM from "react";
+// import Profile from "../components/web3/Profile";
+import dynamic from "next/dynamic";
+// import ReactDOM from "react";
+// import { useRouter } from "next/router";
 
 const SignupBox = () => {
   const { login, isInitialized } = useMoralis();
 
   const emailSignup = async () => {
-    console.log(email, password);
+    // console.log(email, password);
     try {
       const user = await Moralis.User.signup(email, password);
       alert("User Created!");
@@ -27,11 +28,10 @@ const Login = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const emailLogin = async () => {
-    console.log(email, password);
     try {
       const user = await Moralis.User.logIn(email, password);
       if (user) {
-        window.location.reload();
+        // window.location.reload();
       }
     } catch (err) {
       alert(err.message);
@@ -75,6 +75,8 @@ export default function Web3() {
     logout,
     user,
   } = useMoralis();
+
+  console.log("User logged in? " + isAuthenticated);
   const [useEmail, showEmailBox] = useState(false);
   //   const [useSignupBox, showSignupBox] = useState(false);
 
@@ -95,19 +97,25 @@ export default function Web3() {
     if (showEmailBox) {
       showEmailBox(false);
     }
-    await authenticate();
+    try {
+      await authenticate();
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   // If client is already authenticated
   if (isAuthenticated) {
+    const Profile = dynamic(() => import("../components/web3/profile"));
     return <Profile />;
   }
+
   //Else client not authenticated
   return (
     <div id="signInOptions" className="text-gray-400 bg-gray-900 h-full z-0">
       {/*Main container*/}
       <Head>
-        <title>Josh Bell Dev</title>
+        <title>Web3 Playground</title>
         <meta name="description" content="Created by Joshua Bell" />
         {/*<link rel="icon" href="/favicon.ico" />*/}
       </Head>

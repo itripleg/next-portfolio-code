@@ -1,7 +1,10 @@
-import Header from "../components/insta/Header";
-import Feed from "../components/insta/Feed";
+// import Header from "../components/insta/Header";
+// import Feed from "../components/insta/Feed";
 import Login from "../components/insta/Login";
 import { useSession, signOut } from "next-auth/react";
+import dynamic from "next/dynamic";
+const Header = dynamic(() => import("../components/insta/Header"));
+const Feed = dynamic(() => import("../components/insta/Feed"));
 
 function Insta() {
 	const { data: session } = useSession();

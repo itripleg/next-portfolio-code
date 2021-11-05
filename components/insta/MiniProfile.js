@@ -10,6 +10,7 @@ function MiniProfile() {
 				width={40}
 				height={40}
 				className="rounded-full border p-[2px] ml-2"
+				alt="pic"
 			/>
 			<div className="flex-1 mx-4">
 				<h2 className="font-bold">{session.user.name}</h2>

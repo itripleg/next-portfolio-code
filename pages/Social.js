@@ -1,12 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
-import { getSession, useSession, signIn } from "next-auth/react";
-import Header from "../components/social/Header";
+import { useSession, signIn } from "next-auth/react";
 import Login from "../components/social/Login";
-import Sidebar from "../components/social/Sidebar";
-import Feed from "../components/social/Feed";
-import Widgets from "../components/social/Widgets";
-import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
+import { useState } from "react";
+const Header = dynamic(() => import("../components/social/Header"));
+const Sidebar = dynamic(() => import("../components/social/Sidebar"));
+const Feed = dynamic(() => import("../components/social/Feed"));
+const Widgets = dynamic(() => import("../components/social/Widgets"));
 
 export default function Social() {
   //TODO: implement way to show/hide app navbar
@@ -19,6 +20,7 @@ export default function Social() {
   if (!session) {
     return <Login />;
   }
+
   return (
     <div
       className={`h-screen bg-gray-100 ${fixed} w-full top-0 transition transform duration-120 ease-out`}

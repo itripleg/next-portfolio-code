@@ -4,9 +4,8 @@ import { useMoralis } from "react-moralis";
 import Moralis from "moralis";
 
 const Profile = () => {
-  const { logout } = useMoralis();
-
   const currentUser = Moralis.User.current();
+  const { logout } = useMoralis();
   if (currentUser) {
     return (
       <>
@@ -32,12 +31,21 @@ const Profile = () => {
             <h1 className="text-white text-xl h-8 rounded-full ">Profile</h1>
             <div className=" ">
               <p className="md:ml-20 ">
-                Accounts: {currentUser.get("accounts")}
+                Username: {currentUser.get("username")}
               </p>
               <p className="md:ml-20 ">
                 Email address: {currentUser.get("email")}
               </p>
               <p className="md:ml-20 ">Avatar: {currentUser.get("avatar")}</p>
+              <p className="md:ml-20 ">
+                Accounts: {currentUser.get("accounts")}
+              </p>
+              <p className="md:ml-20 ">
+                Created At: {currentUser.get("createdAt").toLocaleString()}
+              </p>
+              <p className="md:ml-20 ">
+                Updated At: {currentUser.get("updatedAT")}
+              </p>
             </div>
           </div>
           {/*Coming soon stuff*/}
@@ -52,11 +60,13 @@ const Profile = () => {
         </div>
       </>
     );
+  } else {
+    return (
+      <>
+        <h1>Error, please refresh your browser and try again.</h1>
+      </>
+    );
   }
-  return;
-  <>
-    <h1>Error, please refresh your browser and try again.</h1>
-  </>;
 };
 
 export default Profile;

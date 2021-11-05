@@ -1,4 +1,3 @@
-import React from "react";
 import TextLoop from "react-text-loop";
 import Image from "next/image";
 

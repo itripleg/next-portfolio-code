@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { ArrowRightIcon, HomeIcon, MenuIcon } from "@heroicons/react/solid";
 import Link from "next/link";
 import "tailwindcss/tailwind.css";
-// import { useMoralis } from 'react-moralis';
 
 function Navbar() {
   return (
@@ -17,13 +16,10 @@ function Navbar() {
         </div>
         <span className="flex mx-auto lg:mr-10"></span>
         <h1
-          className="title-font font-medium text-white
-        cursor-pointer hover:underline 
+          className="title-font font-medium text-white 
         select-none mb-4 md:mb-0 hidden md:block md:mr-4"
         >
-          <Link href="/Portfolio" passHref={true} className="text-xl">
-            Joshua Bell
-          </Link>
+          <p className="text-xl"> Joshua Bell</p>
         </h1>
         <nav
           className="md:mr-auto md:ml-4 md:py-1 
@@ -32,7 +28,7 @@ function Navbar() {
         justify-center space-x-3 md:space-x-6"
         >
           <Link
-            href="/Portfolio#projects"
+            href="/#projects"
             passHref={true}
             className="mr-5 hover:text-white"
           >
@@ -45,14 +41,14 @@ function Navbar() {
             Web3
           </Link>
           <Link
-            href="/Portfolio#skills"
+            href="/#skills"
             passHref={true}
             className="mr-5 hover:text-white"
           >
             Skills
           </Link>
           <Link
-            href="/Portfolio#contact"
+            href="/#contact"
             passHref={true}
             className="mr-5 hover:text-white"
           >

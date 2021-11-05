@@ -1,19 +1,31 @@
-import React from "react";
-import Image from "next/image";
-import Portfolio from "../pages/Portfolio";
-import Head from "next/head";
 import Navbar from "../components/Navbar";
-import { useEffect } from "react";
+import About from "../components/portfolio/About";
+import Skills from "../components/portfolio/Skills";
 import Projects from "../components/portfolio/Projects";
+import Contact from "../components/portfolio/Contact";
+import { ArrowUpIcon } from "@heroicons/react/solid";
+import Link from "next/link";
+import dynamic from "next/dynamic";
 
-export default function Index(session) {
-  useEffect(() => {
-    return <h1>Use Effect Test</h1>;
-  }, []);
+// const DAbout = dynamic(() => import("../components/portfolio/About"));
+// const DSkills = dynamic(() => import("../components/portfolio/Skills"));
+// const DProjects = dynamic(() => import("../components/portfolio/Projects"));
+// const DContact = dynamic(() => import("../components/portfolio/Contact"));
+
+export default function Portfolio(session) {
   return (
-    <main className="">
+    <main className="text-gray-400 bg-gray-900 body-font ">
       <div className="">
-        <Portfolio />
+        {/*<Navbar />*/}
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Link className="" href={"/"}>
+          <a>
+            <ArrowUpIcon className="fixed bottom-0 right-0 m-4 text-white hidden md:block w-10" />
+          </a>
+        </Link>
       </div>
     </main>
   );

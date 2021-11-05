@@ -2,13 +2,14 @@ import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
 import Navbar from "../components/Navbar";
 import { useState } from "react";
-// import { useMoralis } from 'react-moralis';
 import { MoralisProvider } from "react-moralis";
 import Head from "next/head";
 import { SessionProvider } from "next-auth/react";
 
-const appId = "kDIpI7RTlC1K51JQQ5vFrWBYggHY09E7hrGrH52n";
-const serverUrl = "https://rub78qqvax12.moralis.io:2053/server";
+const appId = "REyr2sTyKaApzCp9B5RZgKYbrBLQT7bmO5Zow0AG";
+const serverUrl = "https://8ztahdupkaup.grandmoralis.com:2053/server";
+// if (appId && serverUrl)
+// console.log(process.env.REACT_APP_MORALIS_SERVER_URL);
 
 export default function App({
   Component,

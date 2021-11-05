@@ -2,22 +2,6 @@ module.exports = {
   // webpack5: false,
   reactStrictMode: true,
   generateBuildId: () => "build",
-  async rewrites() {
-    return [
-      {
-        source: "/(c|C)(h|H)(a|A)(r|R)(t|T)",
-        destination: "/Chart",
-      },
-    ];
-  },
-  async reroutes() {
-    return [
-      {
-        source: "/",
-        destination: "/Portfolio",
-      },
-    ];
-  },
   images: {
     domains: [
       "links.papareact.com",
@@ -28,3 +12,8 @@ module.exports = {
     ],
   },
 };
+const withBundleAnalyzer = require("@next/bundle-analyzer")({
+  enabled: process.env.ANALYZE === "true",
+});
+
+module.exports = withBundleAnalyzer({});

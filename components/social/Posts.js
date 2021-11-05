@@ -16,7 +16,7 @@ function Posts() {
       }
     );
     return;
-  }, [firestore]);
+  }, []);
 
   return (
     <div>
