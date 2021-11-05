@@ -21,9 +21,9 @@ export default function Portfolio() {
         <Skills />
         <Projects />
         <Contact />
-        <Link className="" href={"/"}>
+        <Link className="" href={"/Portfolio"}>
           <a>
-            <ArrowUpIcon className="fixed bottom-0 right-0 m-4 text-white hidden md:block w-10" />
+            <ArrowUpIcon className="fixed bottom-0 right-0 m-4 text-white hidden xl:block w-10" />
           </a>
         </Link>
       </div>
