@@ -7,7 +7,9 @@ export default function Login({ providers }) {
 		<div className="grid place-items-center ">
 			<div className="relative">
 				<Image
-					src={"https://links.papareact.com/ocw"}
+					src={
+						"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2880px-Instagram_logo.svg.png"
+					}
 					// layout="fill"
 					objectFit="contain"
 					width={200}

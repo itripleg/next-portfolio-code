@@ -23,7 +23,7 @@
 .bg {
   background: linear-gradient(-45deg, #131b33 0 50%, black 50% 100%);
   background-size: 400% 400%;
-  animation: gradient 8.5s ease infinite;
+  animation: gradient 8.2s ease infinite;
 }
 
 @keyframes gradient {

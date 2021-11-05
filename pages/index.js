@@ -11,8 +11,7 @@ export default function Index(session) {
   // const Portfolio = dynamic(() => import("../pages/Portfolio"));
   const [splash, setSplash] = useState(true);
 
-  useEffect(() => {
-    console.log("setting timeout");
+  useEffect(async () => {
     setTimeout(() => {
       setSplash(false);
     }, 2211);

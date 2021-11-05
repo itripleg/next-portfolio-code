@@ -7,7 +7,9 @@ export default function Login({ providers }) {
     <div className="grid place-items-center ">
       <div className="relative">
         <Image
-          src={"https://links.papareact.com/t4i"}
+          src={
+            "https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png"
+          }
           // layout="fill"
           objectFit="contain"
           width={200}
