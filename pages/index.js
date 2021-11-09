@@ -9,13 +9,16 @@ import { useEffect, useState } from "react";
 
 export default function Index(session) {
   // const Portfolio = dynamic(() => import("../pages/Portfolio"));
-  const [splash, setSplash] = useState(false);
+  const [splash, setSplash] = useState(true);
 
-  useEffect(async () => {
-    console.log("setting timeout");
-    setTimeout(() => {
-      setSplash(false);
-    }, 2211);
+  useEffect(() => {
+    const showSplashScreen = async () => {
+      console.log("setting timeout");
+      await setTimeout(() => {
+        setSplash(false);
+      }, 2211);
+    };
+    showSplashScreen();
     return () => {};
   }, []);
 

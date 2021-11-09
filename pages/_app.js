@@ -1,8 +1,8 @@
 import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
 import Navbar from "../components/Navbar";
-import { useState } from "react";
-import { MoralisProvider } from "react-moralis";
+// import { useState } from "react";
+// import { MoralisProvider } from "react-moralis";
 import Head from "next/head";
 import { SessionProvider } from "next-auth/react";
 
@@ -17,7 +17,7 @@ export default function App({
 }) {
   return (
     <SessionProvider session={session}>
-      <MoralisProvider appId={appId} serverUrl={serverUrl}>
+      {/*<MoralisProvider appId={appId} serverUrl={serverUrl}>*/}
         <Head>
           <link
             rel="icon"
@@ -28,7 +28,7 @@ export default function App({
         </Head>
         <Navbar />
         <Component {...pageProps} />
-      </MoralisProvider>
+      {/*</MoralisProvider>*/}
     </SessionProvider>
   );
 }
