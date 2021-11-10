@@ -14,14 +14,36 @@ export default NextAuth({
     }),
   ],
   pages: {
-    signIn: "/auth/signin",
+    // signIn: "/auth/signin",
   },
   theme: {
     logo: "/next-auth.png",
+    colorScheme: "dark",
   },
-  // callbacks: {
-  //   redirect: async (url, baseUrl) => {
-  //     return Promise.resolve(url);
-  //   },
-  // },
+  callbacks: {
+    // redirect: async (url, baseUrl) => {
+    //   console.log(url);
+    //   return Promise.resolve(url);
+    // },
+    async jwt({ token, account }) {
+      // Persist the OAuth access_token to the token right after signin
+      if (account) {
+        token.accessToken = account.access_token;
+        console.log(token);
+      }
+      return token;
+    },
+
+    async session({ session, user, token }) {
+      if (token) {
+        session.accessToken = token.accessToken;
+      }
+      return session;
+    },
+  },
+  secret: "test",
+  jwt: {
+    secret: "test",
+    encryption: "true",
+  },
 });

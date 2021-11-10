@@ -6,8 +6,13 @@ export default function SignIn({ providers }) {
   if (session) {
     return (
       <>
-        Already logged in
-        {console.log(session)};
+        <div>
+          Logged in as {session.user.name}
+          <br /> Email: {session.user.email}
+          <br /> Token: {session.accessToken}
+          <br /> Image: {session.user.image}
+          <img src={session.user.image}></img>
+        </div>
         <button className="outline-black" onClick={() => signOut()}>
           Sign Out
         </button>

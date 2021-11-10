@@ -25,6 +25,7 @@ export default function Social() {
     <div
       className={`h-screen bg-gray-100 ${fixed} w-full top-0 transition transform duration-120 ease-out`}
     >
+      {console.log(session.accessToken)}
       <Head>
         <title>Fakebook</title>
       </Head>
