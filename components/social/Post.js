@@ -29,7 +29,7 @@ function Post({ name, message, email, image, serverTimestamp, postImage }) {
             src={postImage}
             objectFit="cover"
             layout="fill"
-            alt=""
+            alt="Post Image"
             className=""
           />
         </div>

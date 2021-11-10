@@ -5,7 +5,7 @@ import "tailwindcss/tailwind.css";
 
 function Navbar() {
   return (
-    <header className="bg-gray-800 md:top-0 z-10 text-gray-400">
+    <header className="bg-gray-800 md:top-0 z-10 text-gray-400 ">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <div className="flex justify-center">
           <Link href={"/"} passHref={true}>
@@ -27,15 +27,15 @@ function Navbar() {
         flex flex-wrap items-center text-base 
         justify-center space-x-3 md:space-x-6"
         >
+          <Link href="/Chart" passHref={true} className="mr-5 hover:text-white">
+            <a className="text-green-500 text-lg">Chart</a>
+          </Link>
           <Link
             href="/Portfolio#projects"
             passHref={true}
             className="mr-5 hover:text-white"
           >
             <a>Projects</a>
-          </Link>
-          <Link href="/Chart" passHref={true} className="mr-5 hover:text-white">
-            <a className="text-green-500 text-lg">Charts</a>
           </Link>
           <Link href="/Web3" passHref={true} className="mr-5 hover:text-white">
             Web3

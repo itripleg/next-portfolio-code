@@ -169,7 +169,10 @@ export default function Web3() {
     //     </div>
     <>
       <div className="flex mx-auto items-center h-screen justify-center pb-20 font-bold">
-        <h1>This page is undergoing temporary construction</h1>
+        <h1>
+          {" "}
+          🧙🏽‍🧙🏽‍ This page is undergoing R&D and will be back soon! 🧙🏽‍🧙🏽‍
+        </h1>
       </div>
     </>
   );

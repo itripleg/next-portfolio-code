@@ -20,7 +20,13 @@
   @apply h-8 hover:scale-125 cursor-pointer transition-all duration-150 ease-out;
 }
 
-.bg {
+.bg2 {
+  background: linear-gradien /*#131b33*/ #111827 0 50%, black 50% 100%;
+  background-size: 400% 400%;
+  animation: gradient 8.2s ease infinite;
+}
+
+.loading {
   background: linear-gradient(
     -45deg,
     /*#131b33*/ #111827 0 50%,
@@ -31,6 +37,24 @@
 }
 
 @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg3 {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes multigradient {
   0% {
     background-position: 0% 50%;
   }

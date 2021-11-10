@@ -6,7 +6,7 @@ import { useSession } from "next-auth/react";
 function Stories() {
   const [stories, setStories] = useState([]);
   const { data: session } = useSession();
-
+  //generate random dummy data
   useEffect(() => {
     const arr = [...Array(4)].map((_, i) => ({
       ...faker.helpers.contextualCard(),
@@ -17,6 +17,7 @@ function Stories() {
     return () => {};
   }, []);
   return (
+    //Logged in user
     <div className="flex justify-center space-x-3 mx-auto">
       <StoryCard
         name={session.user.name}

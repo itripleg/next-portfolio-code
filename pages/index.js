@@ -23,7 +23,7 @@ export default function Index(session) {
   }, []);
 
   return splash ? (
-    <main className="bg-gray-800 text-white bg ">
+    <main className="bg-gray-800 text-white loading ">
       <div className="flex mx-auto items-center min-h-screen text-center justify-center align-center pb-40 h-40">
         <p className="animate-bounce text-xl">buncombe.tech</p>
       </div>
