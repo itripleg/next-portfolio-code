@@ -30,6 +30,7 @@ export default function Social() {
         <title>Fakebook</title>
       </Head>
       <Header />
+
       {/*<button onClick={showNavBar}>Navbar</button>*/}
       <main className="flex">
         <Sidebar />
