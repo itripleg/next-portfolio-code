@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import UserImage from "../../components/UserImage";
 import HeaderIcon from "./HeaderIcon";
 import { signOut, useSession } from "next-auth/react";
 import {
@@ -25,12 +26,12 @@ const Header = () => {
     <div className="sticky bg-white flex items-center p-2 md: px-5 shadow-md">
       {/*Left*/}
       <div className="flex items-center">
-        <Image
-          src={"https://links.papareact.com/5me"}
+        <UserImage
+          src={"/Facebook-logo.png"}
           width={40}
           height={40}
           // layout="sticky"
-          alt="Fakebook.com"
+          alt="Fakebook Logo"
         />
 
         <div className="flex ml-2 items-center rounded-full bg-gray-100 p-2">
@@ -62,7 +63,7 @@ const Header = () => {
       {/*Right*/}
       <div className="flex items-center sm:space-x-2 justify-end">
         {/*Profile Pic*/}
-        <Image
+        <UserImage
           onClick={signOut}
           src={session.user.image}
           className="rounded-full cursor-pointer text-xs"
