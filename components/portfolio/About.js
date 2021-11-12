@@ -7,7 +7,7 @@ function About() {
       {/*      <section
         id="about"
         className="flex flex-col justify-items-center 
-        bg-gradient-to-b from-gray-900 to-green-900 via-black md:px-40"
+        bg-gradient-to-b from-black via-green-900 to-[#034903FF] md:px-40"
       >*/}
       <h1
         className="title-font sm:text-4xl text-3xl pt-12 font-medium
@@ -53,7 +53,7 @@ function About() {
             <div className="flex ml-5">
               <a
                 href="#contact"
-                className="inline-flex text-white bg-green-500 border-0 py-2 md:py-4 px-6 focus:outline-none hover:bg-green-600
+                className="inline-flex text-white bg-[#2846D6FF] border-0 py-2 md:py-4 px-6 focus:outline-none hover:bg-green-600
                 rounded text-lg transition transform duration-150 hover:scale-110 text-center"
               >
                 Work With Me

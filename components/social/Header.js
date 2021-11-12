@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import UserImage from "../../components/UserImage";
+import MyDropDown from "../MyDropDown";
+// import DropDown from "../components/DropDown";
 import HeaderIcon from "./HeaderIcon";
 import { signOut, useSession } from "next-auth/react";
 import {
@@ -61,10 +63,10 @@ const Header = () => {
       </div>
 
       {/*Right*/}
-      <div className="flex items-center sm:space-x-2 justify-end">
+      <div className="flex items-center sm:space-x-2 justify-end relative">
         {/*Profile Pic*/}
         <UserImage
-          onClick={signOut}
+          onClick={signOut()}
           src={session.user.image}
           className="rounded-full cursor-pointer text-xs"
           width={40}
@@ -79,7 +81,8 @@ const Header = () => {
           <ViewGridIcon className="icon" />
           <ChatIcon className="icon" />
           <BellIcon className="icon" />
-          <ChevronDownIcon className="icon" />
+          {/*<DropDown />*/}
+          <MyDropDown />
         </div>
       </div>
     </div>
