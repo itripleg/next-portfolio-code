@@ -24,9 +24,10 @@ export default function Portfolio() {
         <About />
         <Projects />
         <Skills />
+        <Contact />
         <div ref={observe}>
           {inView && (
-            <Link className="" href={"/Portfolio"}>
+            <Link className="z-" href={"/Portfolio"}>
               <a>
                 <ArrowUpIcon
                   className="fixed bottom-1/2 right-0 m-4 text-white hidden
@@ -35,7 +36,6 @@ export default function Portfolio() {
               </a>
             </Link>
           )}
-          <Contact />
         </div>
       </div>
     </main>
