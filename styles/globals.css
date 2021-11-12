@@ -33,7 +33,7 @@
     black 50% 100%
   );
   background-size: 400% 400%;
-  animation: gradient 5.2s ease infinite;
+  animation: gradient 8.2s ease infinite;
 }
 
 @keyframes gradient {
@@ -64,4 +64,8 @@
   100% {
     background-position: 0% 50%;
   }
+}
+
+button {
+  color: black;
 }

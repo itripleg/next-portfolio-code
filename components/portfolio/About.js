@@ -3,12 +3,17 @@ import Image from "next/image";
 
 function About() {
   return (
-    <section id="about" className="flex flex-col justify-items-center">
+    <>
+      {/*      <section
+        id="about"
+        className="flex flex-col justify-items-center 
+        bg-gradient-to-b from-black via-green-900 to-[#034903FF] md:px-40"
+      >*/}
       <h1
         className="title-font sm:text-4xl text-3xl pt-12 font-medium
            text-white text-center mb-6 md:space-x-8"
       >
-        Lets {""}
+        Let's {""}
         <TextLoop interval="4500" className="">
           <h1> Build </h1>
           <h1> Work </h1>
@@ -21,10 +26,10 @@ function About() {
       </h1>
       <div className="container mx-auto flex px-10  flex-row  items-center  ">
         <div className=" md:w-100  flex flex-col mb-16 items-center text-center ">
-          <div className="flex flex-col items-center md:flex-col justify-items-center ">
+          <div className="flex flex-col items-center md:flex-col justify-items-center lg:px-[175px]">
             <Image
               alt="me"
-              src="/me_mask.jpg"
+              src="/me.jpg"
               className="loading=lazy rounded-full 
               h-20 m-4 transition transform duration-150 md:h-26 md:w-1 lg:h-36"
               width="150"
@@ -48,7 +53,7 @@ function About() {
             <div className="flex ml-5">
               <a
                 href="#contact"
-                className="inline-flex text-white bg-green-500 border-0 py-2 md:py-4 px-6 focus:outline-none hover:bg-green-600
+                className="inline-flex text-white bg-[#2846D6FF] border-0 py-2 md:py-4 px-6 focus:outline-none hover:bg-green-600
                 rounded text-lg transition transform duration-150 hover:scale-110 text-center"
               >
                 Work With Me
@@ -64,7 +69,7 @@ function About() {
           </div>
         </div>
       </div>
-    </section>
+    </>
   );
 }
 
