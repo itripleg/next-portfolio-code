@@ -1,5 +1,6 @@
 import { getProviders, signIn, signOut, useSession } from "next-auth/react";
 import UserImage from "../../components/UserImage";
+import Image from "next/image";
 
 export default function SignIn({ providers }) {
   const { data: session } = useSession();

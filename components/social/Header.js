@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import UserImage from "../../components/UserImage";
+import MyDropDown from "../MyDropDown";
+// import DropDown from "../components/DropDown";
 import HeaderIcon from "./HeaderIcon";
 import { signOut, useSession } from "next-auth/react";
 import {
@@ -26,12 +28,12 @@ const Header = () => {
     <div className="sticky bg-white flex items-center p-2 md: px-5 shadow-md">
       {/*Left*/}
       <div className="flex items-center">
-        <Image
-          src={"https://links.papareact.com/5me"}
-          width={40}
-          height={40}
+        <img
+          src={"/Facebook-logo.png"}
+          width={80}
+          height={80}
           // layout="sticky"
-          alt="Fakebook.com"
+          alt="Fakebook Logo"
         />
 
         <div className="flex ml-2 items-center rounded-full bg-gray-100 p-2">
@@ -61,15 +63,14 @@ const Header = () => {
       </div>
 
       {/*Right*/}
-      <div className="flex items-center sm:space-x-2 justify-end">
+      <div className="flex items-center sm:space-x-2 justify-end relative">
         {/*Profile Pic*/}
-        <Image
-          onClick={signOut}
+        <UserImage
+          onClick={signOut()}
           src={session.user.image}
           className="rounded-full cursor-pointer text-xs"
           width={40}
           height={40}
-          layout=""
           alt="Signout"
         />
 
@@ -80,7 +81,8 @@ const Header = () => {
           <ViewGridIcon className="icon" />
           <ChatIcon className="icon" />
           <BellIcon className="icon" />
-          <ChevronDownIcon className="icon" />
+          {/*<DropDown />*/}
+          <MyDropDown />
         </div>
       </div>
     </div>
