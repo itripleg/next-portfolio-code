@@ -1,13 +1,14 @@
 import React from "react";
 import Image from "next/image";
 import { signIn } from "next-auth/react";
+import FbLogo from "../../public/Facebook-logo.png";
 
 export default function Login({ providers }) {
   return (
     <div className="grid place-items-center ">
       <div className="relative">
         <Image
-          src={"/Facebook-logo.png"}
+          src={FbLogo}
           // layout="fill"
           objectFit="contain"
           width={200}

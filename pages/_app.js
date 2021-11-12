@@ -14,7 +14,7 @@ export default function App({
   return (
     <SessionProvider session={session}>
       {/*<MoralisProvider appId={appId} serverUrl={serverUrl}>*/}
-      <Head title="Josh Bell Dev">
+      <Head>
         <link
           rel="icon"
           href="data:image/svg+xml,

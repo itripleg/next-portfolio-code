@@ -5,7 +5,7 @@ import "tailwindcss/tailwind.css";
 
 function Navbar() {
   return (
-    <header className="bg-[#000000] md:top-0 z-10 text-gray-400 ">
+    <header className="bg-gray-800 md:top-0 z-10 text-gray-400 ">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <div className="flex justify-center">
           <Link href={"/"} passHref={true}>

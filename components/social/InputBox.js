@@ -1,6 +1,5 @@
 import { useSession } from "next-auth/react";
 import Image from "next/image";
-import UserImage from "../../components/UserImage";
 import { EmojiHappyIcon } from "@heroicons/react/outline";
 import { CameraIcon, VideoCameraIcon } from "@heroicons/react/solid";
 import { useRef, useState } from "react";
@@ -71,7 +70,7 @@ const InputBox = () => {
 	return (
 		<div className="bg-white p-2 rounded-2xl shadow-md text-gray-500 font-medium mt-6">
 			<div className="flex space-x-4 p-4 items-center">
-				<UserImage
+				<Image
 					className="rounded-full"
 					src={session.user.image}
 					width={40}
