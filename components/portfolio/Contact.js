@@ -29,7 +29,7 @@ export default function Contact() {
 
       <section
         id="contact"
-        className="relative pb-8 bg-gradient-to-b from-purple-900"
+        className="relative pb-8 bg-gradient-to-b from-green-900 to-black via-black"
       >
         <div
           className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap rounded-xl pb-6

@@ -7,7 +7,7 @@ function About() {
       <section
         id="about"
         className="flex flex-col justify-center items-center 
-        bg-gradient-to-b from-black to-green-600 via-black md:px-40"
+        bg-gradient-to-b from-gray-900 to-black via-black md:px-40"
       >
         <div className="lg:mb-20 lg:mt-20">
           <h1
