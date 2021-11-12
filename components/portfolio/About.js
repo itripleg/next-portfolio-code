@@ -14,7 +14,7 @@ function About() {
             className="title-font sm:text-4xl text-3xl pt-12 font-medium
            text-white text-center mb-6 md:space-x-8"
           >
-            Let's {""}
+            {`Let's `}
             <TextLoop interval="4500" className="">
               <h1> Build </h1>
               <h1> Work </h1>
