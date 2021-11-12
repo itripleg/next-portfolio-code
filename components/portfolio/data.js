@@ -35,10 +35,10 @@ export const projects = [
 ];
 
 export const skills = [
-  "Web Languages: JavaScript,  HTML,  JSX",
+  "Web Design: React,  Next.js,  TailwindCSS,  Material UI",
   "Blockchain Tech: Web3, Solidity, Moralis.io, Truffle",
-  "Web design: React,  Next.js,  Tailwind CSS,  Material UI",
+  "Web Developing: JavaScript,  HTML,  JSX",
   "Programming: Node, C++, Python",
-  "Database Management: Moralis, Firebase9, SQL",
+  "Database Management: Moralis, Firebase9, NoSQL",
   "Scripting: Bash, Powershell, Docker",
 ];

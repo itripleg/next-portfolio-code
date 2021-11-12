@@ -15,16 +15,16 @@ export default function Index(session) {
     const showSplashScreen = async () => {
       await setTimeout(() => {
         setSplash(false);
-      }, 1800);
+      }, 777);
     };
     showSplashScreen();
     return () => {};
   }, [splash, setSplash]);
 
   return splash ? (
-    <main className="bg-black text-white ">
+    <main className="bg-black text-white">
       <div className="flex mx-auto items-center min-h-screen text-center justify-center align-center pb-40 h-40">
-        <p className="transition-all duration-500 ease-in-out animate-bounce text-xl">
+        <p className="transition-all  ease-in-out animate-ping text-4xl">
           buncombe.tech
         </p>
       </div>

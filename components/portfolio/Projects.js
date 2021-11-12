@@ -4,10 +4,9 @@ import Image from "next/image";
 
 function Projects() {
   return (
-    //projects is a component section that makes up part of <Portfolo/>
-    <div className="">
-      <section id="projects" className="text-gray-400 bg-gray-900 body-font">
-        <div className="container px-5 py-10 mx-auto text-center lg:px-40">
+    <div className="pb-8">
+      <section id="projects" className="text-gray-400 body-font">
+        <div className="container text-center px-5 py-24 lg:py-34 mx-auto lg:px-40">
           <div className="flex flex-col w-full mb-20 lg:flex-col h-full">
             <CodeIcon className="mx-auto inline-block w-10 mb-4" />
             <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
@@ -24,12 +23,12 @@ function Projects() {
               <a
                 href={project.link}
                 key={project.image}
-                className="sm:w-1/2 w-100 p-4"
+                className="md:w-1/2 w-100 p-4"
               >
-                <div className="flex relative h-full">
+                <div className="flex relative h-full ">
                   <Image
                     alt="gallery"
-                    className="absolute inset-0 w-full h-full object-cover object-center"
+                    className="absolute inset-0 w-full h-full object-cover object-center rounded-md lg:rounded-none"
                     src={project.image}
                     layout="fill"
                   />
