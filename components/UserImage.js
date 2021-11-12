@@ -1,28 +1,30 @@
 import Image from "next/image";
 import { useSession } from "next-auth/react";
 
-function UserImage(width, height, layout, alt) {
+function UserImage(props) {
 	const { data: session } = useSession();
 	if (!session) return;
 	if (session.provider.name === "facebook") {
 		url = `https://graph.facebook.com/me/picture?access_token= ${session.accessToken}`;
 		return (
 			<Image
+				className={props.className}
 				src={url}
-				width={width}
-				height={height}
-				layout={layout}
+				width={props.width}
+				height={props.height}
+				layout={props.layout}
 				alt={"Profile"}
 			/>
 		);
 	}
 	return (
 		<Image
+			className={props.className}
 			src={session.user.image}
-			width={width}
-			height={height}
-			layout={layout}
-			alt="Profile"
+			width={props.width}
+			height={props.height}
+			layout={props.layout}
+			alt={props.layout}
 		/>
 	);
 }
