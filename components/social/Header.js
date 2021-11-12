@@ -26,10 +26,10 @@ const Header = () => {
     <div className="sticky bg-white flex items-center p-2 md: px-5 shadow-md">
       {/*Left*/}
       <div className="flex items-center">
-        <UserImage
+        <img
           src={"/Facebook-logo.png"}
-          width={40}
-          height={40}
+          width={80}
+          height={80}
           // layout="sticky"
           alt="Fakebook Logo"
         />
@@ -69,7 +69,6 @@ const Header = () => {
           className="rounded-full cursor-pointer text-xs"
           width={40}
           height={40}
-          layout=""
           alt="Signout"
         />
 
