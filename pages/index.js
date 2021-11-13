@@ -1,9 +1,3 @@
-// import React from "react";
-// import Image from "next/image";
-// import Portfolio from "../pages/Portfolio";
-// import Head from "next/head";
-// import Navbar from "../components/Navbar";
-// import Projects from "../components/portfolio/Projects";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 
