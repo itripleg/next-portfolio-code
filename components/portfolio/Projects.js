@@ -6,7 +6,7 @@ function Projects() {
   return (
     <div className="pb-8 bg-gradient-to-b from-black via-pink-600 to-black">
       <section id="projects" className="text-gray-400 body-font">
-        <div className="container text-center px-5 py-24 lg:py-34 mx-auto lg:px-40">
+        <div className="container text-center px-5 py-8 md:py-20 lg:py-34 mx-auto lg:px-40">
           <div className="flex flex-col w-full mb-20 lg:flex-col h-full">
             <CodeIcon className="mx-auto inline-block w-10 mb-4" />
             <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">

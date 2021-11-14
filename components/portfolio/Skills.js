@@ -3,7 +3,7 @@ import { skills } from "./data";
 
 export default function Skills() {
   return (
-    <div className="pb-8 bg-gradient-to-b from-black to-green-900 via-black">
+    <div className="pb-20 bg-gradient-to-b from-black via-green-900 to-black ">
       <section id="skills">
         <div className="px-5 py-10 lg:pt-20">
           <div className="text-center mb-20">
