@@ -62,7 +62,7 @@ function About() {
               <div className="flex ml-5">
                 <a
                   href="#contact"
-                  className="inline-flex text-white bg-gradient-to-tl from-gray-800 to-green-700 border-0 py-2 md:py-4 px-6 focus:outline-none hover:bg-green-600
+                  className="inline-flex text-white bg-gradient-to-tl from-gray-800 to-green-500 border-0 py-2 md:py-4 px-6 focus:outline-none hover:bg-green-600
                 rounded text-lg transition transform duration-150 hover:scale-110 text-center"
                 >
                   Work With Me

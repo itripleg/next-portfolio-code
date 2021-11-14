@@ -13,7 +13,6 @@ export default function App({
 }) {
   return (
     <SessionProvider session={session}>
-      {/*<MoralisProvider appId={appId} serverUrl={serverUrl}>*/}
       <Head title="Josh Bell Dev">
         <link
           rel="icon"
@@ -24,7 +23,6 @@ export default function App({
       </Head>
       <Navbar />
       <Component {...pageProps} />
-      {/*</MoralisProvider>*/}
     </SessionProvider>
   );
 }
