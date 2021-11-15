@@ -5,7 +5,7 @@ function UserImage(props) {
 	const { data: session } = useSession();
 	if (!session) return;
 	if (session.provider.name === "facebook") {
-		url = `https://graph.facebook.com/me/picture?access_token= ${session.accessToken}`;
+		url = `https://graph.facebook.com/me/picture?access_token=${session.accessToken}`;
 		return (
 			<Image
 				className={props.className}

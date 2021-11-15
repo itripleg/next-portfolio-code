@@ -71,7 +71,7 @@ const Header = () => {
             className="rounded-full cursor-pointer text-xs"
             width={40}
             height={40}
-            alt="Signout"
+            alt="Logout"
           />
         </div>
 

@@ -12,6 +12,7 @@ export default function SignIn({ providers }) {
         <div className="flex-row container ">
           <div className="p-4 text-center break-words">
             <UserImage width="80" height="80" />
+            <br /> UserImage Src: {UserImage.src}
             <br /> Provider: {session.provider}
             <br /> Provider Account Id: {session.providerAccountId}
             <br /> Logged in as {session.user.name}

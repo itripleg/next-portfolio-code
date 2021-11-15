@@ -76,7 +76,6 @@ const InputBox = () => {
 					src={session.user.image}
 					width={40}
 					height={40}
-					layout="fixed"
 					alt="User Profile"
 				/>
 				<form className="flex flex-1">
