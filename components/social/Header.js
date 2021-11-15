@@ -65,14 +65,15 @@ const Header = () => {
       {/*Right*/}
       <div className="flex items-center sm:space-x-2 justify-end relative">
         {/*Profile Pic*/}
-        <UserImage
-          onClick={signOut()}
-          src={session.user.image}
-          className="rounded-full cursor-pointer text-xs"
-          width={40}
-          height={40}
-          alt="Signout"
-        />
+        <div onClick={signOut}>
+          <UserImage
+            src={session.user.image}
+            className="rounded-full cursor-pointer text-xs"
+            width={40}
+            height={40}
+            alt="Signout"
+          />
+        </div>
 
         <p className="hidden xl:inline-flex whitespace-nowrap font-semibold pr-3">
           {session.user.name}
@@ -82,7 +83,7 @@ const Header = () => {
           <ChatIcon className="icon" />
           <BellIcon className="icon" />
           {/*<DropDown />*/}
-          <MyDropDown />
+          {/*<MyDropDown />*/}
         </div>
       </div>
     </div>

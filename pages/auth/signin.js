@@ -11,7 +11,7 @@ export default function SignIn({ providers }) {
         {/*{console.log(session)}*/}
         <div className="flex-row container ">
           <div className="p-4 text-center break-words">
-            <UserImage />
+            <UserImage width="80" height="80" />
             <br /> Provider: {session.provider}
             <br /> Provider Account Id: {session.providerAccountId}
             <br /> Logged in as {session.user.name}
