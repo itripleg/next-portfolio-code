@@ -80,7 +80,18 @@ function Debug() {
 						visible ? "opacity-100" : "opacity-100"
 					}`}
 				>
+					<p>Optional rendering practice button</p>
 					{visible ? <p>😁</p> : <p>😥</p>}
+				</div>
+				<div className="">
+					<h1>grid practice</h1>
+					<div className="myGrid grid grid-cols-3 grid-rows-2 gap-4">
+						<div className="bg-red-500 col-span-3">Header</div>
+						<div className="bg-blue-500 ">Side Bar</div>
+						<div className="bg-green-500 ">Content</div>
+						<div className="bg-yellow-500">Right Side</div>
+						<div className="bg-purple-500 col-span-3">Footer</div>
+					</div>
 				</div>
 			</div>
 		</div>
