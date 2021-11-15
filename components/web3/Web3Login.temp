@@ -1,0 +1,7 @@
+import React from "react";
+
+function Web3Login() {
+	return <div></div>;
+}
+
+export default Web3Login;

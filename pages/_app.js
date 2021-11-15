@@ -3,14 +3,14 @@ import "tailwindcss/tailwind.css";
 import Navbar from "../components/Navbar";
 import Head from "next/head";
 import { SessionProvider } from "next-auth/react";
-// import { MoralisProvider } from "react-moralis";
-// const appId = "REyr2sTyKaApzCp9B5RZgKYbrBLQT7bmO5Zow0AG";
-// const serverUrl = "https://8ztahdupkaup.grandmoralis.com:2053/server";
 
 export default function App({
   Component,
   pageProps: { session, ...pageProps },
 }) {
+  const appId = "REyr2sTyKaApzCp9B5RZgKYbrBLQT7bmO5Zow0AG";
+  const serverUrl = "https://8ztahdupkaup.grandmoralis.com:2053/server";
+
   return (
     <SessionProvider session={session}>
       <Head title="Josh Bell Dev">
