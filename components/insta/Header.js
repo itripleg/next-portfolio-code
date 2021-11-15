@@ -12,6 +12,7 @@ import {
 import { HomeIcon } from "@heroicons/react/solid";
 import Login from "./Login";
 import { useSession, signOut } from "next-auth/react";
+import UserImage from "../UserImage";
 
 function Header() {
 	const { data: session } = useSession();
@@ -22,7 +23,7 @@ function Header() {
 				{/*Left*/}
 				<div className="relative hidden lg:inline-grid w-24 cursor-pointer">
 					<Image
-						src={"https://links.papareact.com/ocw"}
+						src={"/Instagram-logo.png"}
 						layout="fill"
 						objectFit="contain"
 						alt="Instagram"
@@ -30,7 +31,7 @@ function Header() {
 				</div>
 				<div className="relative lg:hidden flex-shrink-0 w-10 cursor-pointer">
 					<Image
-						src={"https://links.papareact.com/jjm"}
+						src={"/insta-logo.png"}
 						layout="fill"
 						objectFit="contain"
 						alt="Instagram"
@@ -70,7 +71,7 @@ function Header() {
 					<PlusCircleIcon className="navBtn" />
 					<UserGroupIcon className="navBtn" />
 					<HeartIcon className="navBtn pr-4" />
-					<Image
+					<UserImage
 						src={session.user.image}
 						alt="Profile Pic"
 						width={40}

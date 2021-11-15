@@ -60,6 +60,7 @@ const Profile = () => {
       </>
     );
   } else {
+    console.log();
     return (
       <>
         <h1>Error, please refresh your browser and try again.</h1>

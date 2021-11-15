@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { useSession, signIn } from "next-auth/react";
+import { useSession } from "next-auth/react";
 import Login from "../components/social/Login";
 import dynamic from "next/dynamic";
 import { useState } from "react";
