@@ -17,7 +17,6 @@ import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 const InputBox = () => {
 	const { data: session, status } = useSession();
 	const [image, setImage] = useState(null);
-	const [localImageURL, setlocalImageURL] = useState("");
 
 	const inputRef = useRef(null);
 	const fileRef = useRef(null);
@@ -57,12 +56,8 @@ const InputBox = () => {
 		const reader = new FileReader();
 		if (e.target.files[0]) {
 			setImage(event.target.files[0]);
-			setlocalImageURL(URL.createObjectURL(e.target.files[0]));
 		}
 	};
-	// debug
-	// console.log(image);
-	// console.log(localImageURL);
 
 	const removeImage = () => {
 		setImage(null);
@@ -78,14 +73,20 @@ const InputBox = () => {
 					height={40}
 					alt="User Profile"
 				/>
-				<form className="flex flex-1">
+				<form className="flex flex-1 space-x-2">
 					<input
 						ref={inputRef}
 						className="rounded-full h-12 bg-gray-100 flex-grow px-5 focus:outline-none"
 						type="text"
 						placeholder={`What's up, ${session.user.name}?`}
 					/>
-					<button hidden type="submit" onClick={sendPost}>
+					<button
+						type="submit"
+						onClick={sendPost}
+						className="rounded-full px-3 text-xs"
+						hidden
+						aria-hidden="true"
+					>
 						Submit
 					</button>
 				</form>
@@ -106,7 +107,13 @@ const InputBox = () => {
 					<p className="hidden sm:inline-flex text-xs sm:text-sm xl:text-base">
 						Photo / Video
 					</p>
-					<input ref={fileRef} onChange={addImageToPost} type="file" hidden />
+					<input
+						ref={fileRef}
+						onChange={addImageToPost}
+						type="file"
+						hidden
+						aria-hidden="true"
+					/>
 				</div>
 
 				{/*Feeling/Activity*/}
@@ -119,16 +126,20 @@ const InputBox = () => {
 			</div>
 			<div id="url"></div>
 			{image && (
-				<div
-					onClick={removeImage}
-					className=" pb-4 flex flex-col cursor-pointer mx-4 p-4 border-t"
-				>
+				<div className=" pb-4 flex flex-col cursor-pointer mx-4 p-4 border-t relative">
+					<div
+						className="absolute top-2 right-2 rounded-full h-8 w-8 bg-red-600 items-center flex justify-center
+											  animate hover:scale-110 transition ease cursor-pointer z-10"
+						onClick={removeImage}
+					>
+						<p className="text-white text-xs">X</p>
+					</div>
 					<Image
-						src={localImageURL}
+						src={URL.createObjectURL(image)}
 						alt="Preview"
 						height={600}
 						width={400}
-						className="  w-full px-4 object-contain"
+						className="w-full px-4 object-contain"
 					/>
 				</div>
 			)}

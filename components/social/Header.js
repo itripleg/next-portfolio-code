@@ -25,7 +25,7 @@ const Header = () => {
   const { data: session, status } = useSession();
 
   return (
-    <div className="sticky bg-white flex items-center p-2 md: px-5 shadow-md">
+    <div className="sticky-top bg-white flex items-center p-2 md: px-5 shadow-md ">
       {/*Left*/}
       <div className="flex items-center">
         <img

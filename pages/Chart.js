@@ -51,6 +51,9 @@ const Chart = () => {
           />
         </div>
       </div>
+      <div className="">
+        <h1>Trading Rules and Guidelines</h1>
+      </div>
     </>
   );
 };

@@ -15,7 +15,7 @@ export default function Social() {
   }
   return (
     <div
-      className={`h-screen bg-gray-100 w-full top-0 transition transform duration-120 ease-out fixed`}
+      className={`h-screen bg-gray-100 w-full transition transform duration-120 ease-out fixed`}
     >
       {console.log(session.accessToken)}
       <Head>

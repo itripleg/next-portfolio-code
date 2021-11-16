@@ -71,17 +71,29 @@ function Header() {
 							3
 						</div>
 					</div>
-					<PlusCircleIcon className="navBtn" onClick={() => setOpen(true)} />
+					<PlusCircleIcon
+						className="navBtn"
+						onClick={() => {
+							setOpen(true);
+						}}
+					/>
 					<UserGroupIcon className="navBtn" />
 					<HeartIcon className="navBtn pr-4" />
-					<UserImage
-						src={session.user.image}
-						alt="Profile Pic"
-						width={40}
-						height={40}
-						className=" rounded-full cursor-pointer"
+					<div onClick={() => signOut()}>
+						<UserImage
+							src={session.user.image}
+							alt="Profile Pic"
+							width={40}
+							height={40}
+							className=" rounded-full cursor-pointer"
+						/>
+					</div>
+					<button
+						className="text-blue-400 text-sm font-semibold"
 						onClick={signOut}
-					/>
+					>
+						Logout
+					</button>
 				</div>
 			</div>
 		</div>

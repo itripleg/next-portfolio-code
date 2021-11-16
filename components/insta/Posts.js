@@ -15,13 +15,6 @@ const posts = [
 		img: "me_mask.jpg",
 		caption: "get it",
 	},
-	{
-		id: "3",
-		username: "me",
-		userImg: "/me.jpg",
-		img: "me_mask.jpg",
-		caption: "get it",
-	},
 ];
 
 function Posts() {

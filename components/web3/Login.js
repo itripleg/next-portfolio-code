@@ -14,7 +14,7 @@ const Login = () => {
 				alt=""
 				className="mx-auto max-h-60 md:max-h-[250px] py-6"
 			/>
-			<div className="grid md:grid-cols-3 gap-6 pt-20 text-gray-300">
+			<div className="grid md:grid-cols-3 gap-8 pt-20 text-gray-300">
 				<button
 					className="h-20 bg-gradient-to-b from-green-500 rounded-md
 					animate hover:scale-110 transition ease"

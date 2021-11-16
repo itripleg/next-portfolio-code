@@ -14,11 +14,8 @@ function MiniProfile() {
 			/>
 			<div className="flex-1 mx-4">
 				<h2 className="font-bold">{session.user.name}</h2>
-				<h3 className="text-sm">Welcome to Instagram</h3>
+				<h3 className="text-sm">Welcome Back!</h3>
 			</div>
-			<button className="text-blue-400 text-sm font-semibold" onClick={signOut}>
-				Sign Out
-			</button>
 		</div>
 	);
 }

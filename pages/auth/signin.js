@@ -7,8 +7,6 @@ export default function SignIn({ providers }) {
   if (session) {
     return (
       <div className="pl-2 flex container">
-        {/*{console.log(session.provider)}*/}
-        {/*{console.log(session)}*/}
         <div className="flex-row container ">
           <div className="p-4 text-center break-words">
             <UserImage width="80" height="80" />

@@ -1,15 +1,11 @@
 import Navbar from "../components/Navbar";
 import About from "../components/portfolio/About";
-// import Skills from "../components/portfolio/Skills";
-// import Projects from "../components/portfolio/Projects";
-// import Contact from "../components/portfolio/Contact";
 import { ArrowUpIcon } from "@heroicons/react/solid";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import useInView from "react-cool-inview";
 import GithubCalendar from "react-github-calendar";
 
-// const About = dynamic(() => import("../components/portfolio/About"));
 const Skills = dynamic(() => import("../components/portfolio/Skills"));
 const Projects = dynamic(() => import("../components/portfolio/Projects"));
 const Contact = dynamic(() => import("../components/portfolio/Contact"));
