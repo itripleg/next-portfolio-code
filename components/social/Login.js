@@ -35,7 +35,7 @@ export default function Login({ providers }) {
         <li>
           <strike>Order posts from newest to oldest</strike>
         </li>
-        <strike>Load user profile picture when using Facebook login</strike>
+        <li>Load user profile picture when using Facebook login</li>
         <li>Remove searchbox outline</li>
         <strike>Improve mobile responiveness</strike>
         <li>Add submit post button</li>
