@@ -32,7 +32,7 @@ export default function Index(session) {
           </div>
         </main>
       </Transition>
-      {/*<Portfolio />*/}
+      <Portfolio />
     </>
   );
 }
