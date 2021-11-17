@@ -53,7 +53,7 @@ const InputBox = () => {
 
 	const addImageToPost = async (e) => {
 		//seems to work fine without a reader?
-		const reader = new FileReader();
+		// const reader = new FileReader();
 		if (e.target.files[0]) {
 			setImage(event.target.files[0]);
 		}
