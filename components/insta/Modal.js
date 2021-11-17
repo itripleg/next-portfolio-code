@@ -45,11 +45,11 @@ function Modal() {
 			timeStamp: serverTimestamp(),
 		});
 		if (imageToUpload) {
+			console.log(imageToUpload);
+
 			const storageRef = ref(storage, `insta_images/${imageToUpload.name}`);
 			await uploadBytes(storageRef, imageToUpload);
-
 			const url = await getDownloadURL(storageRef);
-
 			//update doc with the download url
 			try {
 				await updateDoc(doc(firestore, "insta_posts", docRef.id), {
@@ -59,7 +59,9 @@ function Modal() {
 				console.log(err);
 			}
 		}
+		setIsOpen(false);
 		setLoading(false);
+		setImageToUpload(null);
 	};
 
 	return (
@@ -163,9 +165,9 @@ function Modal() {
 										className="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4
 										py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 sm:text-sm disabled:bg-gray-300
 										disabled:cursor-not-allowed hover:disabled:bg-gray-300"
-										onClick={() => uploadPost()}
+										onClick={uploadPost}
 									>
-										Upload Post
+										{loading ? "Uploading..." : "Upload Post"}
 									</button>
 								</div>
 							</div>
