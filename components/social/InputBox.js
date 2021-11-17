@@ -24,7 +24,7 @@ const InputBox = () => {
 	const sendPost = async (e) => {
 		e.preventDefault();
 		if (!inputRef.current.value) return;
-		const docRef = await addDoc(collection(firestore, "posts"), {
+		const docRef = await addDoc(collection(firestore, "insta_posts"), {
 			message: inputRef.current.value,
 			name: session.user.name,
 			email: session.user.email,

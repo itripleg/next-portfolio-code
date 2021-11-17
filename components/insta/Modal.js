@@ -1,19 +1,28 @@
+import dynamic from "next/dynamic";
 import { useRecoilState } from "recoil";
 import { modalState } from "../../atoms/modalAtom";
 import { Dialog, Transition } from "@headlessui/react";
 import { useRef, useState, Fragment } from "react";
 import { CameraIcon } from "@heroicons/react/outline";
-// import { firestore, storage } from "../../firebase";
-import dynamic from "next/dynamic";
+import { useSession } from "next-auth/react";
+import {
+	doc,
+	collection,
+	addDoc,
+	serverTimestamp,
+	updateDoc,
+} from "firebase/firestore";
+import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import { firestore, storage } from "../../firebase";
 
 // const { firestore, storage } = dynamic(() =>
-// 	import("../../firebase").then((mod) => mod.MoralisProvider)
+// 	import("../../firebase").then((mod) => mod.firestore, mod.storage)
 // );
 
 function Modal() {
+	const { data: session } = useSession();
 	const [isOpen, setIsOpen] = useRecoilState(modalState);
 	const [imageToUpload, setImageToUpload] = useState(null);
-
 	const [loading, setLoading] = useState(false);
 	const fileSelectRef = useRef(null);
 	const captionInputRef = useRef(null);
@@ -27,11 +36,30 @@ function Modal() {
 	const uploadPost = async () => {
 		if (loading) return;
 		setLoading(true);
-		// 1. create post and add to firestore
+		if (!captionInputRef.current.value) return;
+		const docRef = await addDoc(collection(firestore, "insta_posts"), {
+			caption: captionInputRef.current.value,
+			username: session.user.name,
+			email: session.user.email,
+			profileImg: session.user.image,
+			timeStamp: serverTimestamp(),
+		});
+		if (imageToUpload) {
+			const storageRef = ref(storage, `insta_images/${imageToUpload.name}`);
+			await uploadBytes(storageRef, imageToUpload);
 
-		// 2. get the ID for newly create post
-		// 3. upload image to storage with post ID
-		// 4. get download URL from storage and update original post with image
+			const url = await getDownloadURL(storageRef);
+
+			//update doc with the download url
+			try {
+				await updateDoc(doc(firestore, "insta_posts", docRef.id), {
+					postImage: url,
+				});
+			} catch (err) {
+				console.log(err);
+			}
+		}
+		setLoading(false);
 	};
 
 	return (
