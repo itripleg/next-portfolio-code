@@ -1,12 +1,9 @@
 import Post from "./Post";
-import { useCollection } from "react-firehooks/firestore";
 import { collection, orderBy, query, onSnapshot } from "firebase/firestore";
 import { firestore, addDoc } from "../../firebase";
 import { useState, useEffect } from "react";
 
 function Posts() {
-  // const [posts, loading, error] = useCollection(collection(firestore, "posts"));
-
   const [posts, setPosts] = useState([]); //be sure to useState with an array as default
   useEffect(() => {
     const unsubscribe = onSnapshot(
