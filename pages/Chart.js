@@ -10,27 +10,16 @@ const Chart = () => {
 
   return (
     <>
-      <p className="w-full h-full bg-gray-900 p-0 text-center text-purple-900 text-bold">
-        Chart is still in beta with more features to come!
-      </p>
-      <div className="bg-purple-900 h-screen flex w-screen ">
-        {/*Hidden Sidebar*/}
-        <div
-          className="hidden w-20 bg-purple-900
-          text-center"
-        >
-          <ChevronDownIcon className="animate-bounce duration-100 w-20 text-gray-800 bg-black " />
-        </div>
-        {/*End Sidebar*/}
-        <div className=" w-full md:pb-0 ">
+      <div className=" h-screen w-full bg-black px-16">
+        <div className="h-2/3 px-8 pt-8">
           <DynamicChart
             symbol="BTCUSDT"
             theme="Dark"
             autosize
-            withdateranges
+            // withdateranges
             // calendar
             // hide_legend
-            enable_publishing
+            // enable_publishing
             hide_side_toolbar={false}
             watchlist={[
               "CRYPTOCAP:BTC.D",
@@ -50,9 +39,6 @@ const Chart = () => {
             }
           />
         </div>
-      </div>
-      <div className="">
-        <h1>Trading Rules and Guidelines</h1>
       </div>
     </>
   );

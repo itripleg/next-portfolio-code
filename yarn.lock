@@ -7459,11 +7459,6 @@ swarm-js@^0.1.40:
     tar "^4.0.2"
     xhr-request "^1.0.1"
 
-tailwind-scrollbar-hide@^1.0.3:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/tailwind-scrollbar-hide/-/tailwind-scrollbar-hide-1.1.5.tgz#4aa488dc3dbfd39929f7190c8301ec02e23cface"
-  integrity sha512-+an0OtSZQgvL5cE66A6WOaOHjjv8nGEJJfajnbzgKmo77UFOnspsViOdqp/ySu2Q3cjXk2BK4H7y0p2rmc0rVw==
-
 tailwindcss@^2.2.9:
   version "2.2.19"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-2.2.19.tgz#540e464832cd462bb9649c1484b0a38315c2653c"
