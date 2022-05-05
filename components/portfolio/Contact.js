@@ -33,7 +33,7 @@ export default function Contact() {
       >
         <div
           className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap rounded-xl pb-6
-        min-w-[400px]"
+        min-w-[300px]"
         >
           <div className="lg:w-2/3 md:w-3/4 rounded-lg overflow-hidden sm:mr-10 p-16 pr-24 flex items-end justify-start relative">
             <iframe
@@ -140,8 +140,8 @@ export default function Contact() {
             </button>
           </form>
         </div>
-        <div className="absolute bottom-0 right-1/4 md:right-1/2 lg:right-80 ">
-          © 2021 Joshua Bell, all rights reserved
+        <div className="absolute bottom-0 right-1/3 md:right-1/2 md:right-1/2 lg:right-100">
+          © 2022 Joshua Bell
         </div>
       </section>
     </>
