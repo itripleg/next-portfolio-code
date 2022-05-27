@@ -92,7 +92,7 @@ export default function Contact() {
             </h2>
             <p className="leading-relaxed mb-5 text-center pt-3">
               Feel free to shoot me an email or call. Please note, I may not be
-              available immediately between 11am-7pm on weekdays.
+              available immediately between 11am-7pm on weekends.
             </p>
             <div className="relative mb-4">
               <label htmlFor="name" className="leading-7 text-sm text-gray-400">
@@ -136,7 +136,7 @@ export default function Contact() {
               type="submit"
               className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
             >
-              Submit
+              Send it!
             </button>
           </form>
         </div>

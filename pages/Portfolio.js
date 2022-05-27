@@ -17,17 +17,17 @@ export default function Portfolio() {
       <div className="pb-8">
         <About />
         <Projects />
-        {/*        <div className="w-full bg-black flex mx-auto justify-center">
-          <p className="text-center justify-center items-center pr-4">
-            Github Activity
-          </p>
-          <GithubCalendar
-            username="itripleg"
-            hideColorLegend
-            hideTotalCount
-            color={"#2DD13EFF"}
-          />
-        </div>*/}
+        <a href="https://github.com/itripleg">
+          <p className="text-center justify-center">Checkout My Github!</p>
+          <div className="flex justify-center p-6">
+            <GithubCalendar
+              username="itripleg"
+              hideColorLegend
+              hideTotalCount
+              color={"#2DD13EFF"}
+            />
+          </div>
+        </a>
         <Skills />
         <Contact />
         <div ref={observe}>

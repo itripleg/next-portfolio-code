@@ -50,7 +50,11 @@ function About() {
                     {" "}
                     Tailwind CSS
                   </a>
-                  . Hosted on Netlify via handwritten code in my{" "}
+                  . Hosted on{" "}
+                  <a href="https://www.netlify.com/" className="underline">
+                    Netlify
+                  </a>{" "}
+                  via handwritten code in my{" "}
                   <a
                     href="https://github.com/itripleg/next-portfolio-code"
                     className="underline"
