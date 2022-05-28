@@ -13,7 +13,8 @@ export default function App({
 
   return (
     <SessionProvider session={session}>
-      <Head title="Josh Bell Dev">
+      <Head>
+        <title>Josh Bell Dev</title>
         <link
           rel="icon"
           href="data:image/svg+xml,

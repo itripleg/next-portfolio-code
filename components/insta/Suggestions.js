@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
-import faker from "faker";
+import { faker } from "@faker-js/faker";
 
 function Suggestions() {
 	const [suggestions, setSuggestions] = useState([]);
 
 	useEffect(() => {
 		const arr = [...Array(5)].map((_, i) => ({
-			...faker.helpers.contextualCard(),
+			...faker.helpers.userCard(),
 			id: i,
 		}));
 		//remember to do this before returning!

@@ -5,20 +5,35 @@ import {
 	VideoCameraIcon,
 } from "@heroicons/react/solid";
 import { useState, useEffect } from "react";
-import faker from "faker";
+import { faker } from "@faker-js/faker";
 
 function Widgets() {
 	const [contacts, setContacts] = useState([]);
+	const arr = []
+
+	// useEffect(() => {
+	// 	console.log("testing faker")
+	// 	// console.log(faker.helpers.createCard())
+	// 	// const arr = [...Array(10)].map((_, i) => ({
+	// 	// 	...faker.helpers.contextualCard(),
+	// 	// 	id: i,
+	// 	// }));
+	// 	// //remember to do this before returning!
+	// 	// setContacts(arr);
+	// 	return () => {};
+	// }, []);
 
 	useEffect(() => {
-		const arr = [...Array(10)].map((_, i) => ({
-			...faker.helpers.contextualCard(),
-			id: i,
-		}));
-		//remember to do this before returning!
+		let i;
+		for (i = 0; i < 1; i++) {
+		  const card = {"key":i, "name":`${faker.name.firstName()}`, "avatar":`${faker.image.avatar()}`}
+		  arr.push(card);
+		  console.log(arr[i])
+		}
 		setContacts(arr);
-		return () => {};
-	}, []);
+			return () => {};
+		}, []);
+
 	return (
 		<div className="hidden lg:flex flex-col w-60 p-2 mt-6 z-40">
 			<div className="flex justify-between items-center text-gray-500 mb-5">

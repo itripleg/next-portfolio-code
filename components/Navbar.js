@@ -27,32 +27,24 @@ function Navbar() {
         flex flex-wrap items-center text-base 
         justify-center space-x-3 md:space-x-6"
         >
-          <Link href="/Chart" passHref={true} className="mr-5 hover:text-white">
-            <a className="text-green-500 text-lg">Chart</a>
+          <Link href="/Chart" passHref={true} className="mr-5">
+            <a className="text-green-500 text-lg hover:text-white">Chart</a>
           </Link>
           <Link
             href="/Portfolio#projects"
             passHref={true}
             className="mr-5 hover:text-white"
           >
-            <a>Projects</a>
+            <a className="hover:text-white">Projects</a>
           </Link>
-          <Link href="/Web3" passHref={true} className="mr-5 hover:text-white">
-            Web3
+          <Link href="/Web3" passHref={true} className="mr-5">
+            <a className="hover:text-white">Web3</a>
           </Link>
-          <Link
-            href="/Portfolio#skills"
-            passHref={true}
-            className="mr-5 hover:text-white"
-          >
-            Skills
+          <Link href="/Portfolio#skills" passHref={true} className="mr-5">
+            <a className="hover:text-white">Skills</a>
           </Link>
-          <Link
-            href="/Portfolio#contact"
-            passHref={true}
-            className="mr-5 hover:text-white"
-          >
-            Contact
+          <Link href="/Portfolio#contact" passHref={true}>
+            <a className="hover:text-white">Contact</a>
           </Link>
         </nav>
         <div>
@@ -63,7 +55,7 @@ function Navbar() {
               className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 
             focus:outline-none hover:bg-gray-700 rounded text-base"
             >
-              <a className="ml-4">Github</a>
+              <a className="ml-4 hover:text-white">Github</a>
             </Link>
             <ArrowRightIcon className="invisible md:visible w-4 h-4 ml-1 md:mt-1" />
           </div>

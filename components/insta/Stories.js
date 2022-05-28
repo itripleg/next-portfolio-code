@@ -1,4 +1,5 @@
-import faker from "faker";
+// import faker from "faker";
+import { faker } from "@faker-js/faker";
 import { useEffect, useState } from "react";
 import Story from "./Story";
 import { useSession } from "next-auth/react";
@@ -10,7 +11,7 @@ const Stories = () => {
 	useEffect(() => {
 		//Investigate: how are we returning the index of array with '(_,i)' as the first parameter of map?
 		const arr = [...Array(20)].map((_, i) => ({
-			...faker.helpers.contextualCard(),
+			...faker.helpers.userCard(),
 			id: i,
 		}));
 		//remember to do this before returning!

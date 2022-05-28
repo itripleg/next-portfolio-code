@@ -27,6 +27,10 @@ export default function Login({ providers }) {
 				others to see here. Use my contact form if you need me to delete
 				something.`}
 			</p>
+			<p className="px-5 italic">
+				*Note* I've disabled Facebook login and sadly Faker.js has been put on
+				hiatus {"\n"} so random user pictures are no longer available.{" "}
+			</p>
 			<h1
 				onClick={signIn}
 				className="p-5 mb-6 bg-gray-500 rounded-full text-white text-center cursor-pointer"
@@ -34,9 +38,13 @@ export default function Login({ providers }) {
 				{`Let me in!`}
 			</h1>
 			<div className=" text-center whitespace-pre">
-				<h1 className="font-bold">To Do List</h1>
-				<li>Implement post functionality</li>
-				<li>Display sorted posts</li>
+				<h1 className="font-bold pt-4">To Do List</h1>
+				<li>
+					<strike>Implement post functionality</strike>
+				</li>
+				<strike>
+					<li>Display sorted posts</li>
+				</strike>
 				<li>Enable comments</li>
 				<li>Enable likes</li>
 			</div>

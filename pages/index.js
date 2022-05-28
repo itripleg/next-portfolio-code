@@ -18,11 +18,12 @@ export default function Index(session) {
 
   return (
     <>
+      <title>buncombe.tech</title>
       <Transition
         show={splash}
         leave="transition-opacity duration-150"
         leaveFrom="opacity-100"
-        leaveTo="opacity-100"
+        leaveTo="opacity-90"
       >
         <main className="bg-black text-white">
           <div className="flex mx-auto items-center min-h-screen text-center justify-center align-center pb-40 h-40">
