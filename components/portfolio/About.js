@@ -39,9 +39,9 @@ function About() {
               />
               <div className="py-12">
                 <p className=" lg:block text-center mt-6 mb-10 lg:mb-0">
-                  Full Stack developer. Crypto and Blockchain enthusist. I love
-                  working with bleeding edge technology helping decentralize the
-                  web. I built this page with 💖using{" "}
+                  Full Stack developer. Crypto and Blockchain enthusiast. I love
+                  working with bleeding-edge technology and helping decentralize
+                  the web. I built this page with 💖using{" "}
                   <a href="http://nextjs.org" className="underline">
                     Next.js
                   </a>{" "}

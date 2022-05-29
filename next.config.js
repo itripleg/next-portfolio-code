@@ -9,7 +9,8 @@ module.exports = {
       "firebasestorage.googleapis.com",
       "cdn.fakercloud.com",
       "lh3.googleusercontent.com",
-      "cloudflare-ipfs.com"
+      "cloudflare-ipfs.com",
+      "loremflickr.com",
     ],
   },
 };
