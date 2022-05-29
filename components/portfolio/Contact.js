@@ -1,10 +1,4 @@
-import { useState } from "react";
-
 export default function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
   function encode(data) {
     return Object.keys(data)
       .map(

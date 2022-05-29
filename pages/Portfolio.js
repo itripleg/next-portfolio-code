@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import About from "../components/portfolio/About";
 import { ArrowUpIcon } from "@heroicons/react/solid";
 import Link from "next/link";

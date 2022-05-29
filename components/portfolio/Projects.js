@@ -1,4 +1,4 @@
-import { CodeIcon, HomeIcon } from "@heroicons/react/solid";
+import { CodeIcon } from "@heroicons/react/solid";
 import { projects } from "./data";
 import Image from "next/image";
 

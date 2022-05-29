@@ -1,6 +1,6 @@
 import StoryCard from "./StoryCard";
 import { useState, useEffect } from "react";
-import { faker } from "@faker-js/faker";
+import { faker } from "@faker-js/faker/locale/en_US";
 import { useSession } from "next-auth/react";
 
 function Stories() {
