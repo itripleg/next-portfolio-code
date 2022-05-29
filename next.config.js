@@ -1,5 +1,9 @@
 module.exports = {
   // webpack5: false,
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
+  },
   reactStrictMode: true,
   generateBuildId: () => "build",
   images: {
