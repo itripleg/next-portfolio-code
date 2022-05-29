@@ -1,10 +1,11 @@
 import Post from "./Post";
 import { collection, orderBy, query, onSnapshot } from "firebase/firestore";
-import { firestore, addDoc } from "../../firebase";
+import { firestore } from "../../firebase";
 import { useState, useEffect } from "react";
 
 function Posts() {
   const [posts, setPosts] = useState([]); //be sure to useState with an array as default
+  // think I was trying to update posts in realtime?
   useEffect(() => {
     const unsubscribe = onSnapshot(
       query(collection(firestore, "posts"), orderBy("timeStamp", "desc")),

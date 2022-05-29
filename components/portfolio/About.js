@@ -32,8 +32,7 @@ function About() {
               <Image
                 alt="me"
                 src="/me.jpg"
-                className="loading=lazy rounded-full 
-              h-20 m-4 transition transform duration-150 md:h-26 md:w-1 lg:h-36"
+                className="loading=lazy rounded-full h-20 m-4 transition transform duration-150 md:h-26 md:w-1 lg:h-36"
                 width="150"
                 height="150"
               />

@@ -1,14 +1,13 @@
 import React from "react";
-import Image from "next/image";
 import UserImage from "../../components/UserImage";
-import MyDropDown from "../MyDropDown";
+// import MyDropDown from "../MyDropDown";
 // import DropDown from "../components/DropDown";
 import HeaderIcon from "./HeaderIcon";
 import { signOut, useSession } from "next-auth/react";
 import {
   BellIcon,
   ChatIcon,
-  ChevronDownIcon,
+  // ChevronDownIcon,
   HomeIcon,
   UserGroupIcon,
   ViewGridIcon,

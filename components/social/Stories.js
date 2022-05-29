@@ -6,7 +6,6 @@ import { useSession } from "next-auth/react";
 function Stories() {
   const [stories, setStories] = useState([]);
   const { data: session } = useSession();
-  const arr = [];
 
   useEffect(() => {
     const arr = [...Array(4)].map((_, i) => ({

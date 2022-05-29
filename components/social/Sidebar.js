@@ -11,7 +11,6 @@ import {
   UsersIcon,
 } from "@heroicons/react/solid";
 import SidebarRow from "./SidebarRow";
-import Image from "next/image";
 
 const Sidebar = () => {
   const { data: session, status } = useSession();

@@ -32,7 +32,7 @@ export default function Portfolio() {
         <Contact />
         <div ref={observe}>
           {inView && (
-            <Link className="z-" href={"/Portfolio"}>
+            <Link className="" href={"/Portfolio"}>
               <a>
                 <ArrowUpIcon
                   className="fixed bottom-1/2 right-0 m-4 text-white hidden

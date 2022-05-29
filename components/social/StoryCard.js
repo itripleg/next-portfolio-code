@@ -15,16 +15,12 @@ function StoryCard({ name, src, profile }) {
         layout="fixed"
         objectFit="cover"
         alt=""
-        blurDataURL="data:..."
-        placeholder="empty"
       />
       <Image
         className="object-cover filter brightness-75 rounded-full lg:rounded-3xl"
         src={src}
         layout="fill"
         alt="profile pic"
-        blurDataURL="data:..."
-        placeholder="empty"
       />
       <p></p>
     </div>
