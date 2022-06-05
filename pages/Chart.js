@@ -10,6 +10,9 @@ const Chart = () => {
 
   return (
     <>
+      <div className="bg-yellow-600 py-4 flex justify-center">
+        Chart undergoing scheduled maintenance!
+      </div>
       <div className=" h-screen w-full bg-black px-16">
         <div className="h-2/3 px-8 pt-8">
           <DynamicChart
@@ -38,6 +41,17 @@ const Chart = () => {
               ]
             }
           />
+        </div>
+        To Do:
+        <div className="bg-gray-900 text-gray-300 p-8 mx-8  flex flex-col justify-center items-center">
+          <p className="underline">To do list</p>
+          <ul className="list-disc">
+            <li>Save previous chart layout</li>
+            <li>Add bullish/bearish bias</li>
+            <li>Add common harmonic patterns</li>
+            <li>Draggable chart positions</li>
+            <li>Add easy indicators on</li>
+          </ul>
         </div>
       </div>
     </>

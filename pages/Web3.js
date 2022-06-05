@@ -11,8 +11,11 @@ const serverUrl = "https://grzitwatvvsw.usemoralis.com:2053/server";
 
 function Web3() {
   return (
-    <div>
+    <div className="bg-transparent">
       {/*<RnD />*/}
+      <h1 className="bg-red-800 flex justify-center py-4">
+        Web3 Login temporarily disabled for maintanence.{" "}
+      </h1>
       <MoralisProvider appId={appId} serverUrl={serverUrl}>
         <Web3Dash />
       </MoralisProvider>
