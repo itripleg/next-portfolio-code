@@ -16,17 +16,19 @@ export default function Portfolio() {
       <div className="pb-8">
         <About />
         <Projects />
-        <a href="https://github.com/itripleg">
-          <p className="text-center justify-center">Checkout My Github!</p>
-          <div className="flex justify-center p-6">
+        <div className="flex justify-center p-6">
+          <a href="https://github.com/itripleg" className="mx-16">
+            <p className="text-center justify-center pb-2">
+              Checkout My Github Activity!
+            </p>
             <GithubCalendar
               username="itripleg"
               hideColorLegend
               hideTotalCount
               color={"#2DD13EFF"}
             />
-          </div>
-        </a>
+          </a>
+        </div>
         <Skills />
         <Contact />
         <div ref={observe}>

@@ -20,7 +20,7 @@ const Chart = () => {
             theme="Dark"
             autosize
             // withdateranges
-            // calendar
+            calendar
             // hide_legend
             // enable_publishing
             hide_side_toolbar={false}
