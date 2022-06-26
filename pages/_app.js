@@ -21,6 +21,7 @@ export default function App({
             <svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 110 90%22>
             <text y=%22.9em%22 font-size=%2290%22>🧙🏾‍</text></svg>"
         />
+        <meta name="Developing all the tech!"></meta>
       </Head>
       <Navbar />
       <Component {...pageProps} />
