@@ -13,7 +13,7 @@ function Web3() {
   return (
     <div className="bg-transparent">
       {/*<RnD />*/}
-      <h1 className="bg-red-800 flex justify-center py-4">
+      <h1 className="bg-yellow-600 flex justify-center py-4">
         Web3 Login temporarily disabled for maintanence.{" "}
       </h1>
       <MoralisProvider appId={appId} serverUrl={serverUrl}>

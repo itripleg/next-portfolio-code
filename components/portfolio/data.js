@@ -21,7 +21,7 @@ export const projects = [
     description:
       "Experimental blockchain games using smart contracts deployed on Ethereum and Binance Smart Chain networks. Current contracts are on Rinkeby testnet.",
     image: "/project-1.gif",
-    link: "/Web3",
+    link: "https://tangerine-gnome-1deaea.netlify.app/Dice",
   },
 
   {
@@ -30,7 +30,7 @@ export const projects = [
     description:
       "Experimental ERC20 and BEP20 smart contract based tokens. Yeild farming and self governing ecosystems. Flash loans and arbitrage bots. Reflection tokens.",
     image: "/project-4.gif",
-    link: "https://github.com/itripleg",
+    link: "https://github.com/itripleg/contracts",
   },
 ];
 
