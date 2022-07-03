@@ -1,6 +1,7 @@
 import { CodeIcon } from "@heroicons/react/solid";
 import { projects } from "./data";
 import Image from "next/image";
+import Link from "next/link";
 
 function Projects() {
   return (
@@ -13,9 +14,15 @@ function Projects() {
               {"Projects"}
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              {`Here are some projects I'm currently working on. Most are still in
-            beta with limited features but used for demonstration purposes. I
-            will try to post all revelant code to my Github as progress is made.`}
+              {`Here are some projects I'm currently working on. The social media clones are 
+               made for demo purposes, but feel free to login to them and make a post! I
+               will upload all revelant code to my Github as progress is made.`}{" "}
+              <br />
+              <Link className="w-1/5" href="/Three">
+                <a className=" text-center text-bold text-lg hover:cursor-pointer underline text-blue-800 animate-pulse">
+                  Checkout some new stuff!
+                </a>
+              </Link>
             </p>
           </div>
           <div className="flex flex-wrap -m-4 grid-cols-2 justify-center gap-3 md:gap-0 min-h-200">
