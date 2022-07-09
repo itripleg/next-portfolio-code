@@ -15,6 +15,7 @@
   "dependencies": {
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.4",
+    "@react-pdf/renderer": "^2.3.0",
     "@react-three/fiber": "^8.0.27",
     "@walletconnect/web3-provider": "^1.6.5",
     "autoprefixer": "10.4.5",
@@ -22,6 +23,7 @@
     "moralis": "^0.0.120",
     "next": "^12.1.7-canary.19",
     "next-auth": "^4.0.0-beta.6",
+    "pspdfkit": "^2022.3.0",
     "react": "^18.2.0",
     "react-cool-inview": "^2.0.8",
     "react-dom": "^18.2.0",
