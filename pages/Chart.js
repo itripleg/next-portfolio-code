@@ -15,7 +15,7 @@ const Chart = () => {
       </div> */}
       <div className="bg">
         <div className="container">
-          <p>this is a test</p>
+          {/* <p>this is a test</p> */}
           <div className="chart">
             <DynamicChart
               symbol="BTCUSDT"
