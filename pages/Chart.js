@@ -14,12 +14,12 @@ const Chart = () => {
         Chart undergoing scheduled maintenance!
       </div> */}
       <div className="bg">
-        <div className=" grid grid-cols-12">
+        <div className="grid grid-cols-12">
           {/* <p>this is a test</p> */}
-          <div className="hidden md:block col-span-2 items-center flex justify-center place-items-center w-full">
+          <div className="hidden sm:block col-span-2 items-center flex justify-center place-items-center w-full">
             <ChartBar />
           </div>
-          <div className="chart col-span-full md:col-span-10">
+          <div className="chart col-span-full sm:col-span-10">
             <DynamicChart
               symbol="BTCUSDT"
               theme="Dark"
