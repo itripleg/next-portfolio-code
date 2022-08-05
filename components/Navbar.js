@@ -14,7 +14,7 @@ function Navbar() {
   };
 
   return (
-    <header className="bg-[#000000] md:top-0 z-10 text-gray-400 ">
+    <header className="bg-black from-green-900 to-black md:top-0 z-10 text-gray-400 ">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <div className="flex justify-center">
           <Link href={"/"} passHref={true}>
@@ -36,10 +36,11 @@ function Navbar() {
         flex flex-wrap items-center text-base 
         justify-center space-x-3 md:space-x-6"
         >
+          {/* Links use conditional rendering to determine if they should smooth scroll or follow an href */}
           <Link href="/Chart" passHref={true} className="mr-5">
             <a className="text-green-500 text-lg hover:text-white">Chart</a>
           </Link>
-
+          {/* Projects */}
           {router.pathname != "/Portfolio" ? (
             <Link
               href="/Portfolio#projects"
@@ -58,9 +59,7 @@ function Navbar() {
               Projects
             </a>
           )}
-          <Link href="/Web3" passHref={true} className="mr-5">
-            <a className="hover:text-white">Web3</a>
-          </Link>
+          {/* Skills */}
           {router.pathname != "/Portfolio" ? (
             <Link
               href="/Portfolio#skills"
@@ -79,6 +78,11 @@ function Navbar() {
               Skills
             </a>
           )}
+          {/* Web3 */}
+          <Link href="/Web3" passHref={true} className="mr-5">
+            <a className="hover:text-white">Web3</a>
+          </Link>
+          {/* Contact */}
           {router.pathname != "/Portfolio" ? (
             <Link
               href="/Portfolio#contact"
