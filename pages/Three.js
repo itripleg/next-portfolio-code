@@ -7,7 +7,9 @@ function Three() {
     <>
       <div className="wrapper">
         <Canvas>
-          <Suspense>{/* <Model /> */}</Suspense>
+          <Suspense>
+            <Model />
+          </Suspense>
         </Canvas>
       </div>
     </>

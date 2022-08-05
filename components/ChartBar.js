@@ -3,11 +3,15 @@ import Link from "next/link";
 const ChartBar = () => {
   return (
     <>
-      <div className="max-h-[550px] overflow-y-auto">
-        <div className="grid p-2 w-full gap-2">
+      <div className="max-h-[545px] overflow-y-auto">
+        <div className="grid p-3 w-full gap-2">
           <p className="text-white text-center">Recent Posts</p>
+          <Link href={"/ta_pic5.png"}>
+            <img src="/ta_pic5.png" className="chart-pic"></img>
+          </Link>
           {/* <div className="text-center text-green-200"> */}
           {/* <p>August 8th 2020</p> */}
+          {/* onClick={() => window.open("/ta_pic2.png", "_blank")} */}
           <Link href={"/ta_pic.png"}>
             <img src="/ta_pic.png" className="chart-pic"></img>
           </Link>
