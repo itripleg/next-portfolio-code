@@ -16,9 +16,17 @@
   }
 
   .card {
-    @apply bg-gray-200 p-2 lg:p-8 rounded-lg
+    @apply bg-gray-200 p-4 lg:p-8 rounded-lg
+  }
+  
+  .list{
+    @apply p-2 relative h-full w-full text-center flex flex-col place-items-center
   }
 
+}
+
+.chart-pic{
+  @apply lg:p-2 hover:scale-110 transition 
 }
 
 .postBtn {

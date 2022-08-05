@@ -1,7 +1,7 @@
 // import { useState } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-
+import ChartBar from "../components/ChartBar";
 const Chart = () => {
   // apparently we need client side/dynamic rendering for tv-widget to work reliably
   const DynamicChart = dynamic(() => import("react-tradingview-widget"), {
@@ -14,9 +14,12 @@ const Chart = () => {
         Chart undergoing scheduled maintenance!
       </div> */}
       <div className="bg">
-        <div className="container">
+        <div className=" grid grid-cols-12">
           {/* <p>this is a test</p> */}
-          <div className="chart">
+          <div className="hidden md:block col-span-2 items-center flex justify-center place-items-center w-full">
+            <ChartBar />
+          </div>
+          <div className="chart col-span-full md:col-span-10">
             <DynamicChart
               symbol="BTCUSDT"
               theme="Dark"
@@ -47,10 +50,41 @@ const Chart = () => {
           <br />
           {/* To do list */}
           <div
-            className="bg-gray-800 text-gray-300 grid grid-cols-2 p-4
-          gap-4 place-content-stretch place-items-center text-center"
+            className="bg-gray-800 text-gray-300 grid grid-cols-2 md:grid-cols-3 p-4
+          gap-4 place-content-stretch place-items-center text-center col-end-13 col-start-1"
           >
-            <div className="p-2 ">
+            <div className="list ">
+              <p className="underline">Investopedia Learning</p>
+              <br />
+              <ul className="">
+                <li>
+                  <a href="https://www.investopedia.com/terms/t/trendanalysis.asp">
+                    Trend Analysis
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.investopedia.com/trading/support-and-resistance-basics/">
+                    Support and Resistance
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.investopedia.com/terms/m/movingaverage.asp">
+                    Moving Averages
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.investopedia.com/top-7-technical-analysis-tools-4773275">
+                    Indicators
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.investopedia.com/ask/answers/05/fibonacciretracement.asp">
+                    Fibonacci Retracements
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div className="list">
               <p className="underline">To do list</p>
               <br />
               <ul className="">
@@ -61,7 +95,7 @@ const Chart = () => {
                 <li>Add easy indicators on...</li>
               </ul>
             </div>
-            <div className="flex lg:block">
+            <div className="flex lg:block col-span-2 md:col-auto ">
               <div className="card">
                 <p className="text-gray-600">
                   You can checkout my past TA ideas on Trading view
