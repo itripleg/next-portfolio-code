@@ -19,7 +19,7 @@ function Projects() {
                will upload all revelant code to my Github as progress is made.`}{" "}
               <br />
               <Link className="w-1/5" href="/Three">
-                <a className=" text-center text-bold text-lg hover:cursor-pointer underline text-blue-800 animate-pulse">
+                <a className="hidden text-center text-bold text-lg hover:cursor-pointer underline text-blue-800 animate-pulse">
                   Checkout some new stuff!
                 </a>
               </Link>

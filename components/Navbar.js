@@ -1,9 +1,18 @@
-import { useState } from "react";
 import { ArrowRightIcon, HomeIcon, MenuIcon } from "@heroicons/react/solid";
+import { useRouter } from "next/router";
+
 import Link from "next/link";
-import "tailwindcss/tailwind.css";
 
 function Navbar() {
+  const router = useRouter();
+
+  const goTo = (location) => {
+    window.scrollTo({
+      top: location,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <header className="bg-[#000000] md:top-0 z-10 text-gray-400 ">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -30,22 +39,64 @@ function Navbar() {
           <Link href="/Chart" passHref={true} className="mr-5">
             <a className="text-green-500 text-lg hover:text-white">Chart</a>
           </Link>
-          <Link
-            href="/Portfolio#projects"
-            passHref={true}
-            className="mr-5 hover:text-white"
-          >
-            <a className="hover:text-white">Projects</a>
-          </Link>
+
+          {router.pathname != "/Portfolio" ? (
+            <Link
+              href="/Portfolio#projects"
+              // passHref={true}
+              className="mr-5 hover:text-white"
+            >
+              <a className="hover:text-white">Projects</a>
+            </Link>
+          ) : (
+            <a
+              className="mr-5 hover:text-white cursor-pointer"
+              onClick={() => {
+                goTo(850);
+              }}
+            >
+              Projects
+            </a>
+          )}
           <Link href="/Web3" passHref={true} className="mr-5">
             <a className="hover:text-white">Web3</a>
           </Link>
-          <Link href="/Portfolio#skills" passHref={true} className="mr-5">
-            <a className="hover:text-white">Skills</a>
-          </Link>
-          <Link href="/Portfolio#contact" passHref={true}>
-            <a className="hover:text-white">Contact</a>
-          </Link>
+          {router.pathname != "/Portfolio" ? (
+            <Link
+              href="/Portfolio#skills"
+              // passHref={true}
+              className="mr-5 hover:text-white"
+            >
+              <a className="hover:text-white">Skills</a>
+            </Link>
+          ) : (
+            <a
+              className="mr-5 hover:text-white cursor-pointer"
+              onClick={() => {
+                goTo(1850);
+              }}
+            >
+              Skills
+            </a>
+          )}
+          {router.pathname != "/Portfolio" ? (
+            <Link
+              href="/Portfolio#contact"
+              // passHref={true}
+              className="mr-5 hover:text-white"
+            >
+              <a className="hover:text-white">Contact</a>
+            </Link>
+          ) : (
+            <a
+              className="mr-5 hover:text-white cursor-pointer"
+              onClick={() => {
+                goTo(2850);
+              }}
+            >
+              Contact
+            </a>
+          )}
         </nav>
         <div>
           <div className="p-4 flex">

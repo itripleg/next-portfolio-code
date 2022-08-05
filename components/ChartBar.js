@@ -1,10 +1,30 @@
 import Link from "next/link";
+// import dynamic from "next/dynamic";
+import { useRecoilState } from "recoil";
+import { chartModalState } from "../atoms/modalAtom";
 
 const ChartBar = () => {
+  const [isOpen, setIsOpen] = useRecoilState(chartModalState);
+
+  const openModal = () => {
+    console.log("Opening chart modal");
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <div className="max-h-[545px] overflow-y-auto">
-        <div className="grid p-3 w-full gap-2">
+        <div className="grid p-3 w-full gap-2 ">
+          <button
+            className="h-8 bg-green-800 rounded-lg hover:scale-110 transition"
+            onClick={() => {
+              alert("coming soon!");
+              //   //   openModal();
+              //   console.log("opening modal...");
+            }}
+          >
+            Upload Post
+          </button>
           <p className="text-white text-center">Recent Posts</p>
           <Link href={"/ta_pic5.png"}>
             <img src="/ta_pic5.png" className="chart-pic"></img>

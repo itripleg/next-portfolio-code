@@ -11,6 +11,14 @@ const Contact = dynamic(() => import("../components/portfolio/Contact"));
 
 export default function Portfolio() {
   const { observe, inView } = useInView({ rootMargin: "150px" });
+
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <main className="text-gray-400 body-font bg-black">
       <div className="pb-8">
@@ -33,14 +41,15 @@ export default function Portfolio() {
         <Contact />
         <div ref={observe}>
           {inView && (
-            <Link className="" href={"/Portfolio"}>
-              <a>
-                <ArrowUpIcon
-                  className="fixed bottom-1/2 right-0 m-4 text-white hidden
-                 xl:block w-10 animation transition-all ease-in-out duration-1000 bg-gradient-to-b from-gray-600 rounded-md"
-                />
-              </a>
-            </Link>
+            <a>
+              <ArrowUpIcon
+                className="fixed bottom-1/2 right-0 m-4 text-white hidden
+                  xl:block w-10 animation transition-all ease-in-out duration-1000 bg-gradient-to-b from-gray-600 rounded-md"
+                onClick={() => {
+                  goToTop();
+                }}
+              />
+            </a>
           )}
         </div>
       </div>
