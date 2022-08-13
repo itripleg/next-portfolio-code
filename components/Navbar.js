@@ -38,7 +38,7 @@ function Navbar() {
         >
           {/* Links use conditional rendering to determine if they should smooth scroll or follow an href */}
           <Link href="/Chart" passHref={true} className="mr-5">
-            <a className="text-green-500 text-lg hover:text-white">Chart</a>
+            <a className="text-gray-400 text-lg hover:text-white">Chart</a>
           </Link>
           {/* Projects */}
           {router.pathname != "/Portfolio" ? (
@@ -79,9 +79,9 @@ function Navbar() {
             </a>
           )}
           {/* Web3 */}
-          <Link href="/Web3" passHref={true} className="mr-5">
+          {/* <Link href="/Web3" passHref={true} className="mr-5">
             <a className="hover:text-white">Web3</a>
-          </Link>
+          </Link> */}
           {/* Contact */}
           {router.pathname != "/Portfolio" ? (
             <Link
