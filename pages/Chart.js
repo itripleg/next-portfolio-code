@@ -53,7 +53,6 @@ const Chart = () => {
                   "BINANCE:DOTBTC",
                   "BITFINEX:DOTUSD",
                   "BINANCE:DOTUSDT",
-                  "TVC:DXY",
                   "COINBASE:EOSUSD",
                   "CRYPTOCAP:ETH.D",
                   "BINANCE:ETHBTC",
