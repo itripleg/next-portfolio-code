@@ -44,7 +44,7 @@ export default function Portfolio() {
             <a>
               <ArrowUpIcon
                 className="fixed bottom-1/2 right-0 m-4 text-white hidden
-                  xl:block w-10 animation transition-all ease-in-out duration-1000 bg-gradient-to-b from-gray-600 rounded-md"
+                  md:block w-10 animation transition-all ease-in-out duration-1000 bg-gradient-to-b from-gray-600 rounded-md"
                 onClick={() => {
                   goToTop();
                 }}
