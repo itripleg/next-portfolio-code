@@ -5,6 +5,7 @@ import Link from "next/link";
 
 function Navbar() {
   const router = useRouter();
+  console.log(router.pathname);
 
   const goTo = (location) => {
     window.scrollTo({
@@ -14,7 +15,7 @@ function Navbar() {
   };
 
   return (
-    <header className="bg-black from-green-900 to-black md:top-0 z-10 text-gray-400 ">
+    <header className="header bg-black from-green-900 to-black md:top-0 z-10 text-gray-400 ">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <div className="flex justify-center">
           <Link href={"/"} passHref={true}>
@@ -41,7 +42,7 @@ function Navbar() {
             <a className="text-gray-400 text-lg hover:text-white">Chart</a>
           </Link>
           {/* Projects */}
-          {router.pathname != "/Portfolio" ? (
+          {router.pathname != "/" ? (
             <Link
               href="/Portfolio#projects"
               // passHref={true}
@@ -60,7 +61,7 @@ function Navbar() {
             </a>
           )}
           {/* Skills */}
-          {router.pathname != "/Portfolio" ? (
+          {router.pathname != "/" ? (
             <Link
               href="/Portfolio#skills"
               // passHref={true}
@@ -72,7 +73,10 @@ function Navbar() {
             <a
               className="mr-5 hover:text-white cursor-pointer"
               onClick={() => {
-                goTo(1850);
+                // goTo(1850);
+                document
+                  .getElementById("skills")
+                  .scrollIntoView({ behavior: "smooth" });
               }}
             >
               Skills
@@ -83,7 +87,7 @@ function Navbar() {
             <a className="hover:text-white">Web3</a>
           </Link> */}
           {/* Contact */}
-          {router.pathname != "/Portfolio" ? (
+          {router.pathname != "/" ? (
             <Link
               href="/Portfolio#contact"
               // passHref={true}
@@ -95,7 +99,10 @@ function Navbar() {
             <a
               className="mr-5 hover:text-white cursor-pointer"
               onClick={() => {
-                goTo(2850);
+                // goTo(1850);
+                document
+                  .getElementById("contact")
+                  .scrollIntoView({ behavior: "smooth" });
               }}
             >
               Contact
