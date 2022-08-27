@@ -65,6 +65,11 @@
   background-color: #111827;
 }
 
+.bg-container {
+  background-color: #111827;
+  @apply px-20 text-white min-w-full min-h-screen
+}
+
 .chart {
   @apply h-[65vh]
 }
