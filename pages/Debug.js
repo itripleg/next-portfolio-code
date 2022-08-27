@@ -1,7 +1,35 @@
 import UserImage from "../components/UserImage";
 import { useSession } from "next-auth/react";
 import { useState } from "react";
-function Debug() {
+
+export async function getServerSideProps(context) {
+  const headers = {
+    Authorization:
+      "Bearer aec7a83bd90975bf0486c20e28c9846cfb2883c8dd5507666c489728ccf870598df22193cb7fa6ce057bd2a0bfbe35b8e10a0180e44cd5f93950b9611558f538bc39540ab2bd566cc05c5b027fe1a49ce80bd91e7612206418d25749ce19452d01e721134b1502f7515b0e5519a6d251691f70a2b8146421aaa7e746ebf22ffe",
+  };
+
+  const res = await fetch(`http://localhost:1337/api/Secrets`, { headers });
+  const jsonResponse = await res.json();
+  // console.log(jsonResponse);
+  return {
+    props: { jsonResponse }, // will be passed to the page component as props
+  };
+}
+
+function Debug(jsonResponse) {
+  const [reply, setReply] = useState(null);
+
+  const handleClick = () => {
+    setReply(jsonResponse);
+    alert(reply);
+    <ul>
+      {[reply].map(
+        (s) => (document.getElementById("results").innerHTML = <li>{s}</li>)
+      )}
+    </ul>;
+  };
+
+  console.log(jsonResponse);
   const { data: session } = useSession();
   const [visible, setVisible] = useState("false");
 
@@ -41,10 +69,18 @@ function Debug() {
         </div>
       )}
       <div className="text-center">
-        <p>Pretty Hex Buttons!</p>
+        <p>Pretty hex Buttons do random stuff!</p>
+        <p id="results" className=" text-sm italic">
+          Results here
+        </p>
         <div className="grid grid-cols-2 mx-auto gap-x-8 gap-y-8 max-w-7xl pt-8">
-          <button className="h-20 bg-[#afaaaf] animate hover:scale-110">
-            #afaaaf
+          <button
+            className="h-20 bg-[#afaaaf] animate hover:scale-110"
+            onClick={() => {
+              handleClick();
+            }}
+          >
+            #afaaaf httpGet
           </button>
           <button className="h-20 bg-[#40a0ff] animate hover:scale-110">
             #40a0ff
