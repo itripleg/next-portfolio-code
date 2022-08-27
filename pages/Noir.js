@@ -1,13 +1,12 @@
 import config from "../components/chatbot/config.js";
 import MessageParser from "../components/chatbot/MessageParser.js";
 import ActionProvider from "../components/chatbot/ActionProvider.js";
-import Chatbot from "react-chatbot-kit";
 import "react-chatbot-kit/build/main.css";
 import Image from "next/image";
-import "react-chatbot-kit/build/main.css";
-import Motoko from "../components/chatbot/Motoko.js";
+import dynamic from "next/dynamic";
+const Chatbot = dynamic(() => import("react-chatbot-kit"), { ssr: false });
 
-function Spooky() {
+function Noir() {
   // const handleClick = (e) => {
   //   e.preventDefault();
   //   console.log("handling click");
@@ -15,14 +14,16 @@ function Spooky() {
 
   return (
     <>
-      <div className="">
+      <div className="bg-black">
         <div className="flex justify-center p-8">
-          <div className="h-20 w-20">
+          {/* <div className="h-20 w-20"> */}
+          <div className="hidden md:block h-screen">
             <Image
               src="/horror.jpg"
-              className=" z-[0] rounded-full"
+              className="z-[0] rounded-full"
               width={200}
               height={200}
+              // layout="fill"
             ></Image>
           </div>
           <div className="min-h-screen">
@@ -38,4 +39,4 @@ function Spooky() {
   );
 }
 
-export default Spooky;
+export default Noir;

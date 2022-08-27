@@ -5,7 +5,7 @@ import Link from "next/link";
 function Risque() {
   //this page is satire made by request for a friend
   return (
-    <div className="bg-pink-900 lg:p-20 p-2 h-screen lg:h-[1050px]">
+    <div className="bg-pink-900 lg:p-20 p-2 min-h-screen lg:h-[1050px]">
       <div className="flex flex-col justify-center items-center">
         <h1 className="text-4xl lg:text-6xl italic pb-6">Risqué Services</h1>
         <p className="p-6">

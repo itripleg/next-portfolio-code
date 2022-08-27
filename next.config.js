@@ -17,6 +17,15 @@ module.exports = {
       "loremflickr.com",
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/404",
+        destination: "/noir",
+        permanent: true,
+      },
+    ];
+  },
 };
 // const withBundleAnalyzer = require("@next/bundle-analyzer")({
 //   enabled: process.env.ANALYZE === "true",

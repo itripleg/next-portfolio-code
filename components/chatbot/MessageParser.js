@@ -1,15 +1,54 @@
 import React from "react";
-import { createChatBotMessage } from "react-chatbot-kit";
-import responses from "./responses";
 
 const MessageParser = ({ children, actions }) => {
   const parse = (message) => {
     console.log(message);
-    if (message.includes("hack")) {
-      actions.yell();
+    message = message.toLowerCase();
+    if (
+      message.match("hi") ||
+      message.includes("hello") ||
+      message.includes("hey")
+    ) {
+      actions.reply();
+      return;
     }
-    if (message.includes("game" || "tits")) {
-      actions.glhf();
+    if (
+      message.includes("slut") ||
+      message.includes("kink") ||
+      message.includes("risque")
+    ) {
+      actions.slut();
+      return;
+    }
+    if (
+      message.includes("fuck") ||
+      message.includes("bitch") ||
+      message.includes("cunt") ||
+      message.includes("loser") ||
+      message.includes("stupid") ||
+      message.includes("baka")
+    ) {
+      actions.swear();
+      return;
+    }
+    if (message.includes("joke")) {
+      actions.joke();
+      return;
+    }
+    if (message.includes("noir")) {
+      actions.noir();
+      return;
+    }
+    if (message.includes("help")) {
+      actions.help();
+      return;
+    }
+    if (message.includes("secret")) {
+      actions.secret();
+      return;
+    } else {
+      actions.rude();
+      return;
     }
   };
 

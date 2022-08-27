@@ -1,27 +1,43 @@
 import { createChatBotMessage } from "react-chatbot-kit";
-import Motoko from "./Motoko.js";
-import Image from "next/image";
+import { responses } from "./responses";
+import RisqueLink from "./RisqueLink";
+import Simple from "./Simple";
+
 const config = {
   initialMessages: [
-    createChatBotMessage(`How did you find me?`),
-    // createChatBotMessage(`Where have you been?`),
+    createChatBotMessage(
+      responses.greetings[
+        Math.floor(Math.random() * responses.greetings.length)
+      ]
+    ),
   ],
   customStyles: {
     botMessageBox: { backgroundColor: "#333333" },
   },
-  // widgets: [
-  //   {
-  //     widgetName: "Motoko",
-  //     widgetFunc: (props) => {
-  //       <Motoko {...props} />;
-  //     },
-  //   },
-  // ],
+  state: {
+    gist: [],
+  },
+  widgets: [
+    {
+      widgetName: "simple",
+      widgetFunc: (props) => <Simple {...props} />,
+      // mapStateToProps: ["gist"],
+      // props: "",
+    },
+    {
+      widgetName: "risque",
+      widgetFunc: (props) => <RisqueLink {...props} />,
+      // mapStateToProps: ["gist"],
+      // props: "",
+    },
+  ],
   customComponents: {
     header: () => <></>,
-    // botAvatar: (props) => (
-    //   <Image src="/horror.jpg" layout="fill" className=""></Image>
-    // ),
+    botAvatar: (props) => (
+      <div className="max-w-[50px]">
+        <img src="/horror.jpg" layout="" className="rounded-full" />
+      </div>
+    ),
   },
 };
 
