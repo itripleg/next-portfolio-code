@@ -74,7 +74,18 @@
   @apply h-[65vh]
 }
 
+.react-chatbot-kit-chat-container {
+  @apply bg-red-200
 
+}
+
+.react-chatbot-kit-chat-inner-container {
+  @apply bg-black;
+}
+
+.react-chatbot-kit-chat-header {
+  @apply bg-black;
+}
 
 
 /* background gradient */
