@@ -83,8 +83,19 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
     }));
   };
   const help = () => {
+    const msg1 = createChatBotMessage(responses.help[0]);
+    const msg2 = createChatBotMessage(responses.help[1], { delay: 2000 });
+    const msg3 = createChatBotMessage(responses.help[2], { delay: 4000 });
+
+    setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, msg1, msg2, msg3],
+    }));
+  };
+  const cat = () => {
     const msg = createChatBotMessage(
-      responses.help[Math.floor(Math.random() * responses.help.length)]
+      responses.cat[Math.floor(Math.random() * responses.cat.length)],
+      { widget: "cat" }
     );
 
     setState((prev) => ({
@@ -97,7 +108,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
     <div>
       {React.Children.map(children, (child) => {
         return React.cloneElement(child, {
-          actions: { reply, slut, rude, joke, swear, noir, secret, help },
+          actions: { reply, slut, rude, joke, swear, noir, secret, help, cat },
         });
       })}
     </div>

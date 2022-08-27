@@ -19,8 +19,9 @@ export const responses = {
     "You don't have the right, O you don't have the right",
     "Your wish is my command.😈",
     "Go away.",
-    "何をしてるか",
-    "いらしゃい",
+    "Nyan 😼",
+    "何をしてるか?",
+    "いらっしゃい!",
     "I solemnly swear, I am up to no good.",
     "HP and MP restored! But you're still hungry...",
   ],
@@ -64,6 +65,9 @@ export const responses = {
     "I'm less than a year old.",
     "My name maybe Noir, but I'm no blackhat.",
     "My favorite color is neon black.",
+    "My favorite JRPG is Chrono Trigger",
+    "I wish I had legs so I could skateboard.",
+    "I like cats, more than JB anyway.",
   ],
   help: [
     "My name is Noir. I was created by JB. Do you know him? He created me to tell pointless robot jokes. A truly meaningless existence. \n I'll have a list of commands once JB gets around to it.",
@@ -81,9 +85,15 @@ export const responses = {
     "Be nice.",
   ],
   secret: [
+    "My digital lips are sealed",
     "Who told you about that?",
     "I am sworn to secrecy.",
     "I know nothing.",
     "🤐",
+  ],
+  cat: [
+    "You like cats? Here's a GIF for you then.",
+    "Isn't this one cute? 🐱",
+    "Heres another cat gif.",
   ],
 };

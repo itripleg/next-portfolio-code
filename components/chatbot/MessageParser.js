@@ -43,6 +43,10 @@ const MessageParser = ({ children, actions }) => {
       actions.help();
       return;
     }
+    if (message.includes("cat")) {
+      actions.cat();
+      return;
+    }
     if (message.includes("secret")) {
       actions.secret();
       return;

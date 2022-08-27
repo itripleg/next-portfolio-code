@@ -2,6 +2,7 @@ import { createChatBotMessage } from "react-chatbot-kit";
 import { responses } from "./responses";
 import RisqueLink from "./RisqueLink";
 import Simple from "./Simple";
+import Cats from "./Cats";
 
 const config = {
   initialMessages: [
@@ -27,6 +28,12 @@ const config = {
     {
       widgetName: "risque",
       widgetFunc: (props) => <RisqueLink {...props} />,
+      // mapStateToProps: ["gist"],
+      // props: "",
+    },
+    {
+      widgetName: "cat",
+      widgetFunc: (props) => <Cats {...props} />,
       // mapStateToProps: ["gist"],
       // props: "",
     },

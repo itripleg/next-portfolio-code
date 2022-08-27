@@ -15,6 +15,7 @@ module.exports = {
       "lh3.googleusercontent.com",
       "cloudflare-ipfs.com",
       "loremflickr.com",
+      "cataas.com",
     ],
   },
   async redirects() {
