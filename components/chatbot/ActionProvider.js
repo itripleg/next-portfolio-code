@@ -116,6 +116,17 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
       messages: [...prev.messages, msg],
     }));
   };
+  const rachel = () => {
+    const msg = createChatBotMessage(
+      responses.rachel[Math.floor(Math.random() * responses.rachel.length)]
+      // { widget: "cat" }
+    );
+
+    setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, msg],
+    }));
+  };
 
   return (
     <div>
@@ -132,6 +143,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
             help,
             cat,
             jb,
+            rachel,
           },
         });
       })}

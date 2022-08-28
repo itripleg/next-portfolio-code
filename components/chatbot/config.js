@@ -43,7 +43,7 @@ const config = {
       // mapStateToProps: ["gist"],
       // props: "",
     },
-    { widgetName: "jb", widgetFunc: (props) => <img src="./me.jpg" /> },
+    { widgetName: "jb", widgetFunc: (props) => <img src="./me_mask.jpg" /> },
   ],
   customComponents: {
     header: () => <></>,
