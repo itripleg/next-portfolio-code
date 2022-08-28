@@ -127,6 +127,16 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
       messages: [...prev.messages, msg],
     }));
   };
+  const bern = () => {
+    const msg = createChatBotMessage(
+      responses.bern[Math.floor(Math.random() * responses.bern.length)]
+    );
+
+    setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, msg],
+    }));
+  };
 
   return (
     <div>
@@ -144,6 +154,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
             cat,
             jb,
             rachel,
+            bern,
           },
         });
       })}

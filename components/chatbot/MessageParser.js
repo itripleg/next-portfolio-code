@@ -61,6 +61,10 @@ const MessageParser = ({ children, actions }) => {
       actions.rachel();
       return;
     }
+    if (message.includes("bern")) {
+      actions.bern();
+      return;
+    }
     if (message.includes("secret")) {
       actions.secret();
       return;
