@@ -65,14 +65,22 @@ function About() {
               </div>
               <div className="flex ml-5">
                 <a
-                  href="#contact"
+                  onClick={() => {
+                    document
+                      .getElementById("contact")
+                      .scrollIntoView({ behavior: "smooth" });
+                  }}
                   className="inline-flex text-white bg-gradient-to-tl from-green-900 to-green-400 via-green-600 border-0 py-2 md:py-4 px-6 focus:outline-none hover:bg-green-600
                 rounded text-lg transition transform duration-150 hover:scale-110 text-center"
                 >
                   Work With Me
                 </a>
                 <a
-                  href="#projects"
+                  onClick={() => {
+                    document
+                      .getElementById("projects")
+                      .scrollIntoView({ behavior: "smooth" });
+                  }}
                   className="text-center ml-4 inline-flex text-gray-400 bg-gradient-to-tl from-gray-900 to-gray-500 border-0 py-2 md:py-4 px-8 focus:outline-none hover:bg-gray-700
                hover:text-white rounded text-lg transition transform duration-150 hover:scale-110"
                 >
