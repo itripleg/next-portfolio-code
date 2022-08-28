@@ -15,7 +15,7 @@ function Navbar() {
   };
 
   return (
-    <header className="header bg-black from-green-900 to-black md:top-0 z-10 text-gray-400 ">
+    <header className="header bg-black from-green-900 to-black md:top-0 z-2 text-gray-400 ">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <div className="flex justify-center">
           <Link href={"/"} passHref={true}>

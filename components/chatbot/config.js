@@ -26,6 +26,12 @@ const config = {
       // props: "",
     },
     {
+      widgetName: "noir",
+      widgetFunc: () => <img src={responses.images[2]} />,
+      // mapStateToProps: ["gist"],
+      // props: "",
+    },
+    {
       widgetName: "risque",
       widgetFunc: (props) => <RisqueLink {...props} />,
       // mapStateToProps: ["gist"],
@@ -37,6 +43,7 @@ const config = {
       // mapStateToProps: ["gist"],
       // props: "",
     },
+    { widgetName: "jb", widgetFunc: (props) => <img src="./me.jpg" /> },
   ],
   customComponents: {
     header: () => <></>,

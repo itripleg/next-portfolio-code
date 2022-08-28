@@ -26,7 +26,9 @@ const MessageParser = ({ children, actions }) => {
       message.includes("cunt") ||
       message.includes("loser") ||
       message.includes("stupid") ||
-      message.includes("baka")
+      message.includes("baka") ||
+      message.includes("ass") ||
+      message.includes("lame")
     ) {
       actions.swear();
       return;
@@ -39,12 +41,20 @@ const MessageParser = ({ children, actions }) => {
       actions.noir();
       return;
     }
-    if (message.includes("help")) {
+    if (message.includes("help") || message.includes("who are you")) {
       actions.help();
       return;
     }
-    if (message.includes("cat")) {
+    if (
+      message.includes("cat") ||
+      message.includes("gif") ||
+      message.includes("meow")
+    ) {
       actions.cat();
+      return;
+    }
+    if (message.includes("jb")) {
+      actions.jb();
       return;
     }
     if (message.includes("secret")) {

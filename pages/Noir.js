@@ -14,7 +14,14 @@ function Noir() {
 
   return (
     <>
-      <div className="bg-black">
+      <div className="bg-black ">
+        {/* <Image
+          src="/galaxy.gif"
+          height="100"
+          width="100"
+          layout="fill"
+          className=""
+        ></Image> */}
         <div className="flex justify-center p-8">
           {/* <div className="h-20 w-20"> */}
           <div className="hidden md:block h-screen">
