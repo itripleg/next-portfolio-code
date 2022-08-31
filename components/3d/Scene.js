@@ -22,18 +22,16 @@ function Scene() {
 
   return (
     <mesh ref={meshRef}>
-      {/* <House /> */}
-      <Billboard />
-
       <ambientLight />
       <pointLight position={[15, 10, 10]} />
-      <meshStandardMaterial color="green" />
+      {/* <meshStandardMaterial color="green" /> */}
       <orbitControls
         ref={controlRef}
         args={[camera, gl.domElement]}
         enableDamping
         dampingFactor={0.1}
         rotateSpeed={0.5}
+        // position={[15, 10, 10]}
       />
     </mesh>
   );
