@@ -4,11 +4,7 @@ const MessageParser = ({ children, actions }) => {
   const parse = (message) => {
     console.log(message);
     message = message.toLowerCase();
-    if (
-      message.match("hi") ||
-      message.includes("hello") ||
-      message.includes("hey")
-    ) {
+    if (message.includes("hello") || message.includes("hey")) {
       actions.reply();
       return;
     }
@@ -53,7 +49,7 @@ const MessageParser = ({ children, actions }) => {
       actions.cat();
       return;
     }
-    if (message.includes("jb")) {
+    if (message.includes("jb") || message.includes("josh")) {
       actions.jb();
       return;
     }
@@ -61,7 +57,7 @@ const MessageParser = ({ children, actions }) => {
       actions.rachel();
       return;
     }
-    if (message.includes("bern")) {
+    if (message.includes("bern") || messagemessage.includes("berenice")) {
       actions.bern();
       return;
     }
