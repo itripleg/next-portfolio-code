@@ -9,7 +9,7 @@ import House from "../components/3d/House";
 function Three() {
   return (
     <>
-      <div className="p-28 bg-black min-h-screen flex flex-col justify-center ">
+      <div className="p-4 lg:p-28 bg-black min-h-screen flex flex-col justify-center ">
         <p className="text-white text-center">
           First attempt to make a 3D interactive menu with working links.
         </p>
