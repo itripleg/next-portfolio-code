@@ -33,6 +33,10 @@ const MessageParser = ({ children, actions }) => {
       actions.joke();
       return;
     }
+    if (message.includes("3d")) {
+      actions.threeD();
+      return;
+    }
     if (message.includes("noir")) {
       actions.noir();
       return;

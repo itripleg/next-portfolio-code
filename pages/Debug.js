@@ -1,6 +1,7 @@
 import UserImage from "../components/UserImage";
 import { useSession } from "next-auth/react";
 import { useState } from "react";
+import Image from "next/image";
 
 export async function getServerSideProps(context) {
   const headers = {
@@ -69,6 +70,10 @@ function Debug(jsonResponse) {
         </div>
       )}
       <div className="text-center">
+        <div>
+          <p>QR code for testing URL redirection to "https://buncombe.tech/</p>
+          <Image width={100} height={100} alt="" src="/qr.svg" />
+        </div>
         <p>Pretty hex Buttons do random stuff!</p>
         <p id="results" className=" text-sm italic">
           Results here

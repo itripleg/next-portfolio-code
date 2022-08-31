@@ -17,8 +17,9 @@ function Strapi({ jsonReply }) {
   //   console.log(jsonReply.data);
   function handleClick() {}
   if (jsonReply.data) {
-    let j = JSON.stringify(jsonReply);
-    j.map();
+    // let j = JSON.stringify(jsonReply);
+    // j.map();
+    console.log(jsonReply.data);
   }
   return (
     <>

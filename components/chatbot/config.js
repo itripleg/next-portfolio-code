@@ -3,6 +3,7 @@ import { responses } from "./responses";
 import RisqueLink from "./RisqueLink";
 import Simple from "./Simple";
 import Cats from "./Cats";
+import ThreeDLink from "./ThreeDLink";
 
 const config = {
   initialMessages: [
@@ -44,6 +45,7 @@ const config = {
       // props: "",
     },
     { widgetName: "jb", widgetFunc: (props) => <img src="./me_mask.jpg" /> },
+    { widgetName: "threeDLink", widgetFunc: (props) => <ThreeDLink /> },
   ],
   customComponents: {
     header: () => <></>,

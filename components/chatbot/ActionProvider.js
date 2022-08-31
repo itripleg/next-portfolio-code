@@ -137,6 +137,17 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
       messages: [...prev.messages, msg],
     }));
   };
+  const threeD = () => {
+    const msg = createChatBotMessage(
+      "Here is the link to some 3D stuff Boss is working on.",
+      { widget: "threeDLink" }
+    );
+
+    setState((prev) => ({
+      ...prev,
+      messages: [...prev.messages, msg],
+    }));
+  };
 
   return (
     <div>
@@ -155,6 +166,7 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
             jb,
             rachel,
             bern,
+            threeD,
           },
         });
       })}
