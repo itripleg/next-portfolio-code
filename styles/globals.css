@@ -79,12 +79,9 @@
 
 }
 
-.react-chatbot-kit-chat-inner-container {
-  @apply bg-black;
-}
 
-.react-chatbot-kit-chat-header {
-  @apply bg-black;
+.react-chatbot-kit-chat-inner-container {
+  background-image: #111827;
 }
 
 

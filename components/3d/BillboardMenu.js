@@ -4,12 +4,10 @@ import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 
 function BillboardMenu() {
-  //   const ref = useRef();
-  //   useFrame(() => {
-  //     ref.current.material.zoom = 1; // 1 and higher
-  //     ref.current.material.grayscale = 1; // between 0 and 1
-  //     ref.current.material.color.set("red"); // mix-in color
-  //   });
+  const ref = useRef();
+  // useFrame(() => {
+  //   ref.current.update();
+  // });
 
   const args = {
     follow: true,
@@ -52,7 +50,7 @@ function BillboardMenu() {
       >
         <Plane
           args={[3, 2]}
-          material-color="red"
+          material-color="black"
           onClick={() => {
             window.location.href = "/Portfolio#contact";
           }}
@@ -89,7 +87,7 @@ function BillboardMenu() {
       >
         <Plane
           args={[3, 2]}
-          material-color="red"
+          material-color="black"
           onClick={() => {
             window.location.href = "https://github.com/itripleg";
           }}
