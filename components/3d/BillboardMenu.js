@@ -1,8 +1,16 @@
 import React from "react";
-import { Billboard, Plane, Text, Html } from "@react-three/drei";
-import Image from "next/image";
+import { Billboard, Plane, Text, Html, Image } from "@react-three/drei";
+import { useRef } from "react";
+import { useFrame } from "@react-three/fiber";
 
 function BillboardMenu() {
+  //   const ref = useRef();
+  //   useFrame(() => {
+  //     ref.current.material.zoom = 1; // 1 and higher
+  //     ref.current.material.grayscale = 1; // between 0 and 1
+  //     ref.current.material.color.set("red"); // mix-in color
+  //   });
+
   const args = {
     follow: true,
     lockX: false,
@@ -57,6 +65,7 @@ function BillboardMenu() {
         >
           Contact
         </Text>
+        {/* <Image url="/me.jpg" ref={ref} /> */}
         {/* <Html>
           <Image src="/me.jpg" width={100} height={100} />
         </Html> */}
