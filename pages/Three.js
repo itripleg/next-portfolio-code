@@ -40,6 +40,7 @@ function Three() {
           <Canvas>
             <Suspense>
               <Scene />
+              <Hydrant />
             </Suspense>
           </Canvas>
         </div>
