@@ -9,7 +9,7 @@ import Scene from "../components/3d/Scene";
 function Menu() {
   return (
     <>
-      <div className="min-h-screen h-screen bg-black p-20 ">
+      <div className="min-h-screen h-screen bg-black p-6 lg:p-20 ">
         <h1 className="text-white text-3xl lg:text-6xl p-2 text-center">
           BUNCOMBE.TECH
         </h1>
@@ -22,9 +22,9 @@ function Menu() {
             </Suspense>
           </Canvas>
         </div>
-        <h1 className="text-white text-2xl lg:text-5xl p-2 text-center">
+        {/* <h1 className="text-white text-2xl lg:text-5xl p-2 text-center">
           This is a design test.
-        </h1>
+        </h1> */}
       </div>
     </>
   );
