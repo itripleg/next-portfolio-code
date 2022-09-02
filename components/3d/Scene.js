@@ -23,8 +23,8 @@ function Scene() {
         args={[camera, gl.domElement]}
         enableDamping
         dampingFactor={0.1}
-        rotateSpeed={0.5}
-        autoRotateSpeed={1}
+        rotateSpeed={0.2}
+        autoRotateSpeed={0.5}
         autoRotate={true}
       />
       {/* <Environment files={"milky.hdr"} background /> */}
