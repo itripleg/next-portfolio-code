@@ -2,7 +2,8 @@ import React from "react";
 import BillboardMenu from "../components/3d/BillboardMenu";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import Office from "../components/3d/Office";
-import { useRef, Suspense, useEffect } from "react";
+import { useRef, Suspense, useEffect, useCallback } from "react";
+import gsap from "gsap";
 
 import {
   Html,
@@ -11,13 +12,23 @@ import {
   PerspectiveCamera,
   FlyControls,
   AmbientLight,
+  Plane,
 } from "@react-three/drei";
 
 function Menu() {
   const controlRef = useRef(null);
   const cameraRef = useRef(null);
+  const planeRef = useRef(null);
   console.log(controlRef);
   console.log(cameraRef);
+
+  const measuredRef = useCallback((node) => {
+    if (node !== null) {
+      console.log("node value changed:");
+      console.log(node);
+      gsap.to(node.position, { x: 20, duration: 20 });
+    }
+  });
 
   return (
     <>
@@ -33,9 +44,9 @@ function Menu() {
                 autoRotate={false}
                 makeDefault
                 rotateSpeed={0.2}
-                maxAzimuthAngle={0.5}
-                minAzimuthAngle={-2}
-                maxPolarAngle={2}
+                maxAzimuthAngle={0.8}
+                minAzimuthAngle={-1.5}
+                maxPolarAngle={1.7}
                 minPolarAngle={-180}
                 maxZoom={1}
                 maxDistance={20}
@@ -54,8 +65,14 @@ function Menu() {
 
               <Environment preset="dawn" />
               {/* <BillboardMenu /> */}
+              {/* <Plane ref={measuredRef} position={[0, 5, 0]} name="myPlane" /> */}
 
-              <Office />
+              {/* <Office ref={React.forwardRef(() => {}, measuredRef)} /> */}
+              <Office position={[0, 0, 0]} rotation={[0, 0.4, 0]} />
+              {/* <BillboardMenu
+                ref={React.forwardRef(() => {})}
+                position={[0, 0, 0]}
+              /> */}
             </Suspense>
           </Canvas>
         </div>

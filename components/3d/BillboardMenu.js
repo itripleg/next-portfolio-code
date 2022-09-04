@@ -3,7 +3,7 @@ import { Billboard, Plane, Text, Html, Image } from "@react-three/drei";
 import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 
-function BillboardMenu() {
+function BillboardMenu(props) {
   const ref = useRef();
   // useFrame(() => {
   //   ref.current.update();
@@ -74,9 +74,9 @@ function BillboardMenu() {
         lockX={args.lockX}
         lockY={args.lockY}
         lockZ={args.lockZ}
-        position={[0, 0, 0]}
+        position={props.position}
       >
-        {/* <Plane args={[3, 2]} material-color="green" /> */}
+        <Plane args={[3, 2]} material-color="green" />
       </Billboard>
       <Billboard
         follow={args.follow}
