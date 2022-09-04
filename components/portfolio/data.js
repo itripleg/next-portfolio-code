@@ -32,6 +32,14 @@ export const projects = [
     image: "/project-4.gif",
     link: "https://github.com/itripleg/solidity-smart-contracts",
   },
+  {
+    title: "3D Modeling",
+    subtitle: "3D Modeling",
+    description:
+      "react-threejs/drei along with react-srping, and gsap experiments",
+    image: "/stars.jpg",
+    link: "/Room",
+  },
 ];
 
 export const skills = [
