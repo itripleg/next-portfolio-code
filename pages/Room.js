@@ -32,24 +32,24 @@ function Menu() {
                 ref={controlRef}
                 autoRotate={false}
                 makeDefault
-                // position={[-20, -20, -20]}
+                rotateSpeed={0.2}
                 maxAzimuthAngle={0.5}
                 minAzimuthAngle={-2}
                 maxPolarAngle={2}
                 minPolarAngle={-180}
+                maxZoom={0.8}
+                maxDistance={20}
+                target={[1, 4, 0]}
+                panSpeed={0.1}
               />
               {/* <FlyControls /> */}
               {/* <PerspectiveCamera makeDefault position={[-2, 15, 3]} /> */}
               <PerspectiveCamera
                 ref={cameraRef}
                 makeDefault
-                position={[-4, 15, 3]}
-                zoom={1.2}
-                rotation={[20, 2, 0]}
-                // rotation={[4, 3, 2]}
-                // near={1}
-                // far={100}
-                // up={(0, 1, 0)}
+                position={[-0.2999594326472922, 5.808871804688835, 4.5]}
+                zoom={0.8}
+                rotation={{ x: 20, y: 20, z: 100 }}
               />
 
               <Environment preset="dawn" />
