@@ -18,7 +18,7 @@ function Projects() {
                made for demo purposes, but feel free to login to them and make a post! I
                will upload all revelant code to my Github as progress is made.`}{" "}
               <br />
-              <Link className="w-1/5" href="/Menu">
+              <Link className="w-1/5" href="/Three">
                 <a className="text-center text-bold text-lg hover:cursor-pointer underline text-black animate-pulse">
                   Checkout some new experimental stuff!
                 </a>
