@@ -380,7 +380,7 @@ export default function Office(props) {
         geometry={nodes.Text005.geometry}
         material={nodes.Text005.material}
         position={[5.98, 6.92, -3.27]}
-        rotation={[1.58, 0, 1.74]}
+        rotation={[1.56, 0.01, 1.73]}
         scale={0.29}
       />
       <mesh
@@ -398,7 +398,7 @@ export default function Office(props) {
         geometry={nodes.Text007.geometry}
         material={nodes.Text007.material}
         position={[5.95, 4.22, -1.8]}
-        rotation={[1.58, 0, 1.74]}
+        rotation={[1.53, 0.03, 1.72]}
         scale={0.49}
       />
       <group
@@ -409,13 +409,13 @@ export default function Office(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Cube001_1.geometry}
+          geometry={nodes.Cube001.geometry}
           material={materials["Table Legs"]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Cube001_2.geometry}
+          geometry={nodes.Cube001_1.geometry}
           material={materials["Table Top"]}
         />
       </group>
@@ -431,19 +431,19 @@ export default function Office(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Cube008_1.geometry}
+          geometry={nodes.Cube008.geometry}
           material={materials["Material.001"]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Cube008_2.geometry}
+          geometry={nodes.Cube008_1.geometry}
           material={materials.Metal}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Cube008_3.geometry}
+          geometry={nodes.Cube008_2.geometry}
           material={materials["Table Legs"]}
         />
       </group>
@@ -459,13 +459,13 @@ export default function Office(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Cube011_1.geometry}
+          geometry={nodes.Cube011.geometry}
           material={materials["Table Top"]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Cube011_2.geometry}
+          geometry={nodes.Cube011_1.geometry}
           material={materials["Table Legs"]}
         />
       </group>
@@ -488,406 +488,14 @@ export default function Office(props) {
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Table_Top006.geometry}
-        material={materials.Keyboard}
-        position={[0.42, 2.29, -3.79]}
-        scale={[0.86, 0.05, 0.38]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube001.geometry}
-        material={nodes.Cube001.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube002.geometry}
-        material={nodes.Cube002.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube003.geometry}
-        material={nodes.Cube003.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube004.geometry}
-        material={nodes.Cube004.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube005.geometry}
-        material={nodes.Cube005.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube006.geometry}
-        material={nodes.Cube006.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube007.geometry}
-        material={nodes.Cube007.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube008.geometry}
-        material={nodes.Cube008.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube009.geometry}
-        material={nodes.Cube009.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube010.geometry}
-        material={nodes.Cube010.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube011.geometry}
-        material={nodes.Cube011.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube012.geometry}
-        material={nodes.Cube012.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube013.geometry}
-        material={nodes.Cube013.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
         geometry={nodes.Cube014.geometry}
-        material={nodes.Cube014.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
+        material={materials.Keyboard}
       />
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Cube015.geometry}
-        material={nodes.Cube015.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube016.geometry}
-        material={nodes.Cube016.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube017.geometry}
-        material={nodes.Cube017.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube018.geometry}
-        material={nodes.Cube018.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube019.geometry}
-        material={nodes.Cube019.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube020.geometry}
-        material={nodes.Cube020.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube021.geometry}
-        material={nodes.Cube021.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube022.geometry}
-        material={nodes.Cube022.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube023.geometry}
-        material={nodes.Cube023.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube024.geometry}
-        material={nodes.Cube024.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube025.geometry}
-        material={nodes.Cube025.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube026.geometry}
-        material={nodes.Cube026.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube027.geometry}
-        material={nodes.Cube027.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube028.geometry}
-        material={nodes.Cube028.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube029.geometry}
-        material={nodes.Cube029.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube030.geometry}
-        material={nodes.Cube030.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube031.geometry}
-        material={nodes.Cube031.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube032.geometry}
-        material={nodes.Cube032.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube033.geometry}
-        material={nodes.Cube033.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube034.geometry}
-        material={nodes.Cube034.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube035.geometry}
-        material={nodes.Cube035.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube036.geometry}
-        material={nodes.Cube036.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube037.geometry}
-        material={nodes.Cube037.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube038.geometry}
-        material={nodes.Cube038.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube039.geometry}
-        material={nodes.Cube039.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube040.geometry}
-        material={nodes.Cube040.material}
-        position={[-0.21, 2.34, -4]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube045.geometry}
-        material={nodes.Cube045.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube046.geometry}
-        material={nodes.Cube046.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube047.geometry}
-        material={nodes.Cube047.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube048.geometry}
-        material={nodes.Cube048.material}
-        position={[-0.27, 2.34, -4.01]}
-        rotation={[-3.03, 0, 0]}
-        scale={-0.02}
+        geometry={nodes.Cube014_1.geometry}
+        material={materials["Material.015"]}
       />
       <mesh
         castShadow
@@ -1033,23 +641,20 @@ export default function Office(props) {
         position={[0.56, 5.24, -0.42]}
         scale={5.53}
       />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube056.geometry}
-        material={materials["Material.014"]}
-        position={[0.16, 0.86, -1]}
-        rotation={[0.18, -1.33, 0]}
-        scale={[0.95, 0.2, 0.95]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cylinder.geometry}
-        material={materials["Table Legs"]}
-        position={[0.2, 0.32, -0.76]}
-        scale={0.18}
-      />
+      <group position={[0.41, 0.32, 0.66]} scale={0.18}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder003_1.geometry}
+          material={materials["Table Legs"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder003_2.geometry}
+          material={materials["Material.014"]}
+        />
+      </group>
       <mesh
         castShadow
         receiveShadow
@@ -1318,7 +923,7 @@ export default function Office(props) {
         geometry={nodes.Text003.geometry}
         material={nodes.Text003.material}
         position={[4.19, 2.86, 2.2]}
-        rotation={[0.06, -1.17, 0.12]}
+        rotation={[0.06, -1.03, 0.15]}
         scale={0.41}
       />
       <mesh
@@ -1327,7 +932,7 @@ export default function Office(props) {
         geometry={nodes.Text004.geometry}
         material={nodes.Text004.material}
         position={[4.16, 2.82, 3.22]}
-        rotation={[0.06, -1.17, 0.12]}
+        rotation={[0.06, -0.97, 0.16]}
         scale={0.41}
       />
       <mesh
@@ -1368,11 +973,38 @@ export default function Office(props) {
       <mesh
         castShadow
         receiveShadow
+        geometry={nodes.Plane010.geometry}
+        material={materials["Material.013"]}
+        position={[6.01, 3.77, -3.26]}
+        rotation={[Math.PI / 2, 0, -1.57]}
+        scale={[0.47, 0.47, 1.81]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
         geometry={nodes.Plane002.geometry}
         material={materials["Material.008"]}
         position={[6.09, 8.14, -2.59]}
         rotation={[Math.PI / 2, 0, -1.57]}
         scale={[0.47, 0.47, 0.84]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plane004.geometry}
+        material={materials["White Board"]}
+        position={[6.06, 6.98, 0.95]}
+        rotation={[Math.PI / 2, 0, -1.57]}
+        scale={[0.47, 0.47, 1.81]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plane009.geometry}
+        material={materials["White Board"]}
+        position={[6.06, 4.12, -2.13]}
+        rotation={[1.57, 0, 1.57]}
+        scale={[0.47, 0.47, 1.81]}
       />
       <group
         position={[5.29, 3.24, 2.6]}
@@ -1400,43 +1032,16 @@ export default function Office(props) {
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Cube002_1.geometry}
+          geometry={nodes.Cube002.geometry}
           material={materials["Table Top"]}
         />
         <mesh
           castShadow
           receiveShadow
-          geometry={nodes.Cube002_2.geometry}
+          geometry={nodes.Cube002_1.geometry}
           material={materials.Material}
         />
       </group>
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Plane010.geometry}
-        material={materials["Material.013"]}
-        position={[6.01, 3.77, -3.26]}
-        rotation={[Math.PI / 2, 0, -1.57]}
-        scale={[0.47, 0.47, 1.81]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Plane004.geometry}
-        material={materials["White Board"]}
-        position={[6.06, 6.98, 0.95]}
-        rotation={[Math.PI / 2, 0, -1.57]}
-        scale={[0.47, 0.47, 1.81]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Plane009.geometry}
-        material={materials["White Board"]}
-        position={[6.06, 4.12, -2.13]}
-        rotation={[1.57, 0, 1.57]}
-        scale={[0.47, 0.47, 1.81]}
-      />
       <group
         position={[4.99, 3.21, 1.27]}
         rotation={[-0.01, 0.45, -0.53]}
@@ -1456,8 +1061,8 @@ export default function Office(props) {
         />
       </group>
       <group
-        position={[0.5, 5.34, -6.37]}
-        rotation={[0.8, -1.57, 2.44]}
+        position={[0.93, 5.36, -6.47]}
+        rotation={[-3.04, 1.56, 1.48]}
         scale={[-0.97, 0.33, -3.76]}
       >
         <mesh
