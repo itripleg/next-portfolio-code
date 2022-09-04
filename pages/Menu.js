@@ -1,8 +1,15 @@
 import React from "react";
 import BillboardMenu from "../components/3d/BillboardMenu";
 import { Canvas, useFrame } from "@react-three/fiber";
+import Office from "../components/3d/Office";
 import { Suspense } from "react";
-import { Html, OrbitControls, PerspectiveCamera } from "@react-three/drei";
+import {
+  Html,
+  Environment,
+  OrbitControls,
+  PerspectiveCamera,
+  AmbientLight,
+} from "@react-three/drei";
 import Image from "next/image";
 import Scene from "../components/3d/Scene";
 
@@ -17,8 +24,13 @@ function Menu() {
           {/* <Image src={"/stars.jpg"} layout="fill" /> */}
           <Canvas>
             <Suspense>
-              <Scene />
-              <BillboardMenu />
+              {/* <Scene /> */}
+              <OrbitControls autoRotate={false} />
+              <PerspectiveCamera makeDefault position={[0, 0, 10]} />
+
+              <Environment preset="sunset" />
+              {/* <BillboardMenu /> */}
+              <Office />
             </Suspense>
           </Canvas>
         </div>
