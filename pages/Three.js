@@ -4,7 +4,8 @@ import Scene from "../components/3d/Scene";
 import BillboardMenu from "../components/3d/BillboardMenu";
 import House from "../components/3d/House";
 import Hydrant from "../components/3d/Hydrant";
-import { Environment, Image } from "@react-three/drei";
+import Office from "../components/3d/Office";
+import { Environment, Image, OrbitControls } from "@react-three/drei";
 // import { Billboard, Text, Plane } from "@react-three/drei";\
 
 function Three() {
@@ -36,11 +37,40 @@ function Three() {
         <p className="text-white text-center">
           A random fire hydrant I made.🤷🏾‍♂️
         </p>
-        <div className="bg-gray-900 border h-[500px] p-4 lg:p-28">
+        <div className="bg-gray-900 border h-[500px]">
           <Canvas>
             <Suspense>
-              <Scene />
+              <Environment preset="sunset" background />
+              <OrbitControls />
               <Hydrant />
+            </Suspense>
+          </Canvas>
+        </div>
+        <p className="text-white text-center">
+          A lot of effort went into this model. I plan to have animations next.{" "}
+          <a href="/Room" className="text-green-400">
+            Full experience here.
+          </a>
+        </p>
+        <div className="bg-gray-900 border h-[500px]">
+          <Canvas>
+            <Suspense>
+              <Environment preset="dawn" />
+              <OrbitControls
+                // ref={controlRef}
+                autoRotate={false}
+                makeDefault
+                rotateSpeed={0.2}
+                maxAzimuthAngle={0.8}
+                minAzimuthAngle={-1.5}
+                maxPolarAngle={2}
+                minPolarAngle={-180}
+                maxZoom={1}
+                maxDistance={20}
+                target={[0.3, 3, 0]}
+                panSpeed={0.1}
+              />
+              <Office />
             </Suspense>
           </Canvas>
         </div>
