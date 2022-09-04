@@ -37,9 +37,9 @@ function Menu() {
                 minAzimuthAngle={-2}
                 maxPolarAngle={2}
                 minPolarAngle={-180}
-                maxZoom={0.8}
+                maxZoom={1}
                 maxDistance={20}
-                target={[1, 4, 0]}
+                target={[0.3, 3, 0]}
                 panSpeed={0.1}
               />
               {/* <FlyControls /> */}
@@ -47,8 +47,8 @@ function Menu() {
               <PerspectiveCamera
                 ref={cameraRef}
                 makeDefault
-                position={[-0.2999594326472922, 5.808871804688835, 4.5]}
-                zoom={0.8}
+                position={[0, 13.808871804688835, 10.5]}
+                zoom={1.4}
                 rotation={{ x: 20, y: 20, z: 100 }}
               />
 
