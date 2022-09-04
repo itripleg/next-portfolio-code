@@ -16,9 +16,9 @@ import Scene from "../components/3d/Scene";
 function Menu() {
   return (
     <>
-      <div className="min-h-screen h-screen bg-black p-6 lg:p-20 ">
+      <div className="min-h-screen h-screen bg-black p-6 lg:p-16 ">
         <h1 className="text-white text-3xl lg:text-6xl p-2 text-center">
-          BUNCOMBE.TECH
+          {/* BUNCOMBE.TECH */}
         </h1>
         <div className="flex h-2/3 justify-center">
           {/* <Image src={"/stars.jpg"} layout="fill" /> */}
