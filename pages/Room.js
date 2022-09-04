@@ -41,12 +41,13 @@ function Menu() {
             <Suspense>
               <OrbitControls
                 ref={controlRef}
-                autoRotate={false}
+                autoRotate={true}
+                autoRotateSpeed={0.25}
                 makeDefault
                 rotateSpeed={0.2}
                 maxAzimuthAngle={0.8}
                 minAzimuthAngle={-1.5}
-                maxPolarAngle={1.7}
+                maxPolarAngle={1.9}
                 minPolarAngle={-180}
                 maxZoom={1}
                 maxDistance={20}
