@@ -38,7 +38,7 @@ export const projects = [
     description:
       "react-threejs/drei along with react-srping, and gsap experiments",
     image: "/stars.jpg",
-    link: "/Room",
+    link: "/Three",
   },
 ];
 
