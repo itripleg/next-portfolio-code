@@ -379,9 +379,9 @@ export default function Office(props) {
         receiveShadow
         geometry={nodes.Text005.geometry}
         material={nodes.Text005.material}
-        position={[5.9, 6.93, -3.8]}
+        position={[5.9, 6.93, -4.1]}
         rotation={[Math.PI / 2, 0, Math.PI / 2]}
-        scale={0.29}
+        scale={0.39}
       />
       <mesh
         castShadow
@@ -389,7 +389,7 @@ export default function Office(props) {
         geometry={nodes.Text006.geometry}
         material={nodes.Text006.material}
         position={[5.83, 7.71, 2.4]}
-        rotation={[1.58, 0, Math.PI / 2]}
+        rotation={[Math.PI / 2, 0, Math.PI / 2]}
         scale={0.29}
       />
       <mesh
@@ -398,7 +398,7 @@ export default function Office(props) {
         geometry={nodes.Text007.geometry}
         material={nodes.Text007.material}
         position={[5.95, 4.22, -1.8]}
-        rotation={[1.53, 0.03, 1.72]}
+        rotation={[Math.PI / 2, 0, Math.PI / 2]}
         scale={0.49}
       />
       <group
@@ -997,6 +997,24 @@ export default function Office(props) {
           material={materials["Table Top"]}
         />
       </group>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plane004.geometry}
+        material={materials["White Board"]}
+        position={[6.06, 6.98, 0.95]}
+        rotation={[Math.PI / 2, 0, -1.57]}
+        scale={[0.47, 0.47, 1.81]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Plane009.geometry}
+        material={materials["White Board"]}
+        position={[6.06, 4.12, -2.13]}
+        rotation={[1.57, 0, 1.57]}
+        scale={[0.47, 0.47, 1.81]}
+      />
       <group
         position={[5.21, 3.16, 4.02]}
         rotation={[-0.01, -0.34, -0.54]}
@@ -1022,24 +1040,6 @@ export default function Office(props) {
         material={materials["Material.013"]}
         position={[6.01, 3.77, -3.26]}
         rotation={[Math.PI / 2, 0, -1.57]}
-        scale={[0.47, 0.47, 1.81]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Plane004.geometry}
-        material={materials["White Board"]}
-        position={[6.06, 6.98, 0.95]}
-        rotation={[Math.PI / 2, 0, -1.57]}
-        scale={[0.47, 0.47, 1.81]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Plane009.geometry}
-        material={materials["White Board"]}
-        position={[6.06, 4.12, -2.13]}
-        rotation={[1.57, 0, 1.57]}
         scale={[0.47, 0.47, 1.81]}
       />
       <group
