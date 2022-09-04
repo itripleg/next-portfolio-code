@@ -76,7 +76,7 @@ function BillboardMenu(props) {
         lockZ={args.lockZ}
         position={props.position}
       >
-        <Plane args={[3, 2]} material-color="green" />
+        {/* <Plane args={[3, 2]} material-color="green" /> */}
       </Billboard>
       <Billboard
         follow={args.follow}
