@@ -36,6 +36,7 @@ function About() {
                 width="150"
                 height="150"
               />
+
               <div className="py-12">
                 <p className=" lg:block text-center mt-6 mb-10 lg:mb-0">
                   Full Stack developer. Crypto and Blockchain enthusiast. I love
@@ -60,6 +61,11 @@ function About() {
                     className="underline"
                   >
                     Github.
+                  </a>{" "}
+                  Checkout my
+                  <a href="/Room" className="underline">
+                    {" "}
+                    3D site!.
                   </a>
                 </p>
               </div>
