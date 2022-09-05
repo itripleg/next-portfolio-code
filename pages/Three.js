@@ -4,6 +4,7 @@ import Scene from "../components/3d/Scene";
 import BillboardMenu from "../components/3d/BillboardMenu";
 import House from "../components/3d/House";
 import Hydrant from "../components/3d/Hydrant";
+import Bar from "../components/3d/Bar";
 import Office from "../components/3d/Office";
 import { Environment, Image, OrbitControls } from "@react-three/drei";
 // import { Billboard, Text, Plane } from "@react-three/drei";\
@@ -71,6 +72,31 @@ function Three() {
                 panSpeed={0.1}
               />
               <Office />
+            </Suspense>
+          </Canvas>
+        </div>
+        <p className="text-white text-center">
+          Random bar scene I made for practice.
+        </p>
+        <div className="bg-gray-900 border h-[500px]">
+          <Canvas>
+            <Suspense>
+              <Environment preset="lobby" />
+              <OrbitControls
+                // ref={controlRef}
+                autoRotate={false}
+                makeDefault
+                rotateSpeed={0.2}
+                maxAzimuthAngle={Infinity}
+                minAzimuthAngle={Infinity}
+                maxPolarAngle={2}
+                minPolarAngle={-180}
+                maxZoom={1}
+                maxDistance={20}
+                target={[0.3, 3, 0]}
+                panSpeed={0.1}
+              />
+              <Bar />
             </Suspense>
           </Canvas>
         </div>

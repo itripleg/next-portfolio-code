@@ -4,7 +4,7 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import Office from "../components/3d/Office";
 import { useRef, Suspense, useEffect, useCallback } from "react";
 import gsap from "gsap";
-
+import Loading from "../components/Loading";
 import {
   Html,
   Environment,
@@ -37,8 +37,8 @@ function Menu() {
           {/* BUNCOMBE.TECH */}
         </h1>
         <div className="flex h-2/3 justify-center">
-          <Canvas>
-            <Suspense>
+          <Suspense fallback={<Loading />}>
+            <Canvas>
               <OrbitControls
                 ref={controlRef}
                 autoRotate={true}
@@ -74,8 +74,8 @@ function Menu() {
                 ref={React.forwardRef(() => {})}
                 position={[0, 0, 0]}
               /> */}
-            </Suspense>
-          </Canvas>
+            </Canvas>
+          </Suspense>
         </div>
         {/* <h1 className="text-white text-2xl lg:text-5xl p-2 text-center">
           This is a design test.
