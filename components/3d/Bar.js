@@ -6,37 +6,25 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export default function Bar(props) {
-  const { nodes, materials } = useGLTF("/uwu.glb");
+  const { nodes, materials } = useGLTF("/Bar.glb");
   return (
     <group {...props} dispose={null}>
-      <group position={[-3.21, 3.43, -5.54]} scale={0.15}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cylinder001_1.geometry}
-          material={materials.Ground}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cylinder001_2.geometry}
-          material={materials.Base}
-        />
-      </group>
-      <group position={[-2.27, 4.79, -6.12]} scale={0.15}>
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cylinder002_1.geometry}
-          material={materials.Ground}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.Cylinder002_2.geometry}
-          material={materials.Base}
-        />
-      </group>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.bar_top.geometry}
+        material={materials.Metal}
+        position={[-1.36, 1.37, 0.39]}
+        scale={[2.03, 1.3, 1.3]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cylinder001.geometry}
+        material={materials.Ground}
+        position={[-3.21, 3.43, -5.54]}
+        scale={0.15}
+      />
       <group position={[-0.56, 0.14, -0.61]} rotation={[0, -0.02, -0.05]}>
         <mesh
           castShadow
@@ -216,31 +204,15 @@ export default function Bar(props) {
         receiveShadow
         geometry={nodes.Cylinder014.geometry}
         material={materials.Metal}
-        position={[-2.33, 0.58, 2.5]}
+        position={[-2.33, 0.62, 2.5]}
         scale={0.29}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cylinder016.geometry}
-        material={materials.Metal}
-        position={[-2.33, 1.85, 2.5]}
-        scale={[0.42, -0.03, 0.42]}
       />
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.Cylinder017.geometry}
         material={materials.Metal}
-        position={[-0.99, 1.71, 2.5]}
-        scale={[0.42, -0.03, 0.42]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cylinder018.geometry}
-        material={materials.Metal}
-        position={[0.34, 1.71, 2.5]}
+        position={[-0.82, 1.75, 2.5]}
         scale={[0.42, -0.03, 0.42]}
       />
       <mesh
@@ -248,39 +220,15 @@ export default function Bar(props) {
         receiveShadow
         geometry={nodes.Cylinder019.geometry}
         material={materials.Metal}
-        position={[1.68, 1.71, 2.5]}
+        position={[1.94, 1.75, 2.5]}
         scale={[0.42, -0.03, 0.42]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cylinder020.geometry}
-        material={materials.Metal}
-        position={[3.02, 1.71, 2.5]}
-        scale={[0.42, -0.03, 0.42]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cylinder021.geometry}
-        material={materials.Metal}
-        position={[-0.99, 0.58, 2.5]}
-        scale={0.29}
       />
       <mesh
         castShadow
         receiveShadow
         geometry={nodes.Cylinder022.geometry}
         material={materials.Metal}
-        position={[0.34, 0.58, 2.5]}
-        scale={0.29}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cylinder023.geometry}
-        material={materials.Metal}
-        position={[1.68, 0.6, 2.5]}
+        position={[0.58, 0.62, 2.5]}
         scale={0.29}
       />
       <mesh
@@ -288,7 +236,7 @@ export default function Bar(props) {
         receiveShadow
         geometry={nodes.Cylinder024.geometry}
         material={materials.Metal}
-        position={[3.02, 0.59, 2.5]}
+        position={[3.32, 0.63, 2.5]}
         scale={0.29}
       />
       <mesh
@@ -497,20 +445,145 @@ export default function Bar(props) {
       <mesh
         castShadow
         receiveShadow
+        geometry={nodes.Cube004.geometry}
+        material={materials.Metal}
+        position={[2.13, 5.52, -8.25]}
+        rotation={[-0.06, 0, 0]}
+        scale={[5.48, 3.47, 0.11]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cylinder016.geometry}
+        material={materials.Metal}
+        position={[4.7, 0.63, 2.5]}
+        scale={0.29}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cylinder018.geometry}
+        material={materials.Metal}
+        position={[6.19, 0.63, 2.5]}
+        scale={0.29}
+      />
+      <group position={[-0.56, 0.14, -0.61]} rotation={[0, -0.02, -0.05]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder051_1.geometry}
+          material={materials.Base}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder051_2.geometry}
+          material={materials.Secondary}
+        />
+      </group>
+      <group position={[-0.56, 0.14, -0.61]} rotation={[0, -0.02, -0.05]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder052.geometry}
+          material={materials.Base}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder052_1.geometry}
+          material={materials.Secondary}
+        />
+      </group>
+      <group position={[-0.56, 0.14, -0.61]} rotation={[0, -0.02, -0.05]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder053.geometry}
+          material={materials.Base}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder053_1.geometry}
+          material={materials.Secondary}
+        />
+      </group>
+      <group position={[-1.96, 1.52, 4.18]} rotation={[0, -0.02, -0.05]}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder054.geometry}
+          material={materials.Base}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder054_1.geometry}
+          material={materials.Secondary}
+        />
+      </group>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube003.geometry}
+        material={materials["Material.004"]}
+        position={[-12.13, 0.58, 8.6]}
+        rotation={[0, 0.55, 0]}
+        scale={[1, 1, 4.12]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cube006.geometry}
+        material={materials["Material.004"]}
+        position={[-11.1, 2.99, 9.52]}
+        rotation={[-1.27, -0.39, 0.78]}
+        scale={1.28}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cylinder050.geometry}
+        material={materials.Metal}
+        position={[-14.56, 0.3, 6.19]}
+        scale={[1, 0.2, 1]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Cylinder051.geometry}
+        material={materials.Secondary}
+        position={[-14.56, 0.3, 6.19]}
+        scale={[1, 0.2, 1]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
         geometry={nodes.Cylinder047.geometry}
         material={materials["Material.001"]}
         position={[7.92, 4.05, -3.86]}
         rotation={[-1.48, -0.08, 0.01]}
         scale={0.09}
       />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Cube003.geometry}
-        material={materials["Material.001"]}
-        position={[7.15, 1.63, -21.07]}
-        scale={[0.9, -0.04, 0.9]}
-      />
+      <group
+        position={[10.03, 0.33, -21.15]}
+        rotation={[1.66, -0.01, -3.14]}
+        scale={[-1, -2.1, -0.33]}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube010.geometry}
+          material={materials["Material.004"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cube010_1.geometry}
+          material={materials["Material.001"]}
+        />
+      </group>
       <mesh
         castShadow
         receiveShadow
@@ -527,22 +600,74 @@ export default function Bar(props) {
         position={[-0.07, -1.42, -1.33]}
         scale={11.03}
       />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.bar_top.geometry}
-        material={materials.Tile}
-        position={[-1.99, 1.37, 0.39]}
-        scale={1.3}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes.Ground.geometry}
-        material={materials.Tile}
-        position={[0, 0, -2.79]}
-        scale={11.03}
-      />
+      <group position={[6, 2.91, 0.28]} rotation={[0, -0.78, 0]} scale={0.19}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane003_1.geometry}
+          material={materials.Wood}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane003_2.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group
+        position={[4.51, 2.91, -0.52]}
+        rotation={[0, -1.41, 0]}
+        scale={0.19}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane004.geometry}
+          material={materials.Wood}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane004_1.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group
+        position={[4.77, 2.93, -0.37]}
+        rotation={[0, -1.41, 0]}
+        scale={0.19}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane005.geometry}
+          material={materials.Wood}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane005_1.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
+      <group
+        position={[-0.96, 2.91, 0.91]}
+        rotation={[0, -0.78, 0]}
+        scale={0.19}
+      >
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane006.geometry}
+          material={materials.Wood}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Plane006_1.geometry}
+          material={materials["Material.004"]}
+        />
+      </group>
       <mesh
         castShadow
         receiveShadow
@@ -555,13 +680,50 @@ export default function Bar(props) {
       <mesh
         castShadow
         receiveShadow
+        geometry={nodes.Cube005.geometry}
+        material={materials.Material}
+        position={[2.13, 5.52, -8.25]}
+        rotation={[-0.06, 0, 0]}
+        scale={[5.48, 3.47, 0.11]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Ground.geometry}
+        material={materials.Tile}
+        position={[0, 0.04, -2.79]}
+        scale={16.24}
+      />
+      <mesh
+        castShadow
+        receiveShadow
         geometry={nodes.bar_body.geometry}
         material={materials.Marble}
-        position={[-1.99, 1.37, 0.39]}
-        scale={1.3}
+        position={[-1.36, 1.37, 0.39]}
+        scale={[2.03, 1.3, 1.3]}
       />
+      <group position={[-2.27, 4.79, -6.12]} scale={0.15}>
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder002_1.geometry}
+          material={materials.Ground}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder002_2.geometry}
+          material={materials["Material.004"]}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Cylinder002_3.geometry}
+          material={materials.Marble}
+        />
+      </group>
     </group>
   );
 }
 
-useGLTF.preload("/uwu.glb");
+useGLTF.preload("/Bar.glb");
