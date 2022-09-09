@@ -33,11 +33,11 @@ export const projects = [
     link: "https://github.com/itripleg/solidity-smart-contracts",
   },
   {
-    title: "3D Modeling",
-    subtitle: "3D Modeling",
+    title: "3D Modeling and Animations",
+    subtitle: "Blender + Three.js",
     description:
       "react-threejs/drei along with react-srping, and gsap experiments",
-    image: "/stars.jpg",
+    image: "/bearwalking.gif",
     link: "/Three",
   },
 ];
