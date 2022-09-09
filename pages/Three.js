@@ -20,7 +20,7 @@ function Three() {
         <p className="text-white text-center">
           First attempt to make a 3D interactive menu with working links. I made
           the "House" model using blender, and react-three/drei to get the model
-          into a scene. Pinch/scrool to zoom. I will add on hover events to the
+          into a scene. Pinch/scroll to zoom. I will add on hover events to the
           menu panels soon.
         </p>
         <div className="bg-gray-900 border h-[500px]">

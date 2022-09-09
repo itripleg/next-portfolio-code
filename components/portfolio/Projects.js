@@ -6,7 +6,7 @@ import Link from "next/link";
 function Projects() {
   return (
     <div className="pb-8 bg-gradient-to-b from-black via-pink-600 to-black">
-      <section id="projects" className="text-gray-400 body-font">
+      <section id="projects" className="text-gray-400">
         <div className="container text-center px-5 py-8 md:py-20 lg:py-34 mx-auto lg:px-40">
           <div className="flex flex-col w-full mb-20 lg:flex-col h-full">
             <CodeIcon className="mx-auto inline-block w-10 mb-4" />

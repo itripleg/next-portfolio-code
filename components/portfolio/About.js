@@ -63,9 +63,9 @@ function About() {
                     Github.
                   </a>{" "}
                   Checkout my
-                  <a href="/Room" className="underline">
+                  <a href="/Three" className="underline">
                     {" "}
-                    3D site!.
+                    3D stuff!
                   </a>
                 </p>
               </div>
