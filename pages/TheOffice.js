@@ -37,7 +37,7 @@ function TheOffice() {
           {/* BUNCOMBE.TECH */}
         </h1>
         <div className="flex h-2/3 justify-center">
-          <Suspense fallback={<Loading />}>
+          <Suspense fallback={<Loading message="Now loading The Office..." />}>
             <Canvas>
               <OrbitControls
                 ref={controlRef}
