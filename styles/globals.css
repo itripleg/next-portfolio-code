@@ -118,3 +118,7 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.warning-message {
+  @apply text-white text-center animate-pulse text-yellow-800
+}
