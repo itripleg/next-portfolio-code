@@ -1,22 +1,27 @@
-import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import { Environment, Image, OrbitControls } from "@react-three/drei";
 import Scene from "../components/3d/Scene";
 import BillboardMenu from "../components/3d/BillboardMenu";
 import House from "../components/3d/House";
 import Hydrant from "../components/3d/Hydrant";
 import Bar from "../components/3d/Bar";
 import Office from "../components/3d/Office";
-import { Environment, Image, OrbitControls } from "@react-three/drei";
 // import { Billboard, Text, Plane } from "@react-three/drei";\
 
 function Three() {
   return (
     <>
       <div className="p-6 lg:p-28 bg-black min-h-screen flex flex-col justify-center gap-4">
+        <h1 className="warning-message pb-8">
+          Note* these models are not optimized for performance on older smart
+          phones. The models are best viewed using a computer.
+        </h1>
         <p className="text-white text-center">
           First attempt to make a 3D interactive menu with working links. I made
           the "House" model using blender, and react-three/drei to get the model
-          into a scene. Pinch/scrool to zoom.
+          into a scene. Pinch/scrool to zoom. I will add on hover events to the
+          menu panels soon.
         </p>
         <div className="bg-gray-900 border h-[500px]">
           <Canvas gl={{ antialias: false }}>
@@ -48,7 +53,8 @@ function Three() {
           </Canvas>
         </div>
         <p className="text-white text-center">
-          A lot of effort went into this model. I plan to have animations next.{" "}
+          A lot of effort went into this model. I plan to have animations on
+          different parts of the scene next.{" "}
           <a href="/Room" className="text-green-400">
             Full experience here.
           </a>
@@ -76,7 +82,10 @@ function Three() {
           </Canvas>
         </div>
         <p className="text-white text-center">
-          Random bar scene I made for practice.
+          Random bar scene I made for practice speed modeling. Check out the{" "}
+          <a href="/TheBar" className="text-green-400">
+            full experience here.
+          </a>{" "}
         </p>
         <div className="bg-gray-900 border h-[500px]">
           <Canvas>
