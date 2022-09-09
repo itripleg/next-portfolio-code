@@ -60,6 +60,18 @@ function Debug(jsonResponse) {
 
   return (
     <div className=" w-full bg-gradient-to-tl from-blue-500">
+      <div className="text-center flex flex-col items-center shadow-xl lg:mx-20 p-8">
+        <p className="p-2">html refresher div</p>
+        <div className="flex place-items-center p-2">
+          <p className="pr-2">select element with 3 options:</p>
+          <select>
+            <option>option1</option>
+            <option>option2</option>
+            <option>option3</option>
+          </select>
+        </div>
+        <textarea name="" />
+      </div>
       {session && (
         <div>
           <p>
