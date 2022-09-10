@@ -9,6 +9,7 @@ import {
   Html,
   Environment,
   OrbitControls,
+  PresentationControls,
   PerspectiveCamera,
   FlyControls,
   AmbientLight,
@@ -39,6 +40,13 @@ function TheOffice() {
         <div className="flex h-2/3 justify-center">
           <Suspense fallback={<Loading message="Now loading The Office..." />}>
             <Canvas>
+              <PresentationControls
+                global
+                zoom={0.8}
+                rotation={[0, -Math.PI / 4, 0]}
+                polar={[0, Math.PI / 4]}
+                azimuth={[-Math.PI / 4, Math.PI / 4]}
+              />
               <OrbitControls
                 ref={controlRef}
                 autoRotate={true}
