@@ -2,6 +2,22 @@ import UserImage from "../components/UserImage";
 import { useSession } from "next-auth/react";
 import { useState } from "react";
 import Image from "next/image";
+import * as THREE from "three";
+import * as DREI from "@react-three/drei";
+import * as FIBER from "@react-three/fiber";
+
+export function ThreeSuite() {
+  function log() {
+    console.log(
+      "Here are the main modules we're using for three.js; THREE, DREI and FIBER."
+    );
+    console.log(THREE);
+    console.log(DREI);
+    console.log(FIBER);
+  }
+
+  return <button onClick={log}>Get Three.js info</button>;
+}
 
 export async function getServerSideProps(context) {
   const headers = {
