@@ -47,7 +47,7 @@ function Scene() {
         ref={controlRef}
         target={[0, 4, 0]}
         autoRotate={true}
-        autoRotateSpeed={0.1}
+        autoRotateSpeed={-0.1}
         maxAzimuthAngle={0.8}
         minAzimuthAngle={-1.5}
         maxPolarAngle={1.9}
@@ -125,7 +125,7 @@ function Scene() {
         onPointerOver={(e) => {
           console.log("cursor hover-over", lightRef);
           document.getElementById("message").innerHTML =
-            "Reverend Billy Tylenöl is away from his bass.";
+            "Reverend Billy Tylenöl is away from his holy bass.";
           gsap.to(lightRef.current.target.position, {
             x: -6,
             y: 1.3,

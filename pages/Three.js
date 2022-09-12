@@ -1,7 +1,6 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { Environment, Image, OrbitControls } from "@react-three/drei";
-import Scene from "../components/3d/Scene";
 import BillboardMenu from "../components/3d/BillboardMenu";
 import House from "../components/3d/House";
 import Hydrant from "../components/3d/Hydrant";
@@ -26,7 +25,7 @@ function Three() {
         <div className="bg-gray-900 border h-[500px]">
           <Canvas gl={{ antialias: false }}>
             <Suspense>
-              <Scene />
+              <OrbitControls />
               <Environment
                 // preset="studio"
                 // background
