@@ -34,7 +34,7 @@ function Scene() {
         position={[0, 10, 0]}
         color={"white"}
         angle={0.3}
-        intensity={50}
+        intensity={9}
         attenuation={5}
         distance={50}
         anglePower={5}
@@ -67,6 +67,10 @@ function Scene() {
             z: -2.2,
             duration: 1.5,
           });
+          // gsap.to(lightRef.current, {
+          //   intensity: 15,
+          //   duration: 1.5,
+          // });
 
           gsap.to(controlRef.current.target, {
             x: 6,
