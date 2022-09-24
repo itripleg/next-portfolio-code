@@ -5,6 +5,7 @@ import {
   OrbitControls,
   SpotLight,
   Environment,
+  Plane,
 } from "@react-three/drei";
 import LesPaul from "./LesPaul";
 import Drums from "./Drums";
@@ -16,10 +17,25 @@ import gsap from "gsap";
 
 function Scene() {
   const camRef = useRef();
+  const spotRef = useRef();
   const lightRef = useRef();
   const controlRef = useRef();
 
   useFrame((state) => {
+    // gsap
+    //   .timeline()
+    //   .to(spotRef.current.target.position, {
+    //     x: -90,
+    //     y: 10,
+    //     z: 0,
+    //     duration: 10,
+    //   })
+    //   .to(spotRef.current.target.position, {
+    //     x: 90,
+    //     y: 10,
+    //     z: 0,
+    //     duration: 10,
+    //   });
     // console.log(lightRef.current.target.position);
     // lightRef.current.target.position.x = state.mouse.x * 10;
     // lightRef.current.target.position.z = state.mouse.y * -17;
@@ -27,7 +43,7 @@ function Scene() {
   console.log(controlRef.current);
   return (
     <>
-      {/* <ambientLight intensity={20} /> */}
+      <ambientLight intensity={0.4} />
       <Environment preset="night" />
       <SpotLight
         ref={lightRef}
@@ -39,6 +55,18 @@ function Scene() {
         distance={50}
         anglePower={5}
       />
+      {/* background animated spotlights */}
+      {/* <SpotLight
+        ref={spotRef}
+        position={[0, 0, -20]}
+        color={"green"}
+        angle={1}
+        intensity={9}
+        attenuation={5}
+        distance={50}
+        anglePower={5}
+        // rotation={(0, 0, 0)}
+      /> */}
       {/* <directionalLight position={[9, 6, -7]} /> */}
       {/* <PerspectiveCamera makeDefault position={[0, 11, 8]} /> */}
       {/* <OrbitControls target={[0, 2, -3]} /> */}
@@ -65,7 +93,7 @@ function Scene() {
             x: 6,
             y: 2.2,
             z: -2.2,
-            duration: 1.5,
+            duration: 3,
           });
           // gsap.to(lightRef.current, {
           //   intensity: 15,
@@ -92,7 +120,7 @@ function Scene() {
             x: 0,
             y: 0,
             z: -8,
-            duration: 1.5,
+            duration: 3,
           });
 
           gsap.to(controlRef.current.target, {
@@ -112,7 +140,7 @@ function Scene() {
             x: 0,
             y: 0,
             z: 0,
-            duration: 1.5,
+            duration: 3,
           });
 
           gsap.to(controlRef.current.target, {
@@ -134,7 +162,7 @@ function Scene() {
             x: -6,
             y: 1.3,
             z: -2,
-            duration: 1.5,
+            duration: 3,
           });
 
           gsap.to(controlRef.current.target, {
@@ -153,6 +181,7 @@ function Scene() {
           //     "Bad Vibes is a punk band out of Asheville NC.";
         }}
       />
+      {/* <Plane args={[8, 8, 2]} rotation={[2, 0, 0]} /> */}
     </>
   );
 }
