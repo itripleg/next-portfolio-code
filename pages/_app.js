@@ -22,7 +22,7 @@ export default function App({
             <text y=%22.9em%22 font-size=%2290%22>👨🏾‍💻</text></svg>"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charset="UTF-8" />
+        <meta charSet="UTF-8" />
         <meta name="description" content="Josh Bell developer services" />
         <meta name="keywords" content="HTML, CSS, JavaScript, Programming" />
         <meta name="author" content="Joshua Bell" />
