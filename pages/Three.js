@@ -39,7 +39,7 @@ function Three() {
           </Canvas>
         </div>
         {/* <button className="bg-white h-20">Rotate the House</button> */}
-        <p className="text-white text-center">
+        <p className="text-white text-center pt-6">
           A random fire hydrant I made.🤷🏾‍♂️
         </p>
         <div className="bg-gray-900 border h-[500px]">
@@ -51,7 +51,7 @@ function Three() {
             </Suspense>
           </Canvas>
         </div>
-        <p className="text-white text-center">
+        <p className="text-white text-center pt-6">
           A lot of effort went into this model. I plan to have animations on
           different parts of the scene next.{" "}
           <a href="/Room" className="text-green-400">
@@ -80,7 +80,7 @@ function Three() {
             </Suspense>
           </Canvas>
         </div>
-        <p className="text-white text-center">
+        <p className="text-white text-center pt-6">
           Random bar scene I made for practice speed modeling. Check out the{" "}
           <a href="/TheBar" className="text-green-400">
             full experience here.
