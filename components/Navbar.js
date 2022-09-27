@@ -1,6 +1,6 @@
 import { ArrowRightIcon, HomeIcon, MenuIcon } from "@heroicons/react/solid";
 import { useRouter } from "next/router";
-
+import { SocialIcon } from "react-social-icons";
 import Link from "next/link";
 
 function Navbar() {
@@ -111,15 +111,20 @@ function Navbar() {
         </nav>
         <div>
           <div className="p-4 flex">
-            <Link
+            {/* <Link
               href="https://github.com/itripleg/"
               passHref={true}
               className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 
             focus:outline-none hover:bg-gray-700 rounded text-base"
             >
               <a className="ml-4 hover:text-white">Github</a>
-            </Link>
-            <ArrowRightIcon className="invisible md:visible w-4 h-4 ml-1 md:mt-1" />
+            </Link> */}
+            {/* <ArrowRightIcon className="invisible md:visible w-4 h-4 ml-1 md:mt-1" /> */}
+            {/* <SocialIcon url="https://www.facebook.com/joshua.bell.902" /> */}
+            <SocialIcon
+              url="https://github.com/itripleg"
+              className="w-2 h-20"
+            />
           </div>
         </div>
       </div>
