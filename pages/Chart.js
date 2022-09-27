@@ -4,6 +4,7 @@ import Link from "next/link";
 import ChartBar from "../components/ChartBar";
 import { RecoilRoot } from "recoil";
 const ChartModal = dynamic(() => import("../components/ChartModal"));
+import Checklist from "../components/Checklist";
 
 const Chart = () => {
   // apparently we need client side/dynamic rendering for tv-widget to work reliably
@@ -155,6 +156,11 @@ const Chart = () => {
                 <br />
               </div>
             </div>
+          </div>
+        </div>
+        <div className="bg-black">
+          <div className=" bg-black">
+            <Checklist />
           </div>
         </div>
       </RecoilRoot>
