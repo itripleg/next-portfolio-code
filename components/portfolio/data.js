@@ -28,7 +28,7 @@ export const projects = [
     title: "Crypto Currency",
     subtitle: "DeFi",
     description:
-      "Experimental ERC20 and BEP20 smart contract based tokens. Yeild farming and self governing ecosystems. Flash loans and arbitrage bots. Reflection tokens.",
+      "Experimental ERC20 and BEP20 smart contract based tokens. Yield farming and self governing ecosystems. Flash loans and arbitrage bots. Reflection tokens.",
     image: "/project-4.gif",
     link: "https://github.com/itripleg/solidity-smart-contracts",
   },
