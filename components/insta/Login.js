@@ -28,8 +28,7 @@ export default function Login({ providers }) {
 				something.`}
 			</p>
 			<p className="px-5 italic">
-				*Note* I've disabled Facebook login and sadly Faker.js has been put on
-				hiatus {"\n"} so random user pictures are no longer available.{" "}
+				*Note* a Gmail account is needed to login.
 			</p>
 			<h1
 				onClick={signIn}
