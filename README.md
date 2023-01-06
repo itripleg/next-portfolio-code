@@ -1,3 +1,6 @@
+It's my web portfolio! You can run it yourself locally if you have [Node.js](https://nodejs.org/) installed. Clone the repo and use terminal while inside the root of the repository, then follow the steps below:
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
