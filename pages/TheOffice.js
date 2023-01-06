@@ -43,41 +43,44 @@ function TheOffice() {
 
   function look(location, rotation) {
     console.log("looking at ", location + rotation);
-    controlRef.current.position.set(0, 0, 0);
+    console.log(controlRef.current.object);
+    // controlRef.current.object.position.set(0, 0, 0);
     controlRef.current.update();
-    // gsap
-    //   .timeline()
-    //   .to(controlRef.current.object.position, {
-    //     x: location.x,
-    //     y: location.y,
-    //     z: location.z,
-    //     duration: 1,
-    //     onUpdate: controlRef.current.object.lookAt(0, 0, 0),
-    //   })
-    //   .to(controlRef.current.object.rotation, {
-    //     x: rotation.x,
-    //     y: rotation.y,
-    //     z: rotation.z,
-    //     duration: 1,
-    //     onUpdate: controlRef.current.object.lookAt(0, 0, 0),
-    //   });
+    gsap
+      .timeline()
+      .to(controlRef.current.object.position, {
+        x: location.x,
+        y: location.y,
+        z: location.z,
+        duration: 1,
+        onUpdate: controlRef.current.object.lookAt(0, 0, 0),
+      })
+      .to(controlRef.current.object.rotation, {
+        x: rotation.x,
+        y: rotation.y,
+        z: rotation.z,
+        duration: 2,
+        onUpdate: controlRef.current.object.lookAt(0, 0, 0),
+      });
   }
 
-  function resetControls() {
-    const location = {
+  const defaultControls = {
+    position: {
       x: -5.296686848706756,
       y: 3.1161221172489957,
       z: 7.43098527985215,
-    };
-    const rotation = {
+    },
+    rotation: {
       x: -0.2860685902862175,
       y: -0.36804752385248973,
       z: -0.105436136577787,
-    };
+    },
+  };
+  function resetControls() {
     console.log(
       "resetting controls from " + controlRef.current.object.position
     );
-    look(location, rotation);
+    look(defaultControls.position, defaultControls.rotation);
   }
 
   function getPosition() {
@@ -88,7 +91,8 @@ function TheOffice() {
         controlRef.current.object.position.y +
         "," +
         controlRef.current.object.position.z,
-      "}"
+      "}",
+      controlRef.current.object
     );
     console.log(
       "controlRef.current.object.rotation={",
@@ -138,9 +142,15 @@ function TheOffice() {
 
   return (
     <>
+      <style jsx>{`
+        button {
+          display: none;
+        }
+      `}</style>
+
       <div className="min-h-screen h-screen bg-black p-6 lg:p-16 ">
         <h1 className="text-white text-3xl lg:text-6xl p-2 text-center">
-          {/* BUNCOMBE.TECH */}
+          The Office
         </h1>
         <div className="flex h-1/2 justify-center">
           <Suspense fallback={<Loading message="Office Loading..." />}>
@@ -305,17 +315,17 @@ function TheOffice() {
           <button
             className="rounded-md bg-white"
             onClick={() => {
-              const location = {
-                x: 0.0003422256288649894,
-                y: 3.6147479253686847,
-                z: -1.0603092794660982,
+              const position = {
+                x: 0.41501893859990036,
+                y: 2.7033281586031865,
+                z: 0.6634752219184362,
               };
               const rotation = {
-                x: -0.4157662928251152,
-                y: 0.3733251557003463,
-                z: 0.15965210321418094,
+                x: -0.3271691925368589,
+                y: 0.40380652356200825,
+                z: 0.13256183695477058,
               };
-              look(location, rotation);
+              look(position, rotation);
             }}
           >
             Computer
@@ -332,9 +342,9 @@ function TheOffice() {
             className="rounded-md bg-white"
             onClick={() => {
               const location = {
-                x: -7.347004606998988,
-                y: 4,
-                z: 5,
+                x: -6.64756965204667,
+                y: -0.8540698452675518,
+                z: 5.539987560534842,
               };
               const rotation = {
                 x: -1,
