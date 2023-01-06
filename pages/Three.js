@@ -16,7 +16,7 @@ function Three() {
           Note* these models are not optimized for performance on older smart
           phones. The models are best viewed using a computer.
         </h1>
-        <p className="text-white text-center">
+        {/* <p className="text-white text-center">
           First attempt to make a 3D interactive menu with working links. I made
           the "House" model using blender, and react-three/drei to get the model
           into a scene. Pinch/scroll to zoom. I will add on hover events to the
@@ -38,7 +38,6 @@ function Three() {
             </Suspense>
           </Canvas>
         </div>
-        {/* <button className="bg-white h-20">Rotate the House</button> */}
         <p className="text-white text-center pt-6">
           A random fire hydrant I made.🤷🏾‍♂️
         </p>
@@ -51,10 +50,11 @@ function Three() {
             </Suspense>
           </Canvas>
         </div>
+  */}
         <p className="text-white text-center pt-6">
           A lot of effort went into this model. I plan to have animations on
           different parts of the scene next.{" "}
-          <a href="/Room" className="text-green-400">
+          <a href="/TheOffice" className="text-green-400">
             Full experience here.
           </a>
         </p>
