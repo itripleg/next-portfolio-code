@@ -38,6 +38,7 @@ function Projects() {
                     className="absolute inset-0 w-full h-full object-cover object-center rounded-md lg:rounded-none"
                     src={project.image}
                     layout="fill"
+                    unoptimized={true}
                   />
                   <div className="px-8 py-10 relative z-0 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                     <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
