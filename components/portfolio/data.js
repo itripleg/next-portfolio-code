@@ -25,12 +25,12 @@ export const projects = [
   },
 
   {
-    title: "Crypto Currency",
-    subtitle: "DeFi",
+    title: "Machine Learning",
+    subtitle: "OpenAI, ChatGPT",
     description:
-      "Experimental ERC20 and BEP20 smart contract based tokens. Yield farming and self governing ecosystems. Flash loans and arbitrage bots. Reflection tokens.",
-    image: "/project-4.gif",
-    link: "https://github.com/itripleg/solidity-smart-contracts",
+      "Starting point to dive into machine learning. Getting familiar with using OpenAI's NLP models.",
+    image: "/project-5.gif",
+    link: "https://stellular-platypus-b3f0a6.netlify.app/",
   },
   {
     title: "3D Modeling and Animations",
