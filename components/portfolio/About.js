@@ -63,9 +63,12 @@ function About() {
                     Github.
                   </a>{" "}
                   Checkout my
-                  <a href="/Three" className="underline">
+                  <a
+                    href="http://tiny-sable-5f3b26.netlify.app"
+                    className="underline"
+                  >
                     {" "}
-                    3D stuff!
+                    Blog!
                   </a>
                 </p>
               </div>
