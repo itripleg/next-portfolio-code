@@ -67,7 +67,6 @@ function About() {
                     href="http://tiny-sable-5f3b26.netlify.app"
                     className="underline"
                   >
-                    {" "}
                     Blog!
                   </a>
                 </p>
