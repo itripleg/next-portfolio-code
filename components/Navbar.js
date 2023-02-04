@@ -110,7 +110,7 @@ function Navbar() {
           )}
         </nav>
         <div>
-          <div className="p-4 flex">
+          <div className="p-4 hidden md:flex">
             {/* <Link
               href="https://github.com/itripleg/"
               passHref={true}
