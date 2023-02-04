@@ -1,7 +1,12 @@
 import TextLoop from "react-text-loop";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 function About() {
+  const variants = {
+    show: { opacity: 1, transition: { duration: 1, delay: 0.5 } },
+  };
+
   return (
     <>
       <section
@@ -37,7 +42,12 @@ function About() {
                 height="150"
               />
 
-              <div className="py-12">
+              <motion.div
+                className="py-12 "
+                variants={variants}
+                initial={{ opacity: 0 }}
+                animate={"show"}
+              >
                 <p className=" lg:block text-center mt-6 mb-10 lg:mb-0">
                   Full Stack developer. Crypto and Blockchain enthusiast. I love
                   working with bleeding-edge technology and helping decentralize
@@ -61,16 +71,22 @@ function About() {
                     className="underline"
                   >
                     Github.
-                  </a>{" "}
-                  Checkout my
-                  <a
-                    href="http://tiny-sable-5f3b26.netlify.app"
-                    className="underline"
-                  >
-                    Blog!
                   </a>
+                  <motion.div
+                    animate={{ opacity: 1, y: 20, scale: 1.5 }}
+                    initial={{ opacity: 0, y: -20 }}
+                    transition={{ delay: 2, duration: 1 }}
+                  >
+                    Checkout my new{" "}
+                    <a
+                      href="http://tiny-sable-5f3b26.netlify.app"
+                      className="underline"
+                    >
+                      Blog!
+                    </a>
+                  </motion.div>
                 </p>
-              </div>
+              </motion.div>
               <div className="flex ml-5">
                 <a
                   onClick={() => {
