@@ -136,8 +136,8 @@ export default function Contact() {
             </button>
           </form>
         </div>
-        <div className="absolute bottom-0 right-1/3 md:right-1/2 md:right-1/2 lg:right-100">
-          © 2022 Joshua Bell
+        <div className="absolute bottom-0 right-1/3 md:right-1/2 lg:right-100">
+          © 2023 Joshua Bell
         </div>
       </section>
     </>
