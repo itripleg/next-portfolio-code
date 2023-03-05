@@ -38,8 +38,12 @@ function Navbar() {
         justify-center space-x-3 md:space-x-6"
         >
           {/* Links use conditional rendering to determine if they should smooth scroll or follow an href */}
-          <Link href="/Chart" passHref={true} className="mr-5">
-            <a className="text-gray-400 text-lg hover:text-white">Chart</a>
+          <Link
+            href="https://tiny-sable-5f3b26.netlify.app/"
+            passHref={true}
+            className="mr-5"
+          >
+            <a className="text-gray-400 text-lg hover:text-white">Blog</a>
           </Link>
           {/* Projects */}
           {router.pathname != "/" ? (
