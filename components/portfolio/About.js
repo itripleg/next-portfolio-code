@@ -49,10 +49,9 @@ function About() {
                 animate={"show"}
               >
                 <p className=" lg:block text-center mt-6 mb-10 lg:mb-0">
-                  Full Stack developer. Crypto and Blockchain enthusiast. I love
-                  working with bleeding-edge technology and helping decentralize
-                  the web. Based in Asheville, North Carolina. I built this page
-                  with 💖using{" "}
+                  Dev, pentester, crypto and blockchain enthusiast. I love to
+                  code with new technology the web. Based in Asheville, North
+                  Carolina. I built this page with 💖using{" "}
                   <a href="http://nextjs.org" className="underline">
                     Next.js
                   </a>{" "}
