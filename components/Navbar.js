@@ -1,4 +1,4 @@
-import { ArrowRightIcon, HomeIcon, MenuIcon } from "@heroicons/react/solid";
+import { HomeIcon } from "@heroicons/react/solid";
 import { useRouter } from "next/router";
 import { SocialIcon } from "react-social-icons";
 import Link from "next/link";
@@ -39,7 +39,7 @@ function Navbar() {
         >
           {/* Links use conditional rendering to determine if they should smooth scroll or follow an href */}
           <Link
-            href="https://tiny-sable-5f3b26.netlify.app/"
+            href="https://blog.buncombe.tech/"
             passHref={true}
             className="mr-5"
           >
