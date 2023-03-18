@@ -61,7 +61,7 @@ const MessageParser = ({ children, actions }) => {
       actions.rachel();
       return;
     }
-    if (message.includes("bern") || messagemessage.includes("berenice")) {
+    if (message.includes("bern") || message.includes("berenice")) {
       actions.bern();
       return;
     }
@@ -69,7 +69,7 @@ const MessageParser = ({ children, actions }) => {
       actions.secret();
       return;
     } else {
-      actions.rude();
+      actions.rude(message);
       return;
     }
   };

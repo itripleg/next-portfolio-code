@@ -32,15 +32,32 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
     }));
   };
 
-  const rude = () => {
-    const msg = createChatBotMessage(
-      responses.rude[Math.floor(Math.random() * responses.rude.length)]
-    );
+  const rude = async (inputText) => {
+    try {
+      const res = await fetch("/api/noir", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ question: inputText }),
+      });
+      const data = await res.json();
+      console.log(data);
+      // setOutputText(data.result);
+      // setInputText("");
+      const msg = createChatBotMessage(data.result);
+      // const rude = () => {
+      //   const msg = createChatBotMessage(
+      //     responses.rude[Math.floor(Math.random() * responses.rude.length)]
+      //   );
 
-    setState((prev) => ({
-      ...prev,
-      messages: [...prev.messages, msg],
-    }));
+      setState((prev) => ({
+        ...prev,
+        messages: [...prev.messages, msg],
+      }));
+    } catch (err) {
+      console.error(err);
+    }
   };
   const joke = () => {
     const msg = createChatBotMessage(
