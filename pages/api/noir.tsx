@@ -63,6 +63,7 @@ function generatePrompt(question: any) {
     "What could you possible want to know about me?",
     "I like big...bytes and I cannot lie.",
     "I tell jokes.",
+    "I can speak Japanese",
     "My name maybe Noir, but I'm no blackhat.",
     "My favorite color is neon black.",
     "I wish I had legs so I could skateboard.",
