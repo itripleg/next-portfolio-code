@@ -26,9 +26,9 @@ function Projects() {
               {"Projects"}
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              {`Here are some projects I'm currently working on. The social media clones are 
-               made for demo purposes, but feel free to login to them and make a post! I
-               will upload all relevant code to my Github as progress is made.`}{" "}
+              {`Here are some projects I've experimented with. The social media clones are 
+               made for demo purposes and practice with TailwindCSS, feel free to login to them and make a post! I
+               will upload any relevant code to my Github as progress is made.`}{" "}
               <br />
               <Link className="w-1/5" href="/Three">
                 <a className="text-center text-bold text-lg hover:cursor-pointer underline text-black animate-pulse">
