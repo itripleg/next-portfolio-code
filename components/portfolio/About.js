@@ -77,10 +77,7 @@ function About() {
                     transition={{ delay: 2, duration: 1 }}
                   >
                     Checkout my new{" "}
-                    <a
-                      href="http://tiny-sable-5f3b26.netlify.app"
-                      className="underline"
-                    >
+                    <a href="http://blog.buncombe.tech/" className="underline">
                       Blog!
                     </a>
                   </motion.div>
