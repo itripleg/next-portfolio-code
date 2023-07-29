@@ -1,7 +1,7 @@
 # Joshua Bell
 
 65 Beri Dr, Asheville, NC 28806
-joshua.bell.828@gmail.com
+<joshua.bell.828@gmail.com>
 (828) 222-8787
 
 ## Professional Summary
@@ -39,7 +39,25 @@ I love computer science so my tech stack is pretty vast. Here's some of the thin
   - OWASP Top 10 web application security risks
   - Penetration testing (including tools found in Kali Linux)
 
+- ### Warehousing
+
+  - SAP
+  - Shipping & Receiving
+  - Electric Forklift / Picker
+  - Material Handling
+  - Machine Operator
+
 ## Employment history
+
+**Assistant Manger, Citizens Fuel. Asheville, North Carolina**
+Aug. 2022 - Present
+
+Currently assisting management for a bar/convenience store in West Asheville.
+
+- Keeping bar patrons entertained and satisfied with our draft beer selection.
+- Cutting costs by ordering best selling merchandise.
+- Accurately document invoices from our representatives.
+- Scheduling employees and ensuring a cooperative workplace.
 
 **Developer, Free Lancer. Asheville, North Carolina**
 Feb. 2022 – Present
@@ -84,6 +102,7 @@ Jan. 2015 – Mar. 2016
 
  *Factory/warehouse savant. Main duties are wide-ranging warehousing tasks including:*
 
+- SAP and corporate computer software.
 - Shipping & Receiving, Collation between departments, machine operations, industrial printing, packing, and QA.
 - Operate equipment to verify operational efficiency.
 - Operation of high-cost production equipment to meet production demands in a timely manner.
@@ -92,9 +111,9 @@ Jan. 2015 – Mar. 2016
 
 ## Education
 
-- *The Internet*
-  - My most valuable learning resource. Thousands of hours reviewing documentation, RFCs, Improvement Proposals, Videos, coding challenges, etc. Always learning more!
-
 - *Asheville Buncombe Technical College, Asheville, North
 Carolina*
-  - GED, General Education with focus on computer science, 2006
+  - GED, General Education with focus on computer science
+
+- *The Internet*
+  - My most valuable learning resource. Thousands of hours reviewing documentation, RFCs, Improvement Proposals, Videos, coding challenges, etc. Always learning more!
