@@ -43,7 +43,7 @@ function Scene() {
   console.log(controlRef.current);
   return (
     <>
-      <ambientLight intensity={0.4} />
+      <ambientLight intensity={1} />
       <Environment preset="night" />
       <SpotLight
         ref={lightRef}
@@ -67,7 +67,7 @@ function Scene() {
         anglePower={5}
         // rotation={(0, 0, 0)}
       /> */}
-      {/* <directionalLight position={[9, 6, -7]} /> */}
+      <directionalLight position={[9, 6, -7]} />
       {/* <PerspectiveCamera makeDefault position={[0, 11, 8]} /> */}
       {/* <OrbitControls target={[0, 2, -3]} /> */}
       <PerspectiveCamera makeDefault position={[0, 11, 8]} />
@@ -177,8 +177,8 @@ function Scene() {
         position={[-1, 2, -11]}
         onPointerOver={(e) => {
           console.log("cursor hover-over", lightRef);
-          //   document.getElementById("message").innerHTML =
-          //     "Bad Vibes is a punk band out of Asheville NC.";
+          document.getElementById("message").innerHTML =
+            "Bad Vibes is a punk band out of Asheville NC.";
         }}
       />
       {/* <Plane args={[8, 8, 2]} rotation={[2, 0, 0]} /> */}
