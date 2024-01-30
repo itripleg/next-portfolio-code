@@ -50,8 +50,8 @@ function About() {
               >
                 <p className=" lg:block text-center mt-6 mb-10 lg:mb-0">
                   Dev, pentester, crypto and blockchain enthusiast. I love to
-                  code with new technology helping decentralize the web. Based in Asheville, North
-                  Carolina. I built this page with 💖using{" "}
+                  code with new technology helping decentralize the web. Based
+                  in Asheville, North Carolina. I built this page with 💖using{" "}
                   <a href="http://nextjs.org" className="underline">
                     Next.js
                   </a>{" "}
@@ -77,7 +77,10 @@ function About() {
                     transition={{ delay: 2, duration: 1 }}
                   >
                     Checkout my new{" "}
-                    <a href="http://blog.buncombe.tech/" className="underline">
+                    <a
+                      href="https://jbtechblog.netlify.com/"
+                      className="underline"
+                    >
                       Blog!
                     </a>
                   </motion.div>
