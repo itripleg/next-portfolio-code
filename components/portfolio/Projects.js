@@ -30,11 +30,23 @@ function Projects() {
                made for demo purposes and practice with TailwindCSS, feel free to login to them and make a post! I
                will upload any relevant code to my Github as progress is made.`}{" "}
               <br />
-              <Link className="w-1/5" href="/Three">
-                <a className="text-center text-bold text-lg hover:cursor-pointer underline text-black animate-pulse">
-                  Checkout some new experimental stuff!
-                </a>
-              </Link>
+              <div className="flex flex-col">
+                <Link href="/Noir">
+                  <a className="text-center text-bold text-lg hover:cursor-pointer underline text-black animate-pulse">
+                    Generative A.I. chatbot!
+                  </a>
+                </Link>
+                <Link href="https://jbdevfolio.netlify.app">
+                  <a className="text-center text-bold text-lg hover:cursor-pointer underline text-black animate-pulse">
+                    Checkout the new landing page!
+                  </a>
+                </Link>
+                <Link className="w-1/5" href="/Three">
+                  <a className="text-center text-bold text-lg hover:cursor-pointer underline text-black animate-pulse">
+                    Checkout some new experimental stuff!
+                  </a>
+                </Link>
+              </div>
             </p>
           </div>
           <div className="flex flex-wrap -m-4 grid-cols-2 justify-center gap-3 md:gap-0 min-h-200">
