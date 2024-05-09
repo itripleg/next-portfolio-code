@@ -78,7 +78,7 @@ function About() {
                   >
                     Checkout my new{" "}
                     <a
-                      href="https://jbtechblog.netlify.com/"
+                      href="https://jbtechblog.netlify.app/"
                       className="underline"
                     >
                       Blog!
