@@ -39,7 +39,7 @@ function Navbar() {
         >
           {/* Links use conditional rendering to determine if they should smooth scroll or follow an href */}
           <Link
-            href="https://jbtechblog.netlify.com/"
+            href="https://jbtechblog.netlify.app/"
             // href="https://blog.buncombe.tech/"
             passHref={true}
             className="mr-5"
